@@ -240,9 +240,12 @@ same reason, a lower excess alone is not an improvement.
 The unit of analysis is the channel. We use exact sign-flip permutation tests over the 17
 confirmatory channels ($2^{17}$ sign patterns), BCa bootstrap intervals at $1-0.05/m$, and
 Holm correction within each hypothesis family ($m=3$ for H1 and H3; $m=5$ for H2, whose
-untested pipeline variants count at $p=1$). For H1, $d_z$ is the mean over channels of the
-mean cosine drop (control minus switch), divided by the pooled within-channel SD of the
-drops. For H2-P0, a channel's AUC is the probability that a switch point's $d(t)$ exceeds a
+untested pipeline variants count at $p=1$). For H1, let $x_{ci}$ be the cosine drop (control minus switch) of matched set $i$ in channel $c$, with $n_c$ sets, mean $\bar{x}_c$ and SD $s_c$, over $C=17$ channels. We define
+\begin{equation}
+d_z=\frac{\frac{1}{C}\sum_c \bar{x}_c}{s_p},\qquad
+s_p=\sqrt{\frac{\sum_c (n_c-1)\,s_c^2}{\sum_c (n_c-1)}},
+\end{equation}
+an equal-weight mean of channel means over the pooled within-channel SD of the set-level drops. This differs from the conventional $d_z$ (mean paired difference over the SD of those differences at the analysis unit): we use set-level variability because that is the noise a detector faces at each boundary, and the SD of 17 channel means would be unstable. The smallest effect of interest (0.2) and the power calculation use this same definition, and the BCa interval recomputes $s_p$ in every resample. For H2-P0, a channel's AUC is the probability that a switch point's $d(t)$ exceeds a
 same-cell control's. H3 is the mean target-score difference (cross-language minus
 mono-language) on lag-matched same-speaker trials, in units of target-score SD, with the two
 languages weighted equally. The smallest effects of interest are $d_z=0.2$, AUC $=0.55$ and
@@ -483,9 +486,7 @@ The change score tells a narrower story. It is higher at switches only where bot
 runs last at least a second. Most switches in these lectures are
 insertion-like~\cite{muysken2000}: 79\% of the 120{,}630 pooled switch points border a run
 shorter than 0.5~s, too short for a 1~s detector to resolve, and over all switches there is no positive ranking separation. The two off-the-shelf pipelines rarely reported a false change at
-switches. Neither mitigation demonstrably removed the excess, and neither did better than a
-simple score offset. In code-switched lectures, then, language switches by one speaker look
-like a minor source of false speaker changes. Whether that holds in conversation, and whether
+switches. Neither mitigation demonstrably removed the excess, and neither demonstrated an advantage over the simple score offset (direct comparisons $p=.67$ and $.54$, unadjusted). In the short lecture clips and pipeline configurations tested here, language switches by one speaker therefore look like a minor source of false speaker changes; the artificial joins do not establish how these pipelines respond to natural conversational speaker changes. Whether that holds in conversation, and whether
 a mitigation would cost missed real speaker changes, needs conversations with speaker and
 language references.
 
