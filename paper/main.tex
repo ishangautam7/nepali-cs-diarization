@@ -1,6 +1,3 @@
-% Speaker-embedding and change-score sensitivity at Nepali-English code-switch points (IEEEtran conference format).
-% Build: pdflatex main && bibtex main && pdflatex main && pdflatex main
-% arXiv source package: paper/arxiv/make_arxiv.sh
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 
@@ -34,15 +31,13 @@ Tribhuvan University, Nepal\\
 \begin{abstract}
 People who code-switch change language mid-utterance without changing who they are. We ask
 whether a Nepali--English switch within one speaker lowers speaker-embedding similarity and
-raises a speaker-change score. In a pre-registered analysis of real lecture speech from 17
+raises a speaker-change score. In a pre-specified analysis of real lecture speech from 17
 YouTube channels (a proxy for speakers), we compare same-speaker windows that straddle a
 switch with matched same-language controls, for three speaker embeddings. Between language
 runs of at least 1~s, similarity is lower across a switch for all three embeddings and in
 every channel ($d_z$ $0.19$--$0.27$), and cross-language same-speaker scores are
 $0.17$--$0.22$ SD lower. A two-window change score is slightly higher at these switches (AUC
-$0.57$--$0.58$, in a primary cell chosen after a pilot), but not when averaged over all
-switches (AUC $\approx 0.49$), most of which border shorter runs. For two embeddings the
-excess survives adjustment for measured acoustic covariates, although the observational
+$0.57$--$0.58$, in a primary cell chosen after a pilot), but over all switches, most of which border shorter runs, there is no positive ranking separation (pooled AUC $\approx 0.49$). For two embeddings the excess survives the planned adjustment for measured acoustic covariates, although the observational
 design cannot show that language causes it. On Hindi-- and Bengali--English (MUCS~2021) the
 direction is the same. Two mitigations meant to remove language information reduced the excess by $18.9\%$ and $24.9\%$, inconclusively, and one made language more, not less, decodable. In a post hoc check, two off-the-shelf diarization
 pipelines almost never reported a false speaker change at natural switches. The similarity drop is consistent but small, the evidence is preliminary (no independent listener has checked the switch points), and whether it matters in conversational diarization remains open.
@@ -50,7 +45,7 @@ pipelines almost never reported a false speaker change at natural switches. The 
 
 \begin{IEEEkeywords}
 speaker embeddings, speaker diarization, speaker change detection, code-switching, Nepali,
-cross-lingual speaker verification, pre-registration
+cross-lingual speaker verification, pre-specified analysis
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -69,12 +64,10 @@ corpus-level error~\cite{baghel2023displace}. What is missing is a measurement \
 individual, natural switch points} in real speech, against matched same-speaker controls.
 We provide one for Nepali--English. LASE also found that the cross-script gap is smaller for
 Indian-accented voices, so for speakers whose first language is Nepali the effect may be
-small; we pre-registered the study so that a small or null result could still be reported.
+small; we fixed the analysis plan before the confirmatory run so that a small or null result could still be reported.
 
 In short, between language runs of at least a second, same-speaker similarity is slightly
-but consistently lower across a switch, and the change score slightly higher. Averaged over
-all switches, most of which border a run shorter than half a second, there is no
-change-score excess, and neither testable mitigation demonstrably removed the excess we
+but consistently lower across a switch, and the change score slightly higher. Over all switches, most of which border a run shorter than half a second, there is no positive ranking separation, and neither testable mitigation demonstrably removed the excess we
 found. The planned tests on full diarization pipelines and on real cross-lingual speaker
 turns (DS-DL: \emph{different speaker, different language}) needed conversation data we
 could not obtain, so this is a diagnostic study of embeddings and change scores, with a
@@ -85,13 +78,13 @@ post hoc pipeline check.
   \item A boundary-level protocol that compares speaker-embedding similarity and a
         two-window change score at same-speaker language switches with matched
         same-language controls, adjusted for measured acoustic covariates.
-  \item Pre-registered results on real Nepali--English speech for three speaker
+  \item Pre-specified results on real Nepali--English speech for three speaker
         embeddings (\S\ref{sec:results}), with a check of direction on Hindi-- and
         Bengali--English (\S\ref{sec:h7}).
-  \item A pre-registered test of two mitigations meant to remove language information (\S\ref{sec:mitigations})
+  \item A pre-specified test of two mitigations meant to remove language information (\S\ref{sec:mitigations})
         and a post hoc check with two off-the-shelf diarization pipelines (\S\ref{sec:pipe}).
 \end{itemize}
-Code, pre-registration and results are at
+Code, the analysis plan and results are at
 \href{https://github.com/ishangautam7/nepali-cs-diarization}{\nolinkurl{github.com/ishangautam7/nepali-cs-diarization}}.
 
 \section{Related Work}
@@ -159,11 +152,11 @@ and 5{,}071 and 3{,}510 with cell controls in the primary detection cell.
 
 \subsection{Data we could not obtain}
 \label{sec:data-conv}
-The pre-registered tests of full diarization pipelines need long-form recordings, and the
+The planned tests of full diarization pipelines need long-form recordings, and the
 DS-DL tests need conversations with references for both speaker and language. D1's source
 videos could not be downloaded, access to DISPLACE~2024~\cite{displace2024} was not granted
 during the study, and DISPLACE-M~\cite{displacem2026} has no language references. These
-tests were therefore not run: the full-pipeline variants of the change-score test (H2), whether the mitigations add missed cross-language speaker turns (H5), and their ordering (H6). The pre-registered conversation sets D2 and D3 are therefore absent. Apart from the
+tests were therefore not run: the full-pipeline variants of the change-score test (H2), whether the mitigations add missed cross-language speaker turns (H5), and their ordering (H6).  Apart from the
 artificial speaker changes of \S\ref{sec:pipe}, no result here involves a speaker change.
 
 \section{Method}
@@ -188,14 +181,7 @@ cell, standardised per cell; its 1~s windows meet at the middle of any pause.
 \emph{Primary detection cell.} The primary cell, \texttt{p0L1}, keeps switch points where
 both language runs last at least 1~s, with a clean $\pm1$~s field: on the confirmatory
 channels, 3{,}962 switch points with cell controls, against 31{,}844 controls. The pooled
-cell holds all 120{,}630 switch points. The study plan made the pooled cell primary. On the
-pilot channels its AUC was $0.486$--$0.494$, while switch points between longer runs fired
-more often than controls. We then made \texttt{p0L1} primary, because a detector with 1~s
-windows cannot register a sub-second insertion as a two-sided change; this also gives P0 the
-run-length condition already fixed for H1. The choice was made after seeing pilot outcomes,
-but before the pre-registration was written and the configuration frozen, and the
-confirmatory channels are disjoint from the pilot. Because it turns a null pooled estimand
-into a positive one, we report both.
+cell holds all 120{,}630 switch points. The initial study design, committed before the pilot, made the pooled cell primary. On the pilot channels its AUC was $0.486$--$0.494$, while switch points between longer runs fired more often than controls. We then made \texttt{p0L1} primary, because a detector with 1~s windows cannot register a sub-second insertion as a two-sided change; this also gives P0 the run-length condition the initial design already fixed for H1. This change was made after seeing pilot outcomes. The formal analysis plan was written after it, names \texttt{p0L1} as primary, and was frozen with the configuration before the one confirmatory run; the confirmatory channels are disjoint from the pilot. Because the primary cell shows a positive result where the pooled cell shows no positive separation, we report both.
 
 \subsection{Systems}
 We test three speaker embeddings: E1 ECAPA-TDNN~\cite{desplanques2020ecapa}, E2 the
@@ -221,7 +207,7 @@ a weak check.
 Because a speaker is a channel, we audit each video with two embeddings not under test
 (TitaNet-L and CAM++), comparing each clip only with same-video clips of similar language
 mix (by CMI tertile~\cite{gamback2016cmi}), so that English-heavy clips are not flagged for
-their language. The audit flagged 688 of 20{,}444 clips (3.4\%), at the same rate in every
+their language. The audit flagged 688 of the 20{,}444 clips assessable by both embeddings (3.4\%), at the same rate in every
 language-mix stratum, and split off 34 of 161 videos, most of them separate recording
 sessions of one teacher. Apart from one pilot-channel video that may share a teacher with a
 confirmatory channel, the closest pair of videos from two channels has a cosine of 0.65 (TitaNet-L) and 0.66 (CAM++),
@@ -233,7 +219,7 @@ result keeps its direction and meets its smallest effect of interest (H1 $d_z$
 
 \subsection{Mitigations}
 \label{sec:mit-method}
-We pre-registered three mitigations and three baselines. M1 projects the language direction
+The plan specified three mitigations and three baselines. M1 projects the language direction
 out of the embedding~\cite{hosseini2026}. M2 gates the change score with language
 ID~\cite{valk2021voxlingua}. M3 fine-tunes E3 on real speech only, with a gradient-reversal
 language loss~\cite{ganin2015grl}, AAM-softmax~\cite{deng2019arcface}, a
@@ -261,8 +247,7 @@ same-cell control's. H3 is the mean target-score difference (cross-language minu
 mono-language) on lag-matched same-speaker trials, in units of target-score SD, with the two
 languages weighted equally. The smallest effects of interest are $d_z=0.2$, AUC $=0.55$ and
 0.2~SD; a result is \emph{supported} if it is significant with a point estimate at least this
-large. The sample was fixed by the data; with pilot variance components, the pre-registered
-power at these effects was 0.68--1.00 for H1 and 0.70--0.76 for H2-P0.
+large. The sample was fixed by the data; with pilot variance components, the planned power at these effects was 0.68--1.00 for H1 and 0.70--0.76 for H2-P0.
 
 An excess is \emph{covariate-robust} if the primary test, a channel-level test adjusted for
 acoustic covariates (left--right changes in F0, energy, speaking rate, spectral tilt and
@@ -321,8 +306,7 @@ E3 & 0.582 & 0.493 & $+2.73$ pp (0.003) \\
 \end{tabular}
 \end{table}
 
-\textbf{The excess depends on run length.} Over all switch points there is no change-score
-excess (pooled AUC 0.485--0.493). The pooled AUC rises from $\approx 0.48$ when the shorter
+\textbf{The excess depends on run length.} Over all switch points there is no positive ranking separation (pooled AUC 0.485--0.493), and at $\tau$ the pooled $\Delta$FAR is negative ($-1.59/-1.67/-1.51$~pp for E1/E2/E3; secondary, no test). The pooled AUC rises from $\approx 0.48$ when the shorter
 run is under 0.5~s to $\approx 0.59$ when it is at least 1~s (exploratory), consistent with a
 1~s detector being unable to register short insertions. Window length behaves similarly for
 H1: with 0.5~s windows $d_z$ falls to 0.13/0.10/0.12 (E1/E2/E3), and with 1.5~s windows it
@@ -333,8 +317,7 @@ rises to 0.34/0.24/0.36, though longer windows also admit only longer runs.
 13--17\% of primary-cell switch points but at 22--25\% of same-language boundaries with a
 pause over 150~ms (channel means, not cell-standardised), so for this detector a pause is a larger source of within-speaker false alarms than a language switch. The operating-point excess is also uneven across channels (Fig.~\ref{fig:det}):
 $\Delta$FAR is positive in 9, 12 and 13 of 17 channels, and weighting switch points rather
-than channels equally gives $+0.78$, $+2.00$ and $+1.17$~pp, because the largest channel
-shows no excess and the largest values come from small channels.
+than channels equally gives $+0.78$, $+2.00$ and $+1.17$~pp, because the largest channel has a negative $\Delta$FAR and the largest values come from small channels.
 
 \textbf{Acoustic controls.} H1 is covariate-robust for all three embeddings. The H2-P0
 excess is covariate-robust for E2 ($p=.031$) and E3 ($p=.008$) and switch-associated for E1
@@ -369,7 +352,7 @@ the mean over switch points.}
 \centering
 \includegraphics[width=\columnwidth]{figures/umap_speaker_language_invariance.pdf}
 \caption{UMAP~\cite{mcinnes2018umap} of 8000 D1 switch-point windows (E3). \emph{Left:}
-coloured by channel; a linear probe identifies the channel with balanced accuracy 0.95 (six channels per fold, chance 0.17). \emph{Right:} coloured by language; the languages interleave within each
+coloured by channel; a linear probe identifies the channel with balanced accuracy 0.95 (cross-session probe over six channels at a time, chance 0.17). \emph{Right:} coloured by language; the languages interleave within each
 channel with a small offset, and a linear probe still recovers language with balanced
 accuracy 0.76 (chance 0.5). Illustrative only; the probe accuracies come from the mitigation folds, not from the plotted sample.}
 \label{fig:umap}
@@ -377,7 +360,7 @@ accuracy 0.76 (chance 0.5). Illustrative only; the probe accuracies come from th
 
 \section{Direction Check on Hindi-- and Bengali--English}
 \label{sec:h7}
-We repeat H1 and H2-P0 on D4, pre-registered and frozen before any D4 outcome was computed,
+We repeat H1 and H2-P0 on D4, specified and frozen before any D4 outcome was computed,
 with MUCS speaker IDs (tutorials) as clusters. A tutorial enters a test if it has at least 5 matched sets (H1) or 5 primary-cell switch points (H2-P0): 364 and 394 of 550 Hindi IDs, and 235 and 254 of 307 Bengali IDs. With hundreds of clusters, the sign-flip draws $2^{17}$
 random sign patterns. All 12 tests are significant in the predicted direction (Holm
 one-sided $p \le 2.6\times10^{-3}$; Table~\ref{tab:h7}). In Hindi--English the estimates are
@@ -403,7 +386,7 @@ bn-en & H2-P0 & AUC 0.53 / 0.52 / 0.54 (.50--.57) & 0/3 \\
 \end{table}
 
 These $p$-values assume that tutorials are independent speakers; if one narrator recorded
-many tutorials, they are too small. The pre-registered check groups recordings into voice
+many tutorials, they are too small. The planned check groups recordings into voice
 clusters, but its threshold, calibrated on D1, merged MUCS into only 6 Hindi and 3 Bengali
 clusters. With so few clusters no Holm-adjusted $p$ can fall below $.05$ (the smallest attainable is $\approx 0.19$), so no test can reach significance; this reflects a lack of power, not evidence against the effect, and the check is uninformative. Robustness
 to speaker dependence is therefore untested on D4, which supports the direction of the
@@ -411,8 +394,7 @@ effect, not its significance under realistic speaker dependence. An LLM-labelled
 
 \section{Mitigations}
 \label{sec:mitigations}
-On the 15 scored channels B0's excess is $+2.13$~pp, so support needs a reduction of at
-least 0.53~pp. Neither mitigation is supported (Table~\ref{tab:h4}): M1 lowers the excess by
+On the 15 scored channels B0's excess is $+2.13$~pp, so support needs a reduction of at least 0.533~pp. Neither mitigation is supported (Table~\ref{tab:h4}): M1 lowers the excess by
 0.40~pp (18.9\%) and M3 by 0.53~pp (24.9\%), but both intervals include no reduction. The
 language-aware offset B2, itself not significant ($p=.10$), lowers it by about as much
 (0.59~pp), and mean centring B1 does not lower it.
@@ -448,7 +430,7 @@ and neither mitigation lowers it consistently.
 
 \section{Exploratory Full-Pipeline Check}
 \label{sec:pipe}
-After all pre-registered analyses, we ran two off-the-shelf diarization pipelines with
+After all planned analyses, we ran two off-the-shelf diarization pipelines with
 default settings and no given speaker count: pyannote Community-1, with its VBx
 clustering~\cite{landini2022vbx}, and DiariZen~\cite{han2025diarizen}. On the 17
 confirmatory channels we drew 300 primary-cell switch points and one same-cell control for
@@ -500,15 +482,14 @@ ours come from 1~s windows.
 The change score tells a narrower story. It is higher at switches only where both language
 runs last at least a second. Most switches in these lectures are
 insertion-like~\cite{muysken2000}: 79\% of the 120{,}630 pooled switch points border a run
-shorter than 0.5~s, too short for a 1~s detector to resolve, and averaged over all switches
-there is no excess. The two off-the-shelf pipelines rarely reported a false change at
+shorter than 0.5~s, too short for a 1~s detector to resolve, and over all switches there is no positive ranking separation. The two off-the-shelf pipelines rarely reported a false change at
 switches. Neither mitigation demonstrably removed the excess, and neither did better than a
 simple score offset. In code-switched lectures, then, language switches by one speaker look
 like a minor source of false speaker changes. Whether that holds in conversation, and whether
 a mitigation would cost missed real speaker changes, needs conversations with speaker and
 language references.
 
-\textbf{Limitations.} No pre-registered pipeline or DS-DL test could be run, so the results
+\textbf{Limitations.} No planned pipeline or DS-DL test could be run, so the results
 mainly concern embeddings and change scores. The primary detection cell was chosen after
 the pilot. The design is observational. D1's speakers are YouTube channels and D4's are
 tutorials, neither verified, and the channel-level tests assume they are independent. The
@@ -522,8 +503,7 @@ prosody. With 15 channels, H4 could not separate a 25\% reduction from none.
 \label{sec:conclusion}
 Within one speaker and between language runs of at least a second, three speaker embeddings
 rate the same voice as slightly less similar across a natural Nepali--English switch, and a
-two-window change score is slightly higher there. Averaged over all switches there is no
-change-score excess, two mitigations reduced the excess only inconclusively, and two off-the-shelf pipelines rarely reported a false speaker change at
+two-window change score is slightly higher there. Over all switches there is no positive ranking separation, two mitigations reduced the excess only inconclusively, and two off-the-shelf pipelines rarely reported a false speaker change at
 switches. Testing the effect in conversational diarization needs long-form conversations
 with speaker and language references.
 
@@ -533,10 +513,9 @@ The study uses only publicly released recordings: D1 (CC BY-NC 4.0)~\cite{dahal2
 MUCS~2021 (CC BY-SA 4.0) and the Nepali part of IndicVoices (CC BY 4.0). It makes no new
 recordings, recruits no participants and redistributes no audio, so no ethics-board review
 was sought. Speaker embeddings are biometric data, so only aggregate statistics are
-reported. Code, the pre-registration and all results are available at the repository above.
-Each confirmatory analysis was frozen before it was run, and the full commit history is available on request; the pre-registration was not deposited with an external registry. Post hoc analyses are labelled as such.
+reported. Code, the analysis plan and all results are available at the repository above. The plan was written and committed to the project's git repository before the confirmatory analyses, and each confirmatory analysis was frozen as a tagged commit, recording a hash of every code and input file, before it was run. We call the plan pre-specified rather than pre-registered because it was not deposited with an external registry; the full commit history is available on request. Post hoc analyses are labelled as such.
 
-The author designed the study, wrote the pre-registration, made the analysis decisions, did
+The author designed the study, wrote the analysis plan, made the analysis decisions, did
 the listening checks and interpreted the results. AI assistants (Anthropic Claude models)
 helped write and run the analysis code and edit the text. LLM-based tools labelled the D4 lexicon and its audit sample, as text only. The author checked their output and is responsible for all content.
 
