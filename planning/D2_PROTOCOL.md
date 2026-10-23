@@ -2,9 +2,11 @@
 
 v0.2 · companion to `PLAN.md` v0.4 §§2–3 and `DECISIONS.md`.
 
+**Status.** Not run. D2-R was deferred (`DECISIONS.md` decision 6): no session was recorded, no participant was recruited and no pilot was run. This protocol is kept as a design record only.
+
 **Purpose.** Record real, unscripted 2–3-person bilingual Nepali–English conversations so diarization systems see only a room channel while per-speaker close-talk channels give the speaker reference. The study tests whether Nepali↔English code-switching makes systems hypothesize speaker changes that are not there (SS-DL false splits) without missing real cross-lingual turns (DS-DL misses).
 
-**Ethics.** No approval-committee gate. Ishan holds the necessary permissions, so recording starts without waiting for a committee review (`DECISIONS.md` decision 5). Every participant still gives informed, signed consent *before* recording, using the forms in `planning/ethics/`. Record the approving body and the approval reference for the paper's ethics statement: log [APPROVING BODY] and [APPROVAL REFERENCE] once, in the project record. Only real recordings: no scripted reading, no simulated or mixed audio.
+**Ethics.** The design required every participant to give informed, signed consent *before* recording, using consent forms drafted for it (not included in this release; see `planning/ethics/README.md`). Because no recording was made, no ethics approval was sought (`DECISIONS.md` decision 5). Only real recordings: no scripted reading, no simulated or mixed audio.
 
 **Blinding.** Participants are **not** told the code-switching hypothesis. They are told the same purpose as the information sheet: we test how well speech technology can tell who is speaking ("who spoke when") in natural conversation. Eligibility is screened with a neutral language-background questionnaire (§2); there is no cover story about mixing and no screening item about mixing. Debrief after each participant's last session (§6).
 
@@ -24,7 +26,7 @@ v0.2 · companion to `PLAN.md` v0.4 §§2–3 and `DECISIONS.md`.
 
 The final number of sessions and participants is **set by the pilot power simulation** (`PLAN.md` §2b, M2b), not fixed here; the row above is the working target.
 
-**Balance targets (soft, logged per session):** gender mix across dev and test; age spread [e.g. 18–25 / 26–40 / 41+]; home region / dialect [Kathmandu valley vs other]; everyday English use inferred from the neutral questionnaire. Aim so neither split is dominated by one cell.
+**Balance targets (soft, logged per session):** gender mix across dev and test; age spread (e.g. 18–25 / 26–40 / 41+); home region / dialect (Kathmandu valley vs other); everyday English use inferred from the neutral questionnaire. Aim so neither split is dominated by one cell.
 
 **Eligibility.** Screen with a **neutral language-background questionnaire** containing filler items (schooling, media habits, languages used at home/work). Nothing singles out language mixing, and no item asks about switching. Pairs/triads should already be acquainted enough to talk freely.
 
@@ -39,12 +41,12 @@ Goal: natural Nepali–English mixing **without ever asking for it**. Give a top
 **Topic prompts (pick 4–6 per session, open-ended, rotate):**
 
 1. Your typical day from morning to night.
-2. Favourite food and where to get the best [momo/sel roti/local dish].
+2. Favourite food and where to get the best momo, sel roti or another local dish.
 3. A recent trip or trek — what happened, what went wrong.
 4. Phones and apps you use most and why.
 5. A film or series you both watched recently.
 6. Studies or work — what you actually do day to day.
-7. Festivals — how your family celebrates [Dashain/Tihar].
+7. Festivals — how your family celebrates Dashain or Tihar.
 8. Load-shedding, traffic, or city life frustrations.
 9. Sports — a match or team you follow.
 10. Cooking something: walk each other through a recipe.
@@ -83,7 +85,7 @@ Give example models per item, **without prices**. Every item must be checked for
 | Headphones | Closed-back for monitoring levels | Sony MDR-7506; Audio-Technica ATH-M40x |
 | Cables | XLR cables, one per mic + spares; lavalier phantom-to-plug-in-power adapters as needed | — |
 | Power | Recorder batteries + spares, mains adapter, power strip | — |
-| Storage | 2× SD cards (recorder spec), card reader; ≥ [128] GB each | SanDisk Extreme Pro SDXC (recorder-approved speed class) |
+| Storage | 2× SD cards (recorder spec), card reader; ≥ 128 GB each | SanDisk Extreme Pro SDXC (recorder-approved speed class) |
 
 **Minimum workable kit:** 1 recorder (≥ 6 XLR in), 3 lavaliers (one per speaker), 1 dedicated omni room mic, any phantom-to-plug-in-power adapters, headphones, cables, power, two cards.
 
@@ -91,7 +93,7 @@ Give example models per item, **without prices**. Every item must be checked for
 
 ## 4. Room and placement
 
-**Room choice.** Quiet, low-reverb, indoor room with the door closed [ROOM: e.g. a small meeting room]. Avoid: open halls, glass/tile echo, fans/AC noise, fridge hum, street-facing windows, fluorescent buzz. Turn off or unplug noisy appliances. One consistent room across sessions if possible; log any change.
+**Room choice.** Quiet, low-reverb, indoor room with the door closed (e.g. a small meeting room). Avoid: open halls, glass/tile echo, fans/AC noise, fridge hum, street-facing windows, fluorescent buzz. Turn off or unplug noisy appliances. One consistent room across sessions if possible; log any change.
 
 **Seating diagram (text).**
 
@@ -156,7 +158,7 @@ Give example models per item, **without prices**. Every item must be checked for
 - [ ] Signal wind-down; **3 claps** again before stopping (end sync-verification marker).
 - [ ] Stop recording.
 - [ ] **Debrief** only after a participant's **last** session: explain the code-switching focus; answer questions; confirm consent still stands; note any withdrawal. A participant who may return for a second session is not yet debriefed.
-- [ ] **Payment** per agreed amount [AMOUNT]; obtain receipt/acknowledgement.
+- [ ] **Payment** of the agreed amount; obtain receipt/acknowledgement.
 
 ### After
 - [ ] **Copy** all channel WAVs off the card to the project box.
@@ -175,7 +177,7 @@ Give example models per item, **without prices**. Every item must be checked for
 |---|---|---|
 | `session_id` | str | `D2_[SITE]_S[NN]_YYYYMMDD` |
 | `date` | date | YYYY-MM-DD |
-| `site` | str | `[ROOM/location code]` |
+| `site` | str | room/location code |
 | `split` | enum | `dev` / `test` (pilot → `dev`) |
 | `n_speakers` | int | 2 or 3 participants |
 | `participant_ids` | str | comma-separated pseudonymous IDs |
@@ -203,7 +205,7 @@ Give example models per item, **without prices**. Every item must be checked for
 | `session_index` | int | 1 or 2 (≤ 2 per participant) |
 | `debriefed` | bool | true only after the participant's last session |
 | `gender` | str | self-reported |
-| `age_band` | str | `[18-25/26-40/41+]` |
+| `age_band` | str | `18-25` / `26-40` / `41+` |
 | `region` | str | home region/dialect |
 | `english_use` | enum | inferred from the neutral questionnaire |
 | `l1` | str | first language |
@@ -266,4 +268,4 @@ Feed these into the **power simulation** (`PLAN.md` §§2b, 6–7, M2b) to fix t
 
 ---
 
-*Freeze the D2-dependent parts of this protocol and the pre-registration at milestone M2b, after the pilot, before any D2-test scoring (`PLAN.md` §9).*
+*The plan was to freeze the D2-dependent parts of this protocol and the pre-registration at milestone M2b, after the pilot and before any D2-test scoring (`PLAN.md` §9). D2-R was not run, so this freeze did not take place.*

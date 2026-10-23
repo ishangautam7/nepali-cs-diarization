@@ -133,12 +133,12 @@ P1 misses many real speaker changes at joins, and fewer when the language also c
 ```
 PYTHONPATH=. python -m scripts.review_pipeline_set --boundaries $BOUNDARIES --emb $EMB --align $ALIGN --d1 $D1 \
     --out results/review_followups/pipeline                                          # host CPU, numpy 2.5.4
-# GPU box: D1 = the 579 natural clips' WAVs copied from the host, models = the pinned snapshots above
+# GPU box: D1 = the 579 natural clips' WAVs copied from the host, MODELS = the folder holding the pinned snapshots above
 PYTHONPATH=. python -m scripts.review_pipeline_run --set results/review_followups/pipeline/set.json --d1 $D1 \
-    --system p1 --model-dir <models>/pyannote-community-1 --out results/review_followups/pipeline --device cuda
+    --system p1 --model-dir $MODELS/pyannote-community-1 --out results/review_followups/pipeline --device cuda
 PYTHONPATH=. TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1 python -m scripts.review_pipeline_run \
-    --set results/review_followups/pipeline/set.json --d1 $D1 --system p2 --model-dir <models>/diarizen-wavlm-large-s80-md \
-    --embedding <models>/pyannote-wespeaker-voxceleb-resnet34-LM/pytorch_model.bin --out results/review_followups/pipeline --device cuda
+    --set results/review_followups/pipeline/set.json --d1 $D1 --system p2 --model-dir $MODELS/diarizen-wavlm-large-s80-md \
+    --embedding $MODELS/pyannote-wespeaker-voxceleb-resnet34-LM/pytorch_model.bin --out results/review_followups/pipeline --device cuda
 PYTHONPATH=. python -m scripts.review_pipeline_score --set results/review_followups/pipeline/set.json \
     --systems p1 p2 --out results/review_followups/pipeline_exploratory               # pyannote.metrics 4.2.0
 ```
@@ -188,10 +188,3 @@ PYTHONPATH=. python scripts/review_channel_exclusion.py --confirm results/confir
                                                                      # numpy 2.2.6 (.venv-pyannote4 class env)
 ```
 
-## What should change in the paper (5 lines)
-
-1. Fig. 1 (PR #61): add that cell standardisation (+1.0 to +1.7 pp) and equal channel weighting (+1.1 to +1.7 pp) explain the old figure's gap; E3 reconciles exactly on frozen inputs.
-2. Methods/Results: state the counts: 3,962 of 4,069 p0L1 switch points have cell controls (train 3,851, test 111; 31,844 controls in 964 cells), and 120,630 of 121,178 for pooled det.
-3. Add one exploratory paragraph: with stock Community-1 and DiariZen, natural within-speaker switches rarely cause a false speaker change (1.3% and 0.3% within ±0.5 s), no more than matched same-language boundaries (p = .31 and 1.0).
-4. Frame that as limiting the pipeline-level impact of the embedding effect, noting that clip joins are artificial and P1 misses fewer real changes when the language also changes (−9.0 pp, p = .041, uncorrected).
-5. Keep speaker identity unverified until the two-rater subset is labelled; then report kappa and the contamination rates.

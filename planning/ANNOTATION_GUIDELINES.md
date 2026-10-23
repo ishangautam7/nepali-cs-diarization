@@ -1,6 +1,6 @@
 # Annotation guidelines — Nepali–English conversations (D2) and listening checks (D1)
 
-v0.2 · draft for Ishan's review. Placeholders in [SQUARE BRACKETS] are set after the pilot.
+v0.2. No conversation (Job A) was annotated under these guidelines, and the pilot that was to fix the provisional values below was not run.
 
 ## 1. Purpose
 
@@ -65,7 +65,7 @@ A **segment** is one continuous stretch of one speaker's speech.
 - **Start and end at audible speech.** The segment boundary sits where the sound of
   the word actually begins or ends, not on the silence around it. Zoom in and use
   waveform + playback to place it; aim within ~50 ms of the true onset/offset.
-- **Split at pauses of at least [0.5] s.** If one speaker pauses for [0.5] s or more,
+- **Split at pauses of at least 0.5 s (provisional).** If one speaker pauses for 0.5 s or more,
   end the segment and start a new one after the pause. Shorter pauses stay inside
   one segment.
 - **Backchannels** — short listener responses such as `हो`, `हजुर`, `yeah`, `ok`,
@@ -233,7 +233,7 @@ Rules:
 
 - **Qualification test.** Before any paid work, pass a short test on a **gold
   sample** (a session/items we already annotated). You must reach the agreed
-  accuracy bar to start; this is part of paid training (see the job description).
+  accuracy bar to start; this is part of paid training.
 - **Double annotation.** **20% of Job-A sessions** are annotated independently by a
   second annotator who works from the close-talk segments only (§6). Do not look at
   anyone else's file.
@@ -241,7 +241,7 @@ Rules:
   - inter-annotator **DER** with a **0.25 s collar** (speaker labelling/segmentation),
   - **language-boundary F1 at ±0.2 s** (do switches land in the same place),
   - **word error rate near the markers** (transcript agreement where it matters most).
-  - Target thresholds: **[TBD after pilot]**.
+  - Target thresholds were to be set after the pilot, which was not run.
 - **Weekly calibration meeting.** The whole team reviews disagreements and clarifies
   edge cases. The team — not individual annotators — decides the loan lexicon here,
   and once it is frozen at M2b it does not change. Attendance is paid.
@@ -265,14 +265,14 @@ Rules:
 
 Plan for roughly **4–6 hours of annotator time per audio hour** of conversation for
 Job A — that covers Pass 1 (full transcript + segments + one full listen-through) and
-Pass 2 (the marker boundary checks) together. This is **provisional and will be
-measured on the pilot**, then replaced with a figure from real sessions.
+Pass 2 (the marker boundary checks) together. This is **provisional**: the pilot that was to
+measure it was not run.
 
 ## 11. Confidentiality and devices
 
 - You sign a **confidentiality agreement** before starting.
 - You work **only on project-provided equipment** — project laptops or a managed
-  remote desktop, [DECIDE: project laptops or a managed remote desktop]. You do **not
+  remote desktop. You do **not
   use a personal device** for any project data, and you do not need your own laptop to
   do this work; the project provides what you annotate on.
 - Work **only on the provided storage/accounts.** Do not download, copy, screenshot,
@@ -286,6 +286,5 @@ measured on the pilot**, then replaced with a figure from real sessions.
 
 If anything is wrong — audio won't play, a channel/tier/draft is missing, a session
 seems corrupted, a recording raises a privacy concern, or a rule here does not cover
-what you hear — **do not guess.** Flag it in [the project issue tracker / annotation
-channel — link in onboarding] with the session id and timestamp, and continue with
+what you hear — **do not guess.** Flag it in the project's annotation channel with the session id and timestamp, and continue with
 the next session. Ask in the weekly meeting if it is not urgent.

@@ -1,7 +1,7 @@
 # Pre-registration supplement, stage M2b: the conversation data (H5, H6, H4 × H5 jointly on DISPLACE, M2's α, and the conversation parts of H2 and H4)
 
-Status: **DRAFT v4, not frozen**. Design reviews: round 1 (4 major, 6 minor), round 2 (1 major, 6 minor), round 3 (no major, 5 minor), all applied. The archives' file listings are done (§2); the freeze waits for the dev labels and counts that settle the remaining TBDs, and for the code and its review; a design round after the TBDs are filled precedes it. At the freeze, the record `planning/FREEZE_M2B.json`
-(tag `m2b-freeze`) will pin the code hashes, the DISPLACE feature and reference checksums, the dev/eval split
+Status: **DRAFT v4, never frozen**. Design reviews: round 1 (4 major, 6 minor), round 2 (1 major, 6 minor), round 3 (no major, 5 minor), all applied. The archives' file listings were done (§2), but the DISPLACE 2024 password never arrived. The dev labels and counts that would have set the values marked *not determined* below were never read, and stage M2b was not run (`planning/DEVIATIONS.md` entry 7). Had it been frozen, the record `planning/FREEZE_M2B.json`
+(tag `m2b-freeze`) would have pinned the code hashes, the DISPLACE feature and reference checksums, the dev/eval split
 taken as released, and the commit.
 Nothing in this document will have been run on a DISPLACE eval recording at the freeze. Changes after the freeze
 go to `planning/DEVIATIONS.md`, with dates.
@@ -17,7 +17,7 @@ H2 and H4. The M2a and H4 documents are frozen and are not reopened here.
 This document is written before any DISPLACE eval scoring, but **after** the D1 confirmatory results (M2a,
 decision 23; the H4 supplement is frozen, its confirmatory run not yet executed). What was known is stated in
 §12. Every number that depends on the contents of the password-protected archives (only their file names, sizes
-and checksums are readable, §2), or on dev counts that need the extracted data, is marked **TBD** with the rule that will set it.
+and checksums are readable, §2), or on dev counts that need the extracted data, is marked **not determined** with the rule that would have set it.
 
 ## 1. Question and claim grading on conversations
 Do the mitigations lower the SS-DL excess at same-speaker language switches **without** missing real
@@ -39,9 +39,9 @@ switch-associated only, and said to be so.
   reverberation and noise. A separate 12 h of close-field ASR data on five Indian languages is **not used** here.
   The supervised speaker references (SD track) and segment-level language references (LD track) are the two
   tracks this study reads. Zenodo record 14097187 (version 3 of 12166687) holds
-  `Track1_SD_supervised.zip` and `Track2_LD_supervised.zip`, password-protected; the password is placed in
-  `~/.config/csdiar/keys.env` by Ishan (decision 26). The encrypted archives are fetched in advance; nothing is
-  extracted, listed beyond file names, or scored before the password arrives. Both archives are fetched and
+  `Track1_SD_supervised.zip` and `Track2_LD_supervised.zip`, password-protected; the password never arrived (decision 26;
+  `planning/DEVIATIONS.md` entry 7). The encrypted archives were fetched in advance; nothing was
+  extracted, listed beyond file names, or scored. Both archives are fetched and
   checksum-verified, and their central directories (names, lengths, CRC-32; nothing extracted) fix the layout:
   speaker RTTMs `Track1_SD_supervised/{Dev/Track1_SD_labels, Eval/SD_eval_rttms}/<ID>_SPEAKER.rttm`, language
   RTTMs `track2_LD_supervised/{Dev/Track2_LD_labels, Eval/LD_eval_rttms}/<ID>_LANGUAGE.rttm` (lower-case top
@@ -57,8 +57,8 @@ switch-associated only, and said to be so.
   correction in PLAN.md §11). The H5/H6 confirmatory claim is therefore about **Indian-language–English**
   conversation; D2-P supports it on Nepali (§8, confirmatory only if it reaches the simulated size). The exact
   set of languages present and their per-recording pairs are read from the LD references at ingest and reported;
-  which languages appear, and how the LD label strings map to VoxLingua107 codes, stay **TBD** until the dev
-  references are extracted, because the listing shows file names only. The mapping is fixed before the freeze from
+  which languages appear, and how the LD label strings map to VoxLingua107 codes, are **not determined**: the dev
+  references were never extracted, and the listing shows file names only. The mapping is fixed before the freeze from
   the dev label sets and the release's language list (English, Hindi, Bengali, Kannada, Telugu); an eval label
   outside it takes the full-posterior fallback below for that recording, flagged, and the mapping is not revised
   once eval is read.
@@ -106,8 +106,8 @@ switch-associated only, and said to be so.
   §11). The primary collar is fixed at 0.5 s; FAR as a function of collar (0.1–1.0 s) is reported as a
   descriptive curve and never replaces it. A minimum-run-length rule matching D1's
   `p0L1` cell (both runs ≥ 1 s) is applied to the conversation H2/H4 SS-DL points **where the segment references
-  allow it**; segment granularity may leave few sub-second runs resolvable, so the achievable minimum is
-  **TBD** from the **dev** references' timing distribution (never eval) and reported. Run-length strata (< 0.5, 0.5–1.0, ≥ 1.0 s,
+  allow it**; segment granularity may leave few sub-second runs resolvable, so the achievable minimum was to be
+  read from the **dev** references' timing distribution (never eval) and reported. Run-length strata (< 0.5, 0.5–1.0, ≥ 1.0 s,
   PLAN.md §2) are reported for SS-DL points and for DS-DL turns, pooled for the primary test.
 - **Overlap handling:** overlap is scored (PLAN.md §2 "overlap scored"; the pipelines are overlap-aware,
   `p1_ahc.py`). A DS-DL turn whose two speakers overlap through the transition, and an SS-DL point inside an
@@ -339,7 +339,7 @@ Reported, not tested for support:
   H2-P0 result. Pipeline H2 (native P1, P2) is confirmatory and sits in §7.
 - **D2-P test shows** (PLAN.md §6 E-B (iv), decision 6): the same trade-off on Nepali conversation, split by show,
   clustered by show, as support for H5 on Nepali — **confirmatory only if D2-P reaches the simulated size**
-  (PLAN.md §7, §10); otherwise descriptive and labelled so. D2-P counts are **TBD** (no annotated episode yet;
+  (PLAN.md §7, §10); otherwise descriptive and labelled so. D2-P counts are **not determined** (no episode was annotated;
   decisions 6 and 8).
 - **DISPLACE-M** as a secondary set for P1-AHC tuning and descriptive trade-off (decisions 9, 29).
 - Each mitigation against **B1 and B2**, and B1/B2 against B0 (same statistics, unadjusted p), as in the H4

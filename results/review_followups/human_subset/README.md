@@ -12,7 +12,7 @@ Prepared for the external review's issue 4. Nobody has labelled anything here ye
 | `template.csv` | The answer sheet. Each rater fills in a copy. |
 | `key.csv` | Which item is which: kind, point, clip, times, padding. **Raters must not open it, nor `subset.json`.** |
 | `PROTOCOL.md` | The pre-specified analysis (agreement, contamination, verified subset, central comparison). |
-| `audio/` | The 300 snippets. Not in git: D1 is CC BY-NC 4.0 and the paper redistributes no audio. Share the folder privately with the two raters. |
+| `audio/` | The 300 snippets. Not in git: D1 is CC BY-NC 4.0 and the paper redistributes no audio. The folder is only for the two raters and is not shared publicly. |
 
 ## For the raters
 

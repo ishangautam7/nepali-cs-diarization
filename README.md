@@ -1,6 +1,6 @@
 # Speaker-embedding and change-score sensitivity at Nepali–English code-switch points
 
-Code, pre-registration, frozen hashes and aggregate results for the paper *Speaker-Embedding and Change-Score Sensitivity at Nepali–English Code-Switch Points* (Ishan Gautam, Pulchowk Campus, Institute of Engineering, Tribhuvan University). The arXiv link will be added here once the paper is posted; the LaTeX source is in `paper/`.
+Code, pre-registration, frozen hashes and aggregate results for the paper *Speaker-Embedding and Change-Score Sensitivity at Nepali–English Code-Switch Points* (Ishan Gautam, Pulchowk Campus, Institute of Engineering, Tribhuvan University). The LaTeX source is in `paper/`.
 
 The study asks whether, within one speaker, speaker-embedding similarity drops and a two-window speaker-change score rises across a natural Nepali–English switch. Real recordings are used throughout. The only artificial audio is the clip joins of the post hoc pipeline check, which the paper labels as such.
 

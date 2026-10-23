@@ -226,8 +226,8 @@ Each entry records a change made after a freeze: the date, the freeze it departs
 
 - **What happened:** the author answered the page's first 117 pairs (P001–P117), in page order, with both questions
   answered for every one of them, and P118–P230 unanswered. Before this entry and its code were committed, only that
-  structure was inspected; no answer value was read. If the author sends a longer export before the run, its answered
-  prefix replaces this one under the same rule, and the count here is updated before any value is read.
+  structure was inspected; no answer value was read. No longer export was received before the run, so these 117 pairs
+  are the ones scored.
 - **Why the prefix still follows the page's design:** `scripts/make_purity_listening.py` builds the 200 flagged and
   30 control pairs, permutes all of them with one `rng.shuffle`, and numbers them after it. A uniform permutation's
   first N pairs are a simple random sample of the 230 and, restricted to each kind, a simple random sample of that
