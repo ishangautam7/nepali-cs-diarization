@@ -1,0 +1,31 @@
+{
+ "about": "Analyst check of the D4 contamination audit (PREREGISTRATION_H7.md section 3), 2026-10-19: the analyst's own label for each of the 50 items per pair marked for the check, judged from the word in its context. 'outside' lists items outside the check that the analyst read while skimming all 200 and would label differently; that look was not pre-registered and is reported separately.",
+ "hi-en": {
+  "checked": {"8": "NATIVE", "9": "NATIVE", "11": "NATIVE", "14": "NATIVE", "15": "NATIVE", "16": "NATIVE",
+              "33": "NATIVE", "38": "NATIVE", "39": "NATIVE", "46": "NATIVE", "52": "LOAN", "54": "NATIVE",
+              "57": "NATIVE", "60": "NATIVE", "66": "NATIVE", "70": "NATIVE", "76": "NATIVE", "79": "NATIVE",
+              "81": "NATIVE", "82": "NATIVE", "83": "NATIVE", "88": "NATIVE", "92": "NATIVE", "98": "NATIVE",
+              "99": "NATIVE", "102": "NATIVE", "115": "NATIVE", "117": "NATIVE", "132": "NATIVE", "135": "NATIVE",
+              "139": "NATIVE", "142": "NATIVE", "143": "NATIVE", "145": "NATIVE", "148": "NATIVE", "151": "NATIVE",
+              "158": "NATIVE", "160": "NATIVE", "165": "NATIVE", "167": "NATIVE", "169": "NATIVE", "175": "NATIVE",
+              "177": "NATIVE", "179": "NATIVE", "188": "NATIVE", "192": "NATIVE", "193": "NATIVE", "194": "NATIVE",
+              "196": "NATIVE", "198": "NATIVE"},
+  "outside": {}
+ },
+ "bn-en": {
+  "checked": {"2": "NATIVE", "6": "NATIVE", "8": "NATIVE", "9": "NATIVE", "11": "NATIVE", "15": "NATIVE",
+              "23": "NATIVE", "25": "NATIVE", "27": "NATIVE", "29": "NATIVE", "32": "NATIVE", "34": "NATIVE",
+              "35": "NATIVE", "38": "NATIVE", "40": "NATIVE", "45": "NATIVE", "48": "NATIVE", "56": "NATIVE",
+              "57": "NATIVE", "66": "NATIVE", "70": "NATIVE", "92": "NATIVE", "93": "NATIVE", "98": "NATIVE",
+              "100": "NATIVE", "102": "NATIVE", "103": "NATIVE", "115": "NATIVE", "125": "NATIVE", "129": "NATIVE",
+              "132": "NATIVE", "134": "NATIVE", "137": "NATIVE", "142": "NATIVE", "147": "NATIVE", "148": "NATIVE",
+              "151": "NATIVE", "154": "NATIVE", "155": "NATIVE", "156": "NATIVE", "160": "NATIVE", "161": "NATIVE",
+              "166": "NATIVE", "170": "NATIVE", "173": "NATIVE", "174": "NATIVE", "175": "NATIVE", "182": "NATIVE",
+              "187": "NATIVE", "195": "NATIVE"},
+  "outside": {"13": "LOAN", "17": "LOAN", "109": "LOAN", "177": "LOAN"},
+  "outside_reasons": {"13": "কলাম is 'column' (English), as the labeller's own gloss says",
+                      "17": "লাইনের is 'line' + genitive -er",
+                      "109": "প্রম্পটের is 'prompt' + genitive -er",
+                      "177": "ফীল্ডগুলি is 'field' + plural -guli"}
+ }
+}

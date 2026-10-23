@@ -1,0 +1,54 @@
+{
+ "seed": 20261018,
+ "n_items": 200,
+ "n_check": 50,
+ "context_words": 8,
+ "pairs": {
+  "hi-en": {
+   "train": {
+    "clips": 52825,
+    "status": {
+     "empty": 2,
+     "error": 16,
+     "ok": 52807
+    },
+    "words_in_ok_clips": 631291,
+    "align_sha256": "8e595aa7dde27a4bcc0152396962080e3e72bc2203bd4dc4ff22095671a6349a"
+   },
+   "test": {
+    "clips": 3136,
+    "status": {
+     "ok": 3136
+    },
+    "words_in_ok_clips": 37459,
+    "align_sha256": "e7a62e6db68bed6305f8233ab32d5f079e981b3a1af804a82a5dfe9f425f012b"
+   },
+   "native_tokens": 454847,
+   "loans_sha256": "56831366db48ac297a95c662ecb50245c0f1537c9ea4e2c04be7e713d8cf6fa5",
+   "names_sha256": "73a979c79d39049724a8b4d09a104d100dff14fe764a98bb1d5a8eb8e4870a11"
+  },
+  "bn-en": {
+   "train": {
+    "clips": 26606,
+    "status": {
+     "error": 2,
+     "ok": 26604
+    },
+    "words_in_ok_clips": 247259,
+    "align_sha256": "43b2e39cf17e8df58245be5a7c6230db2e58366439d65a439fd811fb1c8e6bd7"
+   },
+   "test": {
+    "clips": 4275,
+    "status": {
+     "error": 1,
+     "ok": 4274
+    },
+    "words_in_ok_clips": 38391,
+    "align_sha256": "117ee3f9ebc8867bd8948930f240ccd4c525eea4c7661cd61d9397bb875f988c"
+   },
+   "native_tokens": 181914,
+   "loans_sha256": "1e697043c3aee0e48d98afba8551165d862620fddb9900933cbf977f3714ad8f",
+   "names_sha256": "675caac9b7b31470ffe5604d747e7218e774efaecb452b2093164229e15d5676"
+  }
+ }
+}

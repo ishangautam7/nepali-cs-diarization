@@ -1,0 +1,71 @@
+# D4 hi-en names for the H7 supplement (built by scripts/build_lexicon_d4.py from the labelled review lists; text only).
+# One word per line, followed by '  #' with its corpus count and gloss (the reader ignores everything after '#').
+# Labelled tokens by script/label: native/LOAN=35036, native/NAME=4523, native/NATIVE=440347, latin/ENGLISH=12966, latin/NAME=221, latin/NATIVE=5.
+# UNSURE (left to the script rule): 0.
+आई  # 695 IIT (spelled letter)
+भारत  # 484 India
+बॉम्बे  # 432 Bombay
+टी  # 426 T (spelled letter, IIT)
+आर्य  # 251 Arya
+श्रुति  # 251 Shruti
+एमएचआरडी  # 215 MHRD
+आईसीटी  # 189 ICT
+सी  # 139 C (spelled letter, ICT)
+कुमार  # 135 Kumar
+रवि  # 123 Ravi
+आईआईटी  # 115 IIT
+डी  # 115 D (spelled letter, MHRD)
+आर  # 113 R (spelled letter, MHRD)
+जया  # 90 Jaya
+प्रभाकर  # 73 Prabhakar
+यश  # 58 Yash
+वोरा  # 58 Vora
+देवेन्द्र  # 55 Devendra
+कैरवान  # 54 Kairavan
+उबन्टु  # 33 Ubuntu
+सकीना  # 33 Sakina
+ऊबंटु  # 26 Ubuntu
+केटच  # 26 KTouch
+मुंबई  # 26 Mumbai
+याहू  # 25 Yahoo
+लिबरऑफिस  # 24 LibreOffice
+priya  # 23 person name Priya
+ज्योति  # 23 Jyoti
+पाइथन  # 23 Python
+साइलैब  # 23 Scilab
+सेलडिज़ाइनर  # 23 CellDesigner
+सोलंकी  # 22 Solanki
+मोज़िला  # 19 Mozilla
+साईलैब  # 18 Scilab
+एनएमईआईसीटी  # 17 NMEICT
+शेख  # 17 Shaikh
+bremen  # 16 Bremen (city in Germany)
+sinha  # 16 surname Sinha
+steinort  # 16 person name Steinort
+आईआईटीबॉम्बे  # 16 IIT Bombay
+लता  # 16 Lata
+raju  # 15 person name Raju
+ramesh  # 15 person name Ramesh
+anirban  # 12 person name Anirban
+अमित  # 12 Amit
+reena  # 9 person name Reena
+headen  # 8 surname Headen
+manish  # 8 person name Manish
+powai  # 8 Powai (place in Mumbai)
+ramu  # 8 person name Ramu
+गुरू  # 8 Guru
+ashwini  # 7 person name Ashwini
+samruddhi  # 7 username/person Samruddhi
+sunita  # 7 person name Sunita
+anjali  # 6 person name Anjali
+ankit  # 6 person name Ankit
+arvind  # 6 person name Arvind
+hiware  # 6 Hiware (Bazar, village)
+kannan  # 6 person name Kannan
+sriranjani  # 6 person name Sriranjani
+टक्स  # 6 Tux
+पैराव्यू  # 6 ParaView
+anusha  # 5 person name Anusha
+iceytina  # 5 username Iceytina
+अंकित  # 5 Ankit
+उबुंटू  # 5 Ubuntu

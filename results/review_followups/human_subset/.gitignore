@@ -1,0 +1,3 @@
+# D1 corpus audio (CC BY-NC 4.0): shared privately with the raters, never committed.
+# Recreate it with: python -m scripts.review_human_subset ... --audio-from-key (see README.md)
+audio/

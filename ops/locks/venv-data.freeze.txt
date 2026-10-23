@@ -1,0 +1,23 @@
+# .venv-data, Python 3.12.14, uv pip freeze on the rebuilt box at 2026-10-19T15:28:49Z
+beautifulsoup4==4.15.0
+certifi==2026.10.18
+charset-normalizer==3.5.2
+filelock==4.2.4
+fsspec==2026.9.0
+gdown==6.4.2
+hf-xet==1.7.0
+huggingface-hub==0.34.4
+idna==3.20
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+pyarrow==21.0.0
+pygments==2.21.0
+pysocks==1.7.1
+pytest==8.4.1
+pyyaml==6.0.3
+requests==2.34.2
+soupsieve==3.0.3
+tqdm==4.70.1
+typing-extensions==4.16.0
+urllib3==2.8.0

@@ -1,0 +1,14 @@
+{
+  "label": "EXPLORATORY (post hoc, external review issue 2)",
+  "system": "p2",
+  "pins": {
+    "repo": "BUT-FIT/diarizen-wavlm-large-s80-md",
+    "revision": "6285693ddd5b38e8229acb93f864f3d04a82bee1",
+    "embedding_repo": "pyannote/wespeaker-voxceleb-resnet34-LM",
+    "embedding_revision": "837717ddb9ff5507820346191109dc79c958d614",
+    "code_commit": "844f5555b0a98acd0931511fc641a8c5b8ba92c7"
+  },
+  "device": "cuda",
+  "threads": 3,
+  "torch": "2.8.0+cu128"
+}

@@ -1,0 +1,25 @@
+# D4 bn-en names for the H7 supplement (built by scripts/build_lexicon_d4.py from the labelled review lists; text only).
+# One word per line, followed by '  #' with its corpus count and gloss (the reader ignores everything after '#').
+# Labelled tokens by script/label: native/LOAN=9095, native/NAME=1009, native/NATIVE=171221, latin/ENGLISH=7519, latin/NAME=99, latin/NATIVE=5.
+# UNSURE (left to the script rule): 0.
+ভারত  # 258 Bharat (India)
+আই  # 174 IIT (A.I.)
+কৌশিক  # 150 Kaushik
+দত্ত  # 150 Datta
+বোম্বে  # 108 Bombay
+টী  # 85 IIT (Tee)
+অন্তরা  # 56 Antara
+amal  # 13 person name (signing off)
+priya  # 12 person name (Priya Sinha)
+ramesh  # 10 person name (Ramesh)
+sinha  # 10 surname (Priya Sinha)
+জীমেল  # 10 Gmail
+anirban  # 9 person name (sample/author)
+bremen  # 9 Bremen, Germany (place)
+steinort  # 9 surname (Rolf Steinort)
+পর্লের  # 9 Perl's
+রাধা  # 9 Radha
+manish  # 8 person name (Manish)
+priyanka  # 8 person name (Priyanka)
+raju  # 6 person name (Raju, sample)
+hiware  # 5 Hiware Bazar (place name)

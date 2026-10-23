@@ -1,0 +1,18 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.pdf
+
+# keep committed figures (they are inputs to the paper, not build artifacts)
+!figures/
+!figures/*.pdf
+!figures/*.png
+
+# keep the arXiv package and the PDF compiled from it (outputs of arxiv/make_arxiv.sh)
+!arxiv/Gautam_codeswitch_diarization.pdf

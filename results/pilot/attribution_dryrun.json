@@ -1,0 +1,660 @@
+{
+  "tag": "dryrun",
+  "splits": [
+    "validation"
+  ],
+  "seed": 20261018,
+  "mode": "dry run on the pilot channels; not confirmatory",
+  "tau": {
+    "e1": 0.9168623979512837,
+    "e2": 0.8631095886230469,
+    "e3": 0.9288795312074744
+  },
+  "models": {
+    "e1": {
+      "h1": {
+        "phrase_contrast": {
+          "statistic": "per-channel mean delta-cos in sets with a pause > 150 ms (predicted > 0)",
+          "n_sets": 52,
+          "n_channels": 3,
+          "mean_of_channels": 0.049978140574626885,
+          "channels": {
+            "UCeq9rTo9W93NfJNP9n1eRGw": {
+              "n": 17,
+              "mean": 0.034410116427084976
+            },
+            "UCBbxIYJ35vGP8qWMJn3RmTA": {
+              "n": 28,
+              "mean": 0.0649700468139989
+            },
+            "UCLR1utoz9wpo4byPAOEIMRQ": {
+              "n": 7,
+              "mean": 0.05055425848279681
+            }
+          },
+          "signflip": {
+            "p_one": 0.125,
+            "p_two": 0.25,
+            "exact": true,
+            "n": 3
+          }
+        },
+        "mixed_model": {
+          "family": "gaussian",
+          "n_input": 1558,
+          "n_complete": 1537,
+          "n_switch": 398,
+          "structure": "no_slope",
+          "structure_formula": "(1 | speaker) + (1 | video/clip) + (1 | set)",
+          "all_singular": false,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_slope": {
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "warnings": [],
+          "cond": {
+            "estimate": -0.0393501732048167,
+            "se": 0.00619090564913656,
+            "z": -6.35612549034807
+          },
+          "cond_without_covariates": {
+            "estimate": -0.040504595306857,
+            "se": 0.00638203980252182,
+            "z": -6.34665350893799
+          },
+          "warnings_without_covariates": [],
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.00696355416753309,
+              "se": 0.00288868218529597
+            },
+            "d_energy": {
+              "estimate": -0.0129109525482162,
+              "se": 0.00288718110275353
+            },
+            "d_rate": {
+              "estimate": -0.00633992642934722,
+              "se": 0.00272065471496281
+            },
+            "d_tilt": {
+              "estimate": -0.0159634388432437,
+              "se": 0.00280177173481179
+            },
+            "d_snr": {
+              "estimate": -0.00846656739704041,
+              "se": 0.00280319453662489
+            }
+          },
+          "n_levels": {
+            "speaker": 3,
+            "video": 14,
+            "clip": 818,
+            "set": 404
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "p_one": 1.0345302392522626e-10,
+          "p_two": 2.0690604785045252e-10,
+          "direction": -1
+        },
+        "criteria": {
+          "a": false,
+          "b": true,
+          "c": false,
+          "d": false
+        },
+        "grade": "not shown"
+      },
+      "h2_p0": {
+        "phrase_contrast": {
+          "statistic": "per-channel cell-standardised AUC within the pause > 150 ms cells (predicted > 0.5)",
+          "n_channels": 3,
+          "auc_mean_of_channels": 0.6516482426303855,
+          "channels": {
+            "UCBbxIYJ35vGP8qWMJn3RmTA": {
+              "auc": 0.7254662698412698,
+              "n_ssdl": 40
+            },
+            "UCLR1utoz9wpo4byPAOEIMRQ": {
+              "auc": 0.6217687074829932,
+              "n_ssdl": 7
+            },
+            "UCeq9rTo9W93NfJNP9n1eRGw": {
+              "auc": 0.6077097505668934,
+              "n_ssdl": 21
+            }
+          },
+          "signflip": {
+            "p_one": 0.125,
+            "p_two": 0.25,
+            "exact": true,
+            "n": 3
+          }
+        },
+        "far": {
+          "ssdl": 0.1425407841152799,
+          "phrase_ctrl": 0.25947073446677815,
+          "other_ctrl": 0.08275081979286474,
+          "note": "mean over channels of the per-channel FAR at the frozen tau"
+        },
+        "mixed_model": {
+          "family": "binomial",
+          "n_input": 3222,
+          "n_complete": 3163,
+          "n_switch": 430,
+          "structure": "no_set",
+          "structure_formula": "(1 | speaker) + (1 | clip)",
+          "all_singular": true,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_slope": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_video": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_set": {
+              "singular": true,
+              "warnings": []
+            }
+          },
+          "warnings": [],
+          "cond": {
+            "estimate": 0.8312623671147,
+            "se": 0.510713367420157,
+            "z": 1.6276495195608
+          },
+          "cond_without_covariates": {
+            "estimate": 0.92945199983653,
+            "se": 0.485890408061994,
+            "z": 1.91288402572858
+          },
+          "warnings_without_covariates": [],
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.126613260785841,
+              "se": 0.163649557765056
+            },
+            "d_energy": {
+              "estimate": 0.208206375659055,
+              "se": 0.140101288895619
+            },
+            "d_rate": {
+              "estimate": -0.0149692200783573,
+              "se": 0.128303773723475
+            },
+            "d_tilt": {
+              "estimate": 0.564021147915359,
+              "se": 0.15010305806901
+            },
+            "d_snr": {
+              "estimate": 0.137042668174353,
+              "se": 0.150807297644513
+            }
+          },
+          "n_levels": {
+            "speaker": 3,
+            "video": 14,
+            "clip": 1049,
+            "set": 131
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "p_one": 0.05179961131153077,
+          "p_two": 0.10359922262306154,
+          "direction": 1
+        },
+        "criteria": {
+          "a": false,
+          "b": false,
+          "c": false,
+          "d": false
+        },
+        "grade": "not shown"
+      }
+    },
+    "e2": {
+      "h1": {
+        "phrase_contrast": {
+          "statistic": "per-channel mean delta-cos in sets with a pause > 150 ms (predicted > 0)",
+          "n_sets": 52,
+          "n_channels": 3,
+          "mean_of_channels": 0.03509356601148092,
+          "channels": {
+            "UCeq9rTo9W93NfJNP9n1eRGw": {
+              "n": 17,
+              "mean": 0.04345296498607187
+            },
+            "UCBbxIYJ35vGP8qWMJn3RmTA": {
+              "n": 28,
+              "mean": 0.03347457413162504
+            },
+            "UCLR1utoz9wpo4byPAOEIMRQ": {
+              "n": 7,
+              "mean": 0.028353158916745867
+            }
+          },
+          "signflip": {
+            "p_one": 0.125,
+            "p_two": 0.25,
+            "exact": true,
+            "n": 3
+          }
+        },
+        "mixed_model": {
+          "family": "gaussian",
+          "n_input": 1558,
+          "n_complete": 1537,
+          "n_switch": 398,
+          "structure": "no_slope",
+          "structure_formula": "(1 | speaker) + (1 | video/clip) + (1 | set)",
+          "all_singular": false,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_slope": {
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "warnings": [],
+          "cond": {
+            "estimate": -0.030314051910519,
+            "se": 0.00639474992712995,
+            "z": -4.74045932303163
+          },
+          "cond_without_covariates": {
+            "estimate": -0.0317020211446777,
+            "se": 0.00654222285202189,
+            "z": -4.84575684163375
+          },
+          "warnings_without_covariates": [],
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.0105493308170231,
+              "se": 0.00297148088758408
+            },
+            "d_energy": {
+              "estimate": -0.00772444720077562,
+              "se": 0.00297709933155495
+            },
+            "d_rate": {
+              "estimate": -0.0072421271782366,
+              "se": 0.00280982172316573
+            },
+            "d_tilt": {
+              "estimate": -0.0144270136899435,
+              "se": 0.00288485523342288
+            },
+            "d_snr": {
+              "estimate": -0.00720301019491256,
+              "se": 0.00287861623313949
+            }
+          },
+          "n_levels": {
+            "speaker": 3,
+            "video": 14,
+            "clip": 818,
+            "set": 404
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "p_one": 1.0661713014115115e-06,
+          "p_two": 2.1323426029340453e-06,
+          "direction": -1
+        },
+        "criteria": {
+          "a": false,
+          "b": true,
+          "c": false,
+          "d": false
+        },
+        "grade": "not shown"
+      },
+      "h2_p0": {
+        "phrase_contrast": {
+          "statistic": "per-channel cell-standardised AUC within the pause > 150 ms cells (predicted > 0.5)",
+          "n_channels": 3,
+          "auc_mean_of_channels": 0.5933245149911817,
+          "channels": {
+            "UCBbxIYJ35vGP8qWMJn3RmTA": {
+              "auc": 0.6397619047619048,
+              "n_ssdl": 40
+            },
+            "UCLR1utoz9wpo4byPAOEIMRQ": {
+              "auc": 0.6292517006802721,
+              "n_ssdl": 7
+            },
+            "UCeq9rTo9W93NfJNP9n1eRGw": {
+              "auc": 0.5109599395313681,
+              "n_ssdl": 21
+            }
+          },
+          "signflip": {
+            "p_one": 0.125,
+            "p_two": 0.25,
+            "exact": true,
+            "n": 3
+          }
+        },
+        "far": {
+          "ssdl": 0.15390477949937212,
+          "phrase_ctrl": 0.21645822658641145,
+          "other_ctrl": 0.09209765545481212,
+          "note": "mean over channels of the per-channel FAR at the frozen tau"
+        },
+        "mixed_model": {
+          "family": "binomial",
+          "n_input": 3222,
+          "n_complete": 3163,
+          "n_switch": 430,
+          "structure": "no_set",
+          "structure_formula": "(1 | speaker) + (1 | clip)",
+          "all_singular": true,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_slope": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_video": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_set": {
+              "singular": true,
+              "warnings": []
+            }
+          },
+          "warnings": [],
+          "cond": {
+            "estimate": 0.699854504406621,
+            "se": 0.392381190221132,
+            "z": 1.78360869952051
+          },
+          "cond_without_covariates": {
+            "estimate": 0.723445688111231,
+            "se": 0.378777630900238,
+            "z": 1.90994828916328
+          },
+          "warnings_without_covariates": [],
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.0822640170645182,
+              "se": 0.132394077321395
+            },
+            "d_energy": {
+              "estimate": 0.28053806590508,
+              "se": 0.1244691786225
+            },
+            "d_rate": {
+              "estimate": 0.151529466163518,
+              "se": 0.113350471788692
+            },
+            "d_tilt": {
+              "estimate": 0.238717181139507,
+              "se": 0.114949544565642
+            },
+            "d_snr": {
+              "estimate": 0.205540999690185,
+              "se": 0.126314872756194
+            }
+          },
+          "n_levels": {
+            "speaker": 3,
+            "video": 14,
+            "clip": 1049,
+            "set": 131
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "p_one": 0.03724363550436677,
+          "p_two": 0.07448727100873365,
+          "direction": 1
+        },
+        "criteria": {
+          "a": false,
+          "b": true,
+          "c": false,
+          "d": false
+        },
+        "grade": "not shown"
+      }
+    },
+    "e3": {
+      "h1": {
+        "phrase_contrast": {
+          "statistic": "per-channel mean delta-cos in sets with a pause > 150 ms (predicted > 0)",
+          "n_sets": 52,
+          "n_channels": 3,
+          "mean_of_channels": 0.005889041657123913,
+          "channels": {
+            "UCeq9rTo9W93NfJNP9n1eRGw": {
+              "n": 17,
+              "mean": 0.002720315666759715
+            },
+            "UCBbxIYJ35vGP8qWMJn3RmTA": {
+              "n": 28,
+              "mean": 0.033682873738663535
+            },
+            "UCLR1utoz9wpo4byPAOEIMRQ": {
+              "n": 7,
+              "mean": -0.018736064434051514
+            }
+          },
+          "signflip": {
+            "p_one": 0.375,
+            "p_two": 0.75,
+            "exact": true,
+            "n": 3
+          }
+        },
+        "mixed_model": {
+          "family": "gaussian",
+          "n_input": 1558,
+          "n_complete": 1537,
+          "n_switch": 398,
+          "structure": "no_slope",
+          "structure_formula": "(1 | speaker) + (1 | video/clip) + (1 | set)",
+          "all_singular": false,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_slope": {
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "warnings": [],
+          "cond": {
+            "estimate": -0.0288147141314089,
+            "se": 0.00630862777467001,
+            "z": -4.56750899888307
+          },
+          "cond_without_covariates": {
+            "estimate": -0.0314029518982967,
+            "se": 0.00650220913648418,
+            "z": -4.82958195270794
+          },
+          "warnings_without_covariates": [],
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.00863351374578264,
+              "se": 0.00292922980739633
+            },
+            "d_energy": {
+              "estimate": -0.00675128564854898,
+              "se": 0.00294519124477026
+            },
+            "d_rate": {
+              "estimate": -0.00227842154041932,
+              "se": 0.00278117690553416
+            },
+            "d_tilt": {
+              "estimate": -0.0206785218369896,
+              "se": 0.002848479036405
+            },
+            "d_snr": {
+              "estimate": -0.00742040995540067,
+              "se": 0.00282712758217623
+            }
+          },
+          "n_levels": {
+            "speaker": 3,
+            "video": 14,
+            "clip": 818,
+            "set": 404
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "p_one": 2.467772475811536e-06,
+          "p_two": 4.935544951623072e-06,
+          "direction": -1
+        },
+        "criteria": {
+          "a": false,
+          "b": true,
+          "c": false,
+          "d": false
+        },
+        "grade": "not shown"
+      },
+      "h2_p0": {
+        "phrase_contrast": {
+          "statistic": "per-channel cell-standardised AUC within the pause > 150 ms cells (predicted > 0.5)",
+          "n_channels": 3,
+          "auc_mean_of_channels": 0.5628424981103552,
+          "channels": {
+            "UCBbxIYJ35vGP8qWMJn3RmTA": {
+              "auc": 0.5814980158730159,
+              "n_ssdl": 40
+            },
+            "UCLR1utoz9wpo4byPAOEIMRQ": {
+              "auc": 0.5639455782312924,
+              "n_ssdl": 7
+            },
+            "UCeq9rTo9W93NfJNP9n1eRGw": {
+              "auc": 0.5430839002267573,
+              "n_ssdl": 21
+            }
+          },
+          "signflip": {
+            "p_one": 0.125,
+            "p_two": 0.25,
+            "exact": true,
+            "n": 3
+          }
+        },
+        "far": {
+          "ssdl": 0.14858055481925936,
+          "phrase_ctrl": 0.2131249559640128,
+          "other_ctrl": 0.08496206550420704,
+          "note": "mean over channels of the per-channel FAR at the frozen tau"
+        },
+        "mixed_model": {
+          "family": "binomial",
+          "n_input": 3222,
+          "n_complete": 3163,
+          "n_switch": 430,
+          "structure": "no_set",
+          "structure_formula": "(1 | speaker) + (1 | clip)",
+          "all_singular": true,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_slope": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_video": {
+              "singular": true,
+              "warnings": []
+            },
+            "no_set": {
+              "singular": true,
+              "warnings": []
+            }
+          },
+          "warnings": [],
+          "cond": {
+            "estimate": 0.501442692527386,
+            "se": 0.418054802288887,
+            "z": 1.19946640914527
+          },
+          "cond_without_covariates": {
+            "estimate": 0.621057705650668,
+            "se": 0.406019064309926,
+            "z": 1.52962695657216
+          },
+          "warnings_without_covariates": [],
+          "covariates": {
+            "d_f0": {
+              "estimate": 0.060049697138113,
+              "se": 0.125535475678158
+            },
+            "d_energy": {
+              "estimate": 0.25551614275295,
+              "se": 0.119859693546994
+            },
+            "d_rate": {
+              "estimate": 0.0666523119198916,
+              "se": 0.121257756674586
+            },
+            "d_tilt": {
+              "estimate": 0.515231166343572,
+              "se": 0.118214578859361
+            },
+            "d_snr": {
+              "estimate": 0.133856480889364,
+              "se": 0.131013877873389
+            }
+          },
+          "n_levels": {
+            "speaker": 3,
+            "video": 14,
+            "clip": 1049,
+            "set": 131
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "p_one": 0.11517331930002461,
+          "p_two": 0.23034663860004922,
+          "direction": 1
+        },
+        "criteria": {
+          "a": false,
+          "b": false,
+          "c": false,
+          "d": false
+        },
+        "grade": "not shown"
+      }
+    }
+  }
+}

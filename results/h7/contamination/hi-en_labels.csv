@@ -1,0 +1,201 @@
+item,split,word,label,gloss,note,analyst_check,analyst_label
+1,test,लिए,NATIVE,for/to (postposition),,0,
+2,train,तो,NATIVE,then,,0,
+3,train,अब,NATIVE,now,,0,
+4,train,अंदर,NATIVE,inside,,0,
+5,train,तो,NATIVE,then/so,,0,
+6,train,में,NATIVE,in (postposition),,0,
+7,test,याने,NATIVE,that is / meaning,,0,
+8,train,करता,NATIVE,does (verb),,1,NATIVE
+9,train,करें,NATIVE,do (imperative),,1,NATIVE
+10,train,रहा,NATIVE,-ing (progressive aux),,0,
+11,train,हैं,NATIVE,are (verb),,1,NATIVE
+12,train,देने,NATIVE,to give,,0,
+13,test,और,NATIVE,and,,0,
+14,train,याद,NATIVE,memory/remember,,1,NATIVE
+15,train,रखूँगी,NATIVE,will keep (fem),,1,NATIVE
+16,train,करेंगे,NATIVE,will do,,1,NATIVE
+17,train,को,NATIVE,to (object marker),,0,
+18,train,डालते,NATIVE,put/insert (verb),,0,
+19,train,को,NATIVE,to (object marker),,0,
+20,test,बंद,NATIVE,closed/shut,,0,
+21,train,की,NATIVE,of (genitive fem),,0,
+22,train,बंद,NATIVE,closed/shut,,0,
+23,train,चाहिए,NATIVE,should/ought,,0,
+24,train,घोषित,NATIVE,declared,,0,
+25,train,हो,NATIVE,be/become,,0,
+26,train,चार,NATIVE,four,,0,
+27,test,हैं,NATIVE,are (verb),,0,
+28,train,तो,NATIVE,then/so,,0,
+29,train,एक,NATIVE,one/a,,0,
+30,train,इनको,NATIVE,to these,,0,
+31,train,हैं,NATIVE,are (verb),,0,
+32,train,और,NATIVE,and,,0,
+33,train,होनी,NATIVE,must be (fem),,1,NATIVE
+34,train,हैं,NATIVE,are (verb),,0,
+35,train,को,NATIVE,to (object marker),,0,
+36,train,है,NATIVE,is (verb),,0,
+37,train,क्षेत्र,NATIVE,area/region,,0,
+38,train,अनुकरण,NATIVE,imitation/to follow,,1,NATIVE
+39,train,उपलब्ध,NATIVE,available,,1,NATIVE
+40,train,बारे,NATIVE,about,,0,
+41,train,भी,NATIVE,also,,0,
+42,train,प्रकार,NATIVE,kind/type,,0,
+43,train,एक,NATIVE,one/a,,0,
+44,train,हम,NATIVE,we,,0,
+45,train,का,NATIVE,of (genitive),,0,
+46,train,कि,NATIVE,that (complementizer),,1,NATIVE
+47,train,बदलता,NATIVE,changes (verb),,0,
+48,train,हैं,NATIVE,are (verb),,0,
+49,test,के,NATIVE,of (genitive plural),,0,
+50,train,गया,NATIVE,gone (perfective),,0,
+51,train,और,NATIVE,and,,0,
+52,train,वेवफॉर्म्स,LOAN,waveforms,"transliteration of English ""waveforms""",1,LOAN
+53,train,हम,NATIVE,we,,0,
+54,train,लाना,NATIVE,to bring,,1,NATIVE
+55,train,हैं,NATIVE,are (verb),,0,
+56,train,इस,NATIVE,this,,0,
+57,train,प्रदर्शित,NATIVE,displayed/shown,,1,NATIVE
+58,train,लिए,NATIVE,for/to (postposition),,0,
+59,train,आप,NATIVE,you,,0,
+60,train,यहाँ,NATIVE,here,,1,NATIVE
+61,test,को,NATIVE,to (object marker),,0,
+62,train,हम,NATIVE,we,,0,
+63,train,अब,NATIVE,now,,0,
+64,train,जिस,NATIVE,which (relative),,0,
+65,train,करने,NATIVE,to do/doing,,0,
+66,train,आपको,NATIVE,to you,,1,NATIVE
+67,train,पश्चात,NATIVE,after,,0,
+68,train,तो,NATIVE,then/so,,0,
+69,train,करें,NATIVE,do (imperative),,0,
+70,train,समय,NATIVE,time,,1,NATIVE
+71,train,के,NATIVE,of (genitive),,0,
+72,train,बदलूँगा,NATIVE,will change,,0,
+73,train,में,NATIVE,in (postposition),,0,
+74,train,साथ,NATIVE,with/together,,0,
+75,train,की,NATIVE,of (genitive fem),,0,
+76,train,वापस,NATIVE,back,,1,NATIVE
+77,train,करता,NATIVE,does (verb),,0,
+78,train,पश्चात,NATIVE,after,,0,
+79,train,ऐसा,NATIVE,such/thus,,1,NATIVE
+80,train,इस,NATIVE,this,,0,
+81,test,अधिक,NATIVE,more,,1,NATIVE
+82,train,संस्थापन,NATIVE,installation,,1,NATIVE
+83,train,दबाएं,NATIVE,press (imperative),,1,NATIVE
+84,train,जा,NATIVE,go (verb),,0,
+85,train,इस,NATIVE,this,,0,
+86,train,है,NATIVE,is (verb),,0,
+87,train,हैं,NATIVE,are (verb),,0,
+88,train,को,NATIVE,to (object marker),,1,NATIVE
+89,train,न,NATIVE,not (negation),,0,
+90,train,दें,NATIVE,give (imperative),,0,
+91,test,है,NATIVE,is (verb),,0,
+92,train,और,NATIVE,and,,1,NATIVE
+93,train,है,NATIVE,is (verb),,0,
+94,train,ओर,NATIVE,side/direction,,0,
+95,train,को,NATIVE,to (object marker),,0,
+96,train,अपनी,NATIVE,own (reflexive),,0,
+97,train,अब,NATIVE,now,,0,
+98,train,अणुओं,NATIVE,molecules,,1,NATIVE
+99,train,बंद,NATIVE,closed/shut,,1,NATIVE
+100,train,ज़्यादा,NATIVE,more/a lot,,0,
+101,train,में,NATIVE,in (postposition),,0,
+102,train,होता,NATIVE,entitled/rightful,,1,NATIVE
+103,train,किनारों,NATIVE,edges,,0,
+104,train,रही,NATIVE,-ing (progressive aux fem),,0,
+105,train,हूँ,NATIVE,am (verb, fem),0,
+106,train,अपने,NATIVE,own (reflexive),,0,
+107,train,देख,NATIVE,see/look,,0,
+108,train,जाएँ,NATIVE,go (imperative),,0,
+109,train,की,NATIVE,of (genitive fem),,0,
+110,train,परिभाषा,NATIVE,definition,,0,
+111,train,अगला,NATIVE,next,,0,
+112,train,अब,NATIVE,now,,0,
+113,train,दें,NATIVE,give/pay attention (imperative),,0,
+114,train,की,NATIVE,of (genitive fem),,0,
+115,train,भरता,NATIVE,fills (verb),,1,NATIVE
+116,test,बायें,NATIVE,left (direction),,0,
+117,train,करता,NATIVE,does (verb),,1,NATIVE
+118,train,सकते,NATIVE,can (verb),,0,
+119,train,में,NATIVE,in (postposition),,0,
+120,train,राष्ट्रीय,NATIVE,national,,0,
+121,train,में,NATIVE,in (postposition),,0,
+122,train,इस,NATIVE,this,,0,
+123,train,या,NATIVE,or,,0,
+124,train,संचयन,NATIVE,storage,,0,
+125,train,एक,NATIVE,one/a,,0,
+126,train,परिणाम,NATIVE,result,,0,
+127,train,हम,NATIVE,we,,0,
+128,train,है,NATIVE,is (verb),,0,
+129,train,में,NATIVE,in (postposition),,0,
+130,train,भी,NATIVE,also,,0,
+131,train,कर,NATIVE,do (verb),,0,
+132,train,निचले,NATIVE,lower,,1,NATIVE
+133,train,जरूरत,NATIVE,need/requirement,,0,
+134,train,है,NATIVE,is (verb),,0,
+135,train,के,NATIVE,of/for (genitive),,1,NATIVE
+136,train,पहले,NATIVE,first/before,,0,
+137,train,पर,NATIVE,on (postposition),,0,
+138,train,संस्थापित,NATIVE,installed,,0,
+139,train,हम,NATIVE,we,,1,NATIVE
+140,train,कर,NATIVE,do (verb),,0,
+141,train,हैं,NATIVE,are (verb),,0,
+142,test,है,NATIVE,is (verb),,1,NATIVE
+143,train,हैं,NATIVE,are (verb),,1,NATIVE
+144,train,हैं,NATIVE,are (verb),,0,
+145,train,धन्यवाद,NATIVE,thanks,,1,NATIVE
+146,train,हमारे,NATIVE,our,,0,
+147,train,का,NATIVE,of (genitive),,0,
+148,train,है,NATIVE,is (verb),,1,NATIVE
+149,train,अच्छी,NATIVE,good (fem),,0,
+150,train,करें,NATIVE,do (imperative),,0,
+151,train,अगला,NATIVE,next,,1,NATIVE
+152,train,चयन,NATIVE,selection/choice,,0,
+153,train,का,NATIVE,of (genitive),,0,
+154,train,में,NATIVE,in (postposition),,0,
+155,train,है,NATIVE,is (verb),,0,
+156,train,पर,NATIVE,on (postposition),,0,
+157,train,है,NATIVE,is (verb),,0,
+158,train,और,NATIVE,and,,1,NATIVE
+159,train,कर,NATIVE,do (verb),,0,
+160,train,करके,NATIVE,by doing,,1,NATIVE
+161,train,में,NATIVE,in (postposition),,0,
+162,train,और,NATIVE,and,,0,
+163,train,फिर,NATIVE,then,,0,
+164,train,प्रयोग,NATIVE,use (noun/verb),,0,
+165,train,पुस्तक,NATIVE,book,,1,NATIVE
+166,train,का,NATIVE,of (genitive),,0,
+167,train,करें,NATIVE,do (imperative),,1,NATIVE
+168,train,की,NATIVE,of (genitive fem),,0,
+169,train,है,NATIVE,is (verb),,1,NATIVE
+170,train,देते,NATIVE,give (verb),,0,
+171,train,तो,NATIVE,then/so,,0,
+172,train,हैं,NATIVE,are (verb),,0,
+173,train,का,NATIVE,of (genitive),,0,
+174,train,बनाया,NATIVE,made/created,,0,
+175,train,क्योंकि,NATIVE,because,,1,NATIVE
+176,train,के,NATIVE,of/for (genitive),,0,
+177,train,कैसे,NATIVE,how,,1,NATIVE
+178,train,करें,NATIVE,do (imperative),,0,
+179,train,देखते,NATIVE,see/look,,1,NATIVE
+180,train,में,NATIVE,in (postposition),,0,
+181,train,चुनें,NATIVE,choose/select (imperative),,0,
+182,train,क्षेत्र,NATIVE,area/field,,0,
+183,train,भागों,NATIVE,parts/portions,,0,
+184,train,इस,NATIVE,this,,0,
+185,train,के,NATIVE,of/for (genitive),,0,
+186,train,सारे,NATIVE,all/whole,,0,
+187,train,की,NATIVE,of (genitive fem),,0,
+188,train,चाहते,NATIVE,want (verb),,1,NATIVE
+189,train,हैं,NATIVE,are (verb),,0,
+190,train,दबाएं,NATIVE,press (imperative),,0,
+191,train,मैंने,NATIVE,I (emphatic, fem),0,
+192,train,या,NATIVE,or,,1,NATIVE
+193,train,का,NATIVE,of (genitive),,1,NATIVE
+194,train,जैसे,NATIVE,like/such as,,1,NATIVE
+195,train,अब,NATIVE,now,,0,
+196,train,को,NATIVE,to (object marker),,1,NATIVE
+197,train,को,NATIVE,to (object marker),,0,
+198,train,आइए,NATIVE,come/let's (hortative),,1,NATIVE
+199,train,परमाणु,NATIVE,atom,,0,
+200,train,लिए,NATIVE,for/to (postposition),,0,

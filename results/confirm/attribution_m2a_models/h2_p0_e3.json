@@ -1,0 +1,92 @@
+{
+  "family": "binomial",
+  "n_input": {
+    "0": 31844,
+    "1": 3962
+  },
+  "n_complete": {
+    "0": 30556,
+    "1": 3820
+  },
+  "n_switch": 3820,
+  "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+  "tried": {
+    "full": {
+      "optimizer": "bobyqa",
+      "error": false,
+      "unconverged": false,
+      "singular": true,
+      "warnings": []
+    },
+    "no_slope": {
+      "optimizer": "bobyqa",
+      "error": false,
+      "unconverged": false,
+      "singular": true,
+      "warnings": []
+    },
+    "no_video": {
+      "optimizer": "bobyqa",
+      "error": false,
+      "unconverged": false,
+      "singular": false,
+      "warnings": []
+    }
+  },
+  "R": "R version 4.5.3 (2026-03-11)",
+  "lme4": "2.0.6",
+  "failed": false,
+  "accepted": true,
+  "structure": "no_video",
+  "structure_formula": "(1 | speaker) + (1 | clip) + (1 | set)",
+  "cond": {
+    "estimate": 0.11548177294918,
+    "se": 0.0999949459439633,
+    "z": 1.15487609757692
+  },
+  "cond_without_covariates": {
+    "estimate": 0.147439035969613,
+    "se": 0.0954806777854232,
+    "z": 1.54417667940059
+  },
+  "without_covariates_fit": {
+    "optimizer": "bobyqa",
+    "error": false,
+    "unconverged": false,
+    "singular": false,
+    "warnings": []
+  },
+  "covariates": {
+    "d_f0": {
+      "estimate": 0.179557378936262,
+      "se": 0.0304603708049131,
+      "z": 5.89478637953087
+    },
+    "d_energy": {
+      "estimate": 0.232196793689479,
+      "se": 0.0276232362917481,
+      "z": 8.40585046723303
+    },
+    "d_rate": {
+      "estimate": 0.293963081007008,
+      "se": 0.027043308452314,
+      "z": 10.8700857191848
+    },
+    "d_tilt": {
+      "estimate": 0.268624006921121,
+      "se": 0.0267349162269398,
+      "z": 10.04768463237
+    },
+    "d_snr": {
+      "estimate": 0.294081946394058,
+      "se": 0.0304647530065397,
+      "z": 9.65318662951014
+    }
+  },
+  "n_levels": {
+    "speaker": 17,
+    "video": 137,
+    "clip": 8954,
+    "set": 964
+  }
+}

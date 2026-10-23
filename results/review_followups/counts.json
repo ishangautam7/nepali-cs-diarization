@@ -1,0 +1,164 @@
+{
+  "label": "EXPLORATORY (post hoc, external review issue 3); counts only, no outcome computed",
+  "splits": [
+    "train",
+    "test"
+  ],
+  "cells": {
+    "p0L1": {
+      "switch_family": "p0L1",
+      "control_family": "det_w1"
+    },
+    "det": {
+      "switch_family": "det",
+      "control_family": "det"
+    }
+  },
+  "inputs": {
+    "boundaries": "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b",
+    "emb": "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb",
+    "sha256": {
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b/points_train.csv.gz": "dffc685a50ed2b825716e171fac22b6bb625e5b362fb8a605ca8028af5af1c2e",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b/points_test.csv.gz": "13362fa6c9f4348b960548026b93395d89ff1f6e0f910e8bd78ac2b6653cd008"
+    },
+    "note": "point tables rebuilt after the first box loss (DEVIATIONS.md entry 6); the cross-checks below compare them with the frozen M2a counts"
+  },
+  "same_for_all_embeddings": true,
+  "counts": {
+    "p0L1": {
+      "train": {
+        "cells_used": 894,
+        "controls_eligible": 33562,
+        "controls_in_used_cells": 29528,
+        "controls_scored": 33556,
+        "switch_points_eligible": 3954,
+        "switch_points_scored": 3954,
+        "switch_points_with_cell_controls": 3851,
+        "switch_points_without_cell_controls": 103,
+        "channels": 15
+      },
+      "test": {
+        "cells_used": 70,
+        "controls_eligible": 6735,
+        "controls_in_used_cells": 2316,
+        "controls_scored": 6735,
+        "switch_points_eligible": 115,
+        "switch_points_scored": 115,
+        "switch_points_with_cell_controls": 111,
+        "switch_points_without_cell_controls": 4,
+        "channels": 2
+      },
+      "total": {
+        "cells_used": 964,
+        "controls_eligible": 40297,
+        "controls_in_used_cells": 31844,
+        "controls_scored": 40291,
+        "switch_points_eligible": 4069,
+        "switch_points_scored": 4069,
+        "switch_points_with_cell_controls": 3962,
+        "switch_points_without_cell_controls": 107,
+        "channels": 17
+      }
+    },
+    "det": {
+      "train": {
+        "cells_used": 2041,
+        "controls_eligible": 93946,
+        "controls_in_used_cells": 86456,
+        "controls_scored": 87607,
+        "switch_points_eligible": 129792,
+        "switch_points_not_scored": 12881,
+        "switch_points_scored": 116911,
+        "switch_points_with_cell_controls": 116408,
+        "switch_points_without_cell_controls": 503,
+        "channels": 15
+      },
+      "test": {
+        "cells_used": 301,
+        "controls_eligible": 12095,
+        "controls_in_used_cells": 10699,
+        "controls_scored": 11345,
+        "switch_points_eligible": 4722,
+        "switch_points_not_scored": 455,
+        "switch_points_scored": 4267,
+        "switch_points_with_cell_controls": 4222,
+        "switch_points_without_cell_controls": 45,
+        "channels": 2
+      },
+      "total": {
+        "cells_used": 2342,
+        "controls_eligible": 106041,
+        "controls_in_used_cells": 97155,
+        "controls_scored": 98952,
+        "switch_points_eligible": 134514,
+        "switch_points_not_scored": 13336,
+        "switch_points_scored": 121178,
+        "switch_points_with_cell_controls": 120630,
+        "switch_points_without_cell_controls": 548,
+        "channels": 17
+      }
+    }
+  },
+  "cross_checks": {
+    "all_match": true,
+    "values_[this, frozen(, stated)]": {
+      "e1": {
+        "p0L1_scored": [
+          4069,
+          4069
+        ],
+        "p0L1_without_cell_controls": [
+          107,
+          107
+        ],
+        "p0L1_with_cell_controls": [
+          3962,
+          3962
+        ],
+        "det_with_cell_controls_vs_strata_sum": [
+          120630,
+          120630,
+          120630
+        ]
+      },
+      "e2": {
+        "p0L1_scored": [
+          4069,
+          4069
+        ],
+        "p0L1_without_cell_controls": [
+          107,
+          107
+        ],
+        "p0L1_with_cell_controls": [
+          3962,
+          3962
+        ],
+        "det_with_cell_controls_vs_strata_sum": [
+          120630,
+          120630,
+          120630
+        ]
+      },
+      "e3": {
+        "p0L1_scored": [
+          4069,
+          4069
+        ],
+        "p0L1_without_cell_controls": [
+          107,
+          107
+        ],
+        "p0L1_with_cell_controls": [
+          3962,
+          3962
+        ],
+        "det_with_cell_controls_vs_strata_sum": [
+          120630,
+          120630,
+          120630
+        ]
+      }
+    }
+  }
+}

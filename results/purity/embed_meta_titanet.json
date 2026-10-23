@@ -1,0 +1,51 @@
+{
+  "model": "titanet",
+  "checkpoint": "/home/ec2-user/data/models/titanet-large/speakerverification_en_titanet_large.nemo",
+  "revision": "0dc382f40121a5fbd34db10a2bb04d826c2be6a8",
+  "sha256": "e838520693f269e7984f55bc8eb3c2d60ccf246bf4b896d4be9bcabe3e4b0fe3",
+  "vad_threshold": 0.5,
+  "gap_bridge_s": 0.25,
+  "min_run_s": 0.5,
+  "pooling": "duration-weighted mean of L2-normalised speech-run embeddings, re-normalised",
+  "limit": 0,
+  "splits": {
+    "validation": {
+      "clips": 2338,
+      "runs": 5053,
+      "embedded_speech_h": 5.81,
+      "fallback_whole_clip": 0,
+      "fallback_clip_ids": []
+    },
+    "train": {
+      "clips": 16702,
+      "runs": 37829,
+      "embedded_speech_h": 39.379,
+      "fallback_whole_clip": 6,
+      "fallback_clip_ids": [
+        "57CuMjls6OM_00119536_00123408",
+        "57CuMjls6OM_05863952_05872528",
+        "57CuMjls6OM_00778992_00785840",
+        "57CuMjls6OM_00889872_00899264",
+        "57CuMjls6OM_00089168_00100752",
+        "MGCx7NQRErE_03271312_03276848"
+      ]
+    },
+    "test": {
+      "clips": 1765,
+      "runs": 4288,
+      "embedded_speech_h": 3.754,
+      "fallback_whole_clip": 9,
+      "fallback_clip_ids": [
+        "HUfMJuhOj5w_01048127_01056752",
+        "HUfMJuhOj5w_00229872_00233904",
+        "HUfMJuhOj5w_00312144_00317104",
+        "HUfMJuhOj5w_00641328_00654864",
+        "HUfMJuhOj5w_00750912_00761952",
+        "HUfMJuhOj5w_00800528_00809744",
+        "HUfMJuhOj5w_00896624_00906608",
+        "HUfMJuhOj5w_00955344_00964912",
+        "Mnm3U3UlPPU_00118480_00122128"
+      ]
+    }
+  }
+}

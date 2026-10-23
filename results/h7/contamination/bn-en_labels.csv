@@ -1,0 +1,201 @@
+item,split,word,label,gloss,note,analyst_check,analyst_label
+1,train,টিপুন,NATIVE,press,,0,
+2,train,প্রান্ত,NATIVE,edge,,1,NATIVE
+3,train,উদ্ধৃতিতে,NATIVE,in the quotation,,0,
+4,train,একটি,NATIVE,a/one,,0,
+5,train,করা,NATIVE,do,,0,
+6,train,পারি,NATIVE,can,,1,NATIVE
+7,train,যাচাই,NATIVE,verify,,0,
+8,train,অর্থ,NATIVE,meaning,,1,NATIVE
+9,train,আপনার,NATIVE,your,,1,NATIVE
+10,test,প্রদর্শিত,NATIVE,displayed,,0,
+11,train,যে,NATIVE,that,,1,NATIVE
+12,train,এড়াতে,NATIVE,to avoid,,0,
+13,train,কলাম,NATIVE,column,,0,LOAN
+14,train,কাছে,NATIVE,near/to,,0,
+15,train,হয়,NATIVE,is/becomes,,1,NATIVE
+16,train,তাই,NATIVE,so/therefore,,0,
+17,train,লাইনের,NATIVE,of the line,,0,LOAN
+18,train,এর,NATIVE,of/than,,0,
+19,train,নয়,NATIVE,not,,0,
+20,test,দেখি,NATIVE,see,,0,
+21,train,প্রকল্প,NATIVE,project,,0,
+22,train,করতে,NATIVE,to do,,0,
+23,train,যায়,NATIVE,goes,,1,NATIVE
+24,train,অনেক,NATIVE,many,,0,
+25,test,করব,NATIVE,will do,,1,NATIVE
+26,train,একটি,NATIVE,a/one,,0,
+27,train,যদি,NATIVE,if,,1,NATIVE
+28,train,দেখা,NATIVE,seeing,,0,
+29,train,করুন,NATIVE,do,,1,NATIVE
+30,train,জন্মেছেন,NATIVE,was born,,0,
+31,test,এবং,NATIVE,and,,0,
+32,test,আমি,NATIVE,I,,1,NATIVE
+33,train,এবং,NATIVE,and,,0,
+34,train,রয়েছে,NATIVE,there is,,1,NATIVE
+35,train,ব্যবহৃত,NATIVE,used,,1,NATIVE
+36,train,করুন,NATIVE,do,,0,
+37,train,কারণ,NATIVE,because,,0,
+38,test,কিছু,NATIVE,some,,1,NATIVE
+39,train,হলে,NATIVE,if it is,,0,
+40,train,সংরক্ষণ,NATIVE,store/save,,1,NATIVE
+41,test,এই,NATIVE,this,,0,
+42,train,ব্যবহার,NATIVE,use,,0,
+43,train,কাছে,NATIVE,near,,0,
+44,train,এবং,NATIVE,and,,0,
+45,train,হয়েছে,NATIVE,has been,,1,NATIVE
+46,train,এখন,NATIVE,now,,0,
+47,train,মতন,NATIVE,like,,0,
+48,train,এবং,NATIVE,and,,1,NATIVE
+49,train,চয়ন,NATIVE,choose/select,,0,
+50,train,বা,NATIVE,or,,0,
+51,train,না,NATIVE,no/not,,0,
+52,train,যে,NATIVE,that,,0,
+53,train,বুনিয়াদিরূপে,NATIVE,basically,,0,
+54,train,এবং,NATIVE,and,,0,
+55,train,বদলে,NATIVE,changed,,0,
+56,train,শর্ত,NATIVE,condition,,1,NATIVE
+57,train,বিচ্যুত,NATIVE,deviated,,1,NATIVE
+58,train,একইভাবে,NATIVE,similarly,,0,
+59,train,এই,NATIVE,this,,0,
+60,train,আমাদের,NATIVE,our,,0,
+61,train,আঁকুন,NATIVE,draw,,0,
+62,train,এখন,NATIVE,now,,0,
+63,train,আমাদের,NATIVE,our,,0,
+64,train,অর্থাৎ,NATIVE,that is,,0,
+65,train,সাহায্যে,NATIVE,with the help of,,0,
+66,test,সমর্থন,NATIVE,support,,1,NATIVE
+67,train,চিহ্ন,NATIVE,sign/mark,,0,
+68,train,আসা,NATIVE,come/return,,0,
+69,train,ব্যবহার,NATIVE,use,,0,
+70,train,চাই,NATIVE,want,,1,NATIVE
+71,train,উদাহরণ,NATIVE,example,,0,
+72,train,অনেকগুলি,NATIVE,many,,0,
+73,train,একটি,NATIVE,a/one,,0,
+74,train,সংস্করণ,NATIVE,version,,0,
+75,train,সাহায্য,NATIVE,help,,0,
+76,train,রাখতে,NATIVE,to keep,,0,
+77,train,করার,NATIVE,of doing,,0,
+78,train,উদ্ধৃতির,NATIVE,of the quotation,,0,
+79,train,এটি,NATIVE,it/this,,0,
+80,train,নিয়ন্ত্রণগুলি,NATIVE,the controls,,0,
+81,train,বোঝানোর,NATIVE,to indicate,,0,
+82,train,এখন,NATIVE,now,,0,
+83,train,টিপুন,NATIVE,press,,0,
+84,train,উদাহরণ,NATIVE,example,,0,
+85,test,করুন,NATIVE,do,,0,
+86,train,অনুসরণ,NATIVE,follow,,0,
+87,train,একাধিক,NATIVE,multiple,,0,
+88,train,ফেলা,NATIVE,to drop/delete,,0,
+89,train,এবং,NATIVE,and,,0,
+90,test,করুন,NATIVE,do,,0,
+91,train,উভয়,NATIVE,both,,0,
+92,train,পূর্বে,NATIVE,before,,1,NATIVE
+93,test,এইরকম,NATIVE,like this,,1,NATIVE
+94,train,পারি,NATIVE,can,,0,
+95,train,নীচে,NATIVE,below,,0,
+96,test,হয়,NATIVE,is/becomes,,0,
+97,train,অনিয়মিত,NATIVE,irregular,,0,
+98,train,দেখুন,NATIVE,see/look,,1,NATIVE
+99,train,এর,NATIVE,of/'s,,0,
+100,train,লুকোলে,NATIVE,if hidden,,1,NATIVE
+101,train,আমরা,NATIVE,we,,0,
+102,train,করবে,NATIVE,will do,,1,NATIVE
+103,train,এখানে,NATIVE,here,,1,NATIVE
+104,train,টেনে,NATIVE,drag/pull,,0,
+105,train,ও,NATIVE,and/also,,0,
+106,train,এবং,NATIVE,and,,0,
+107,train,করি,NATIVE,do,,0,
+108,test,এ,NATIVE,on/at,,0,
+109,train,প্রম্পটের,NATIVE,of the prompt,,0,LOAN
+110,train,টিপে,NATIVE,pressing,,0,
+111,train,নির্বাচন,NATIVE,selection,,0,
+112,train,পারেন,NATIVE,can,,0,
+113,train,টিপুন,NATIVE,press,,0,
+114,train,পেয়েছি,NATIVE,got/received,,0,
+115,train,এটি,NATIVE,it/this,,1,NATIVE
+116,train,এখানে,NATIVE,here,,0,
+117,train,কি,NATIVE,what,,0,
+118,train,এ,NATIVE,on/at,,0,
+119,train,করতে,NATIVE,to do,,0,
+120,train,নির্বাচন,NATIVE,selection,,0,
+121,train,অংশে,NATIVE,in the part,,0,
+122,train,দিয়ে,NATIVE,with/by,,0,
+123,train,এটি,NATIVE,it/this,,0,
+124,train,করেছি,NATIVE,have done,,0,
+125,train,হয়,NATIVE,is/becomes,,1,NATIVE
+126,train,অংশবিশেষ,NATIVE,a portion of,,0,
+127,train,আপনি,NATIVE,you,,0,
+128,train,এখন,NATIVE,now,,0,
+129,train,আরেকটি,NATIVE,another,,1,NATIVE
+130,train,কোঁকড়া,NATIVE,curly,,0,
+131,train,এর,NATIVE,of/'s,,0,
+132,train,সেখানে,NATIVE,there,,1,NATIVE
+133,train,লিখুন,NATIVE,write,,0,
+134,train,জাহাজের,NATIVE,of the ship,,1,NATIVE
+135,train,জিজ্ঞাসা,NATIVE,ask/inquire,,0,
+136,train,করে,NATIVE,does/displays,,0,
+137,train,আমাদের,NATIVE,our,,1,NATIVE
+138,train,যে,NATIVE,that,,0,
+139,train,করুন,NATIVE,do,,0,
+140,train,দ্বারা,NATIVE,by/with,,0,
+141,train,বিষয়ে,NATIVE,about,,0,
+142,train,শতকরা,NATIVE,percent,,1,NATIVE
+143,train,করুন,NATIVE,do,,0,
+144,train,সাথে,NATIVE,with,,0,
+145,test,একটি,NATIVE,a/one,,0,
+146,train,সংশোধন,NATIVE,correct/fix,,0,
+147,train,ধাপে,NATIVE,in the step,,1,NATIVE
+148,train,ঠিক,NATIVE,exactly/right,,1,NATIVE
+149,train,ম্যাসেজ,LOAN,message,,0,
+150,train,এবং,NATIVE,and,,0,
+151,train,আমি,NATIVE,I,,1,NATIVE
+152,train,উদ্ধৃতি,NATIVE,quotation,,0,
+153,test,করুন,NATIVE,do,,0,
+154,test,যাতে,NATIVE,so that,,1,NATIVE
+155,train,করব,NATIVE,will do,,1,NATIVE
+156,test,অনুসন্ধান,NATIVE,search,,1,NATIVE
+157,train,দেখেন,NATIVE,see/look,,0,
+158,train,এবং,NATIVE,and,,0,
+159,train,যাই,NATIVE,go,,0,
+160,train,মানুষ,NATIVE,human/people,,1,NATIVE
+161,train,করুন,NATIVE,do,,1,NATIVE
+162,train,এ,NATIVE,on/at,,0,
+163,train,এবং,NATIVE,and,,0,
+164,train,আমরা,NATIVE,we,,0,
+165,train,জুড়ব,NATIVE,will join,,0,
+166,train,এবং,NATIVE,and,,1,NATIVE
+167,train,হয়,NATIVE,is/becomes,,0,
+168,train,লেখা,NATIVE,text/writing,,0,
+169,test,হয়,NATIVE,is/becomes,,0,
+170,test,করলে,NATIVE,if done,,1,NATIVE
+171,train,রয়েছে,NATIVE,there is,,0,
+172,test,যাক,NATIVE,let's/so,,0,
+173,train,মাত্র,NATIVE,only/just,,1,NATIVE
+174,train,প্রয়োজনীয়,NATIVE,necessary,,1,NATIVE
+175,test,ক্ষেত্রে,NATIVE,in the case,,1,NATIVE
+176,train,হিসাবে,NATIVE,as,,0,
+177,train,ফীল্ডগুলি,NATIVE,the fields,,0,LOAN
+178,train,আমাদের,NATIVE,our,,0,
+179,train,পাসওয়ার্ড,LOAN,password,,0,
+180,test,করে,NATIVE,do,,0,
+181,train,সম্বন্ধে,NATIVE,about,,0,
+182,train,তারপর,NATIVE,then,,1,NATIVE
+183,train,করি,NATIVE,do,,0,
+184,train,ব্যবহার,NATIVE,use,,0,
+185,test,এখানে,NATIVE,here,,0,
+186,train,রয়েছে,NATIVE,there is,,0,
+187,train,আমাদের,NATIVE,our,,1,NATIVE
+188,test,পাওয়া,NATIVE,get/obtain,,0,
+189,train,এ,NATIVE,on/at,,0,
+190,train,বা,NATIVE,or,,0,
+191,train,এ,NATIVE,on/at,,0,
+192,train,করুন,NATIVE,do,,0,
+193,train,ব্যবহার,NATIVE,use,,0,
+194,train,করে,NATIVE,does/makes,,0,
+195,train,যাচ্ছে,NATIVE,is going,,1,NATIVE
+196,train,যে,NATIVE,that,,0,
+197,train,সকল,NATIVE,all,,0,
+198,train,করা,NATIVE,do,,0,
+199,train,এর,NATIVE,of/'s,,0,
+200,train,সমান,NATIVE,equal,,0,

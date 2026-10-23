@@ -1,0 +1,84 @@
+{
+ "part": "lambda",
+ "scope": "test",
+ "dry_run": false,
+ "date": "2026-10-20T19:19:19+00:00",
+ "code_sha256": "e6a5b1666b9bf8b90f06d57767cd1dc77ed1dbb0486de7657f62f52badc5c60c",
+ "stage1_sha256": "443250a825ab1db48c0e7d1c8a25dff509c828059a695b10ecac95aa78fb5579",
+ "units": [
+  {
+   "fold": null,
+   "scored": [
+    "UChx9-bynjfm6Js3k54Sf1Mg",
+    "UCy-Q66KQYSQAUVKvdNxgKbw"
+   ],
+   "fit": [
+    "UC1a2Vvzr7NJMtkIoV9c6Opw",
+    "UC6B-8q01CqGJmZ5NswbYGDw",
+    "UCA4izoAnn46iBh3TupN3ADQ",
+    "UCAh6gaPtNIBBW_qNss4flcA",
+    "UCIKslGb0pGieZTCn8341Xsw",
+    "UCJinKAyRTpHJOPE0YgCMhog",
+    "UCOC6C8_U9PsAs3tQodDDmGw",
+    "UCUj0DJEMJRzBgrFOnDqOZig",
+    "UCZfM_5lOt0Rfs9lY0kZ5glw",
+    "UCdsTvXwaUcvV88UhqTHynTg",
+    "UCiVc0CAFFWBOd2Zf3dQwThw",
+    "UCjD3bnXfPtoGVfZ4PmY9sBQ",
+    "UCs_i-XIuSGGLQu-OHrWeTCA",
+    "UCvc1Xg1qWSfQptoCEq13pEA",
+    "UCyPr9KIODQt5J1oOGbz44Hg"
+   ]
+  }
+ ],
+ "inputs_sha256": {
+  "/home/ec2-user/data/d1/boundaries/lex_v1b/points_test.csv.gz": "13362fa6c9f4348b960548026b93395d89ff1f6e0f910e8bd78ac2b6653cd008",
+  "/home/ec2-user/data/d1/boundaries/lex_v1b/points_train.csv.gz": "dffc685a50ed2b825716e171fac22b6bb625e5b362fb8a605ca8028af5af1c2e",
+  "/home/ec2-user/data/d1/boundaries/lex_v1b/points_validation.csv.gz": "a8ca6cdcbf1818ea10ccfddc39e1d91d8a66ea7694f3bb6b1aba511fe70d1030",
+  "/home/ec2-user/data/d1/emb/e3_L1/test.npz": "c4b2b1f387661231fe7fd82ba2268a713c06c909b38896babf3194c8ddbdf710",
+  "/home/ec2-user/data/d1/emb/e3_L1/train.npz": "e9efbf4e97451f00d609beefd7e9874e43f28633de38eb1bf98331f65b75827b",
+  "/home/ec2-user/data/d1/emb/e3_L1/validation.npz": "ebf58a6d23d3fafb5c9e148169689b6aa2fdff9798e84942faba91efb3639400",
+  "/home/ec2-user/data/d1/lid/test.npz": "acf7ce5fa11324322be92c6edd2c8bb4ae40d4ec18051aecabe4428bbb009102",
+  "/home/ec2-user/data/d1/lid/train.npz": "d6f267fafeac071863a4d7e940cb347776c2b8938a72ea3b75beb5cfe4b4e07e",
+  "/home/ec2-user/data/d1/lid/validation.npz": "1b3cf38abcb802928f173728fd3d3583ae640374a8ba43b8d361c98fb449013e",
+  "/home/ec2-user/data/d1/manifest.csv": "4092ae10b64c306d60e33b616b16056f42f1fe59536ba24df0af556852396ccd",
+  "/home/ec2-user/data/d1/point_emb/lex_v1b/e3/train_L1.npz": "6dd5ccc81044b2658fcd770c689853ae86545869fe1a47b745233b1986a7dab5",
+  "/home/ec2-user/data/d1/windows/lex_v1/windows_train.csv.gz": "2e584313b43a8ad2071c5acd5c1738e8ffa8b98f062de31596cb46175aca7352"
+ },
+ "result": {
+  "per_channel": {
+   "UChx9-bynjfm6Js3k54Sf1Mg": {
+    "auc": 0.8023872611791134,
+    "n_ssdl": 13,
+    "auc_phrase_vs_other": 0.7311245034915121,
+    "n_phrase": 525
+   },
+   "UCy-Q66KQYSQAUVKvdNxgKbw": {
+    "auc": 0.6133617612663715,
+    "n_ssdl": 98,
+    "auc_phrase_vs_other": 0.5145832581388124,
+    "n_phrase": 444
+   }
+  },
+  "included": [
+   "UChx9-bynjfm6Js3k54Sf1Mg",
+   "UCy-Q66KQYSQAUVKvdNxgKbw"
+  ],
+  "summary": {
+   "auc": {
+    "n_channels": 2,
+    "mean": 0.7078745112227425,
+    "sd": 0.13366121280547694,
+    "p_one_unadjusted": 0.25,
+    "p_two_unadjusted": 0.5
+   },
+   "auc_phrase_vs_other": {
+    "n_channels": 2,
+    "mean": 0.6228538808151622,
+    "sd": 0.15311778299547393,
+    "p_one_unadjusted": 0.25,
+    "p_two_unadjusted": 0.5
+   }
+  }
+ }
+}

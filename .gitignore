@@ -1,0 +1,20 @@
+# Data and audio never go into git (licences, privacy, size). Top-level folder only:
+# the csdiar/data package is code and must stay tracked.
+/data/
+*.wav
+*.flac
+*.m4a
+*.webm
+*.mp3
+*.mp4
+
+# Machine-specific connection details.
+ops/ssh_config
+ops/known_hosts
+
+# Environments and caches.
+.venv*/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/

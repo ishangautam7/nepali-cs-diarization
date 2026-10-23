@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csdiar"
+version = "0.0.1"
+description = "Speaker consistency under Nepali-English code-switching: data, systems and evaluation"
+requires-python = ">=3.10"
+# The core (tagging, boundaries, metrics) stays dependency-light so it runs anywhere.
+# GPU toolkits live in separate per-toolkit environments (PLAN.md section 8).
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.1"]
+meta = ["pyarrow==21.0.0", "huggingface_hub==0.34.4"]
+
+[tool.setuptools.packages.find]
+include = ["csdiar*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

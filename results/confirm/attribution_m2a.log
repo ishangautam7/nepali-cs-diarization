@@ -1,0 +1,12 @@
+== 2026-10-18T12:36:38Z attribution after deviation 1
+# Attribution (m2a; confirmatory)
+
+| H | Model | (a) primary, Holm p [category] | (b) adjusted, channels, p | (c) pause > 150 ms only: channels, p | (d) H3, Holm p | Grade | lme4 (descriptive): coef [no covariates], structure |
+|---|---|---|---|---|---|---|---|
+| h1 | e1 | 0.0000 [supported] | 17, 0.0000 | 14, 0.0001 | 0.0000 | language-attributable | -0.0302 [-0.0326], full |
+| h2_p0 | e1 | 0.0000 [supported] | 17, 0.0793 | 13, 0.0114 | 0.0000 | switch-associated | +0.2268 [+0.2385], full |
+| h1 | e2 | 0.0000 [nonzero but trivial] | 17, 0.0002 | 14, 0.0005 | 0.0000 | language-attributable | -0.0241 [-0.0270], full |
+| h2_p0 | e2 | 0.0000 [supported] | 17, 0.0314 | 13, 0.0120 | 0.0000 | language-attributable | +0.3084 [+0.3096], full |
+| h1 | e3 | 0.0000 [supported] | 17, 0.0000 | 14, 0.0006 | 0.0000 | language-attributable | -0.0311 [-0.0337], full |
+| h2_p0 | e3 | 0.0000 [supported] | 17, 0.0085 | 13, 0.0104 | 0.0000 | language-attributable | +0.1155 [+0.1474], no_video |
+ATTRIBUTION_DONE 2026-10-18T12:53:56Z

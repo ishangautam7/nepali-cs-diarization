@@ -1,0 +1,1671 @@
+{
+  "tag": "m2a",
+  "splits": [
+    "train",
+    "test"
+  ],
+  "seed": 20261018,
+  "mode": "confirmatory",
+  "freeze": {
+    "tag": "m2a-freeze",
+    "commit": "11eb77caa98c98594a4c27c337a35e677363a9a4",
+    "date": "2026-10-18T12:28:44+00:00"
+  },
+  "tau": {
+    "e1": 0.9168623979512837,
+    "e2": 0.8631095886230469,
+    "e3": 0.9288795312074744
+  },
+  "points_without_video_id": 16,
+  "models": {
+    "e1": {
+      "h1": {
+        "phrase_contrast": {
+          "statistic": "per-channel mean delta-cos in sets with a pause > 150 ms (predicted > 0)",
+          "n_sets": 381,
+          "n_channels": 14,
+          "excluded_channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": 1
+          },
+          "mean_of_channels": 0.048621441388888784,
+          "channels": {
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "n": 30,
+              "mean": 0.028707063694794973
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "n": 98,
+              "mean": 0.04602404668623088
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "n": 24,
+              "mean": 0.04024734472235044
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "n": 6,
+              "mean": 0.10238465418418248
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "n": 26,
+              "mean": 0.0488997227870501
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "n": 34,
+              "mean": 0.01572795058874523
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "n": 18,
+              "mean": 0.09587660845783022
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "n": 33,
+              "mean": 0.02574923995769385
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "n": 24,
+              "mean": 0.03972726377348105
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "n": 16,
+              "mean": 0.06326636765152216
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "n": 27,
+              "mean": -0.0014458210379989058
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "n": 25,
+              "mean": 0.08145049750804902
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "n": 14,
+              "mean": 0.05317279856119837
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "n": 6,
+              "mean": 0.0409124419093132
+            }
+          },
+          "signflip": {
+            "p_one": 0.0001220703125,
+            "p_two": 0.000244140625,
+            "exact": true,
+            "n": 14
+          }
+        },
+        "adjusted": {
+          "statistic": "per-channel covariate-adjusted condition coefficient (within-set least squares); sign-flip on direction x coefficient",
+          "direction": -1,
+          "n_channels": 17,
+          "excluded_channels": {},
+          "assessable": true,
+          "mean_coefficient": -0.03290703972918403,
+          "channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": {
+              "beta_cond": -0.03786168533877032,
+              "n_switch": 240,
+              "n_sets": 240
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "beta_cond": -0.020329188371222322,
+              "n_switch": 319,
+              "n_sets": 319
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "beta_cond": -0.030441067271169416,
+              "n_switch": 35,
+              "n_sets": 35
+            },
+            "UCAh6gaPtNIBBW_qNss4flcA": {
+              "beta_cond": -0.028931821586490897,
+              "n_switch": 534,
+              "n_sets": 534
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "beta_cond": -0.02948769243446641,
+              "n_switch": 143,
+              "n_sets": 143
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "beta_cond": -0.029254431587550107,
+              "n_switch": 396,
+              "n_sets": 396
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "beta_cond": -0.03634962169499817,
+              "n_switch": 231,
+              "n_sets": 231
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "beta_cond": -0.06198569632025056,
+              "n_switch": 212,
+              "n_sets": 212
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "beta_cond": -0.033917223433124054,
+              "n_switch": 171,
+              "n_sets": 171
+            },
+            "UCdsTvXwaUcvV88UhqTHynTg": {
+              "beta_cond": -0.03719214868794359,
+              "n_switch": 123,
+              "n_sets": 123
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "beta_cond": -0.044649655018789536,
+              "n_switch": 12,
+              "n_sets": 12
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "beta_cond": 0.0036629893320617194,
+              "n_switch": 196,
+              "n_sets": 196
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "beta_cond": -0.02643348676640067,
+              "n_switch": 214,
+              "n_sets": 214
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "beta_cond": -0.01524370117615436,
+              "n_switch": 119,
+              "n_sets": 119
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "beta_cond": -0.021009540193283584,
+              "n_switch": 300,
+              "n_sets": 300
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "beta_cond": -0.06719131950603022,
+              "n_switch": 77,
+              "n_sets": 77
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "beta_cond": -0.042804385341546056,
+              "n_switch": 236,
+              "n_sets": 236
+            }
+          },
+          "signflip": {
+            "p_one": 1.52587890625e-05,
+            "p_two": 3.0517578125e-05,
+            "exact": true,
+            "n": 17
+          }
+        },
+        "mixed_model": {
+          "family": "gaussian",
+          "n_input": {
+            "0": 10594,
+            "1": 3695
+          },
+          "n_complete": {
+            "0": 10299,
+            "1": 3565
+          },
+          "n_switch": 3565,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "failed": false,
+          "accepted": true,
+          "structure": "full",
+          "structure_formula": "(1 + cond | speaker) + (1 | video/clip) + (1 | set)",
+          "cond": {
+            "estimate": -0.0301661376787723,
+            "se": 0.00408088415626417,
+            "z": -7.39205929981307
+          },
+          "cond_without_covariates": {
+            "estimate": -0.0326388639047791,
+            "se": 0.00425380354246141,
+            "z": -7.6728658432338
+          },
+          "without_covariates_fit": {
+            "optimizer": "bobyqa",
+            "error": false,
+            "unconverged": false,
+            "singular": false,
+            "warnings": []
+          },
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.0124813100149325,
+              "se": 0.000990576877883093,
+              "z": -12.6000417469925
+            },
+            "d_energy": {
+              "estimate": -0.0115616611085781,
+              "se": 0.000965237296045131,
+              "z": -11.9780505332209
+            },
+            "d_rate": {
+              "estimate": -0.0108764857919623,
+              "se": 0.000898138613331162,
+              "z": -12.110030267624
+            },
+            "d_tilt": {
+              "estimate": -0.013488534634961,
+              "se": 0.00096010804486376,
+              "z": -14.0489757450944
+            },
+            "d_snr": {
+              "estimate": -0.00620931878526752,
+              "se": 0.00106511381718616,
+              "z": -5.82972325124034
+            }
+          },
+          "n_levels": {
+            "speaker": 17,
+            "video": 137,
+            "clip": 6774,
+            "set": 3694
+          },
+          "p_one": 7.227551890309769e-14,
+          "p_two": 1.4455103780619538e-13,
+          "direction": -1
+        },
+        "criteria": {
+          "a": true,
+          "b": true,
+          "c": true,
+          "d": true
+        },
+        "assessable": {
+          "b": true,
+          "c": true
+        },
+        "grade": "language-attributable",
+        "primary_category": "supported",
+        "label": "language-attributable (supported)"
+      },
+      "h2_p0": {
+        "phrase_contrast": {
+          "statistic": "per-channel cell-standardised AUC within the pause > 150 ms cells (predicted > 0.5)",
+          "n_channels": 13,
+          "excluded_channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": 1,
+            "UCA4izoAnn46iBh3TupN3ADQ": 2,
+            "UCAh6gaPtNIBBW_qNss4flcA": 1
+          },
+          "auc_mean_of_channels": 0.5717523389695405,
+          "channels": {
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "auc": 0.6022431219212021,
+              "n_ssdl": 27
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "auc": 0.3964912280701754,
+              "n_ssdl": 19
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "auc": 0.6004093503913338,
+              "n_ssdl": 94
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "auc": 0.511222141096543,
+              "n_ssdl": 44
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "auc": 0.5946031746031745,
+              "n_ssdl": 25
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "auc": 0.5442032554648655,
+              "n_ssdl": 28
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "auc": 0.7898359288097886,
+              "n_ssdl": 5
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "auc": 0.49117295243456227,
+              "n_ssdl": 34
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "auc": 0.6118421052631579,
+              "n_ssdl": 38
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "auc": 0.6028373587197117,
+              "n_ssdl": 39
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "auc": 0.4604644326866549,
+              "n_ssdl": 54
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "auc": 0.6936011904761904,
+              "n_ssdl": 16
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "auc": 0.5338541666666667,
+              "n_ssdl": 32
+            }
+          },
+          "signflip": {
+            "p_one": 0.0113525390625,
+            "p_two": 0.022705078125,
+            "exact": true,
+            "n": 13
+          }
+        },
+        "far": {
+          "ssdl": 0.14173773072831883,
+          "phrase_ctrl": 0.23622019465715477,
+          "other_ctrl": 0.09770248466054579,
+          "note": "mean over channels of the per-channel FAR at the frozen tau"
+        },
+        "adjusted": {
+          "statistic": "per-channel covariate-adjusted condition coefficient (within-set least squares); sign-flip on direction x coefficient",
+          "direction": 1,
+          "n_channels": 17,
+          "excluded_channels": {},
+          "assessable": true,
+          "mean_coefficient": 0.011310205503527645,
+          "channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": {
+              "beta_cond": -0.0006023300846515321,
+              "n_switch": 243,
+              "n_sets": 36
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "beta_cond": 0.015661234127396312,
+              "n_switch": 320,
+              "n_sets": 58
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "beta_cond": 0.0018959162664765126,
+              "n_switch": 34,
+              "n_sets": 15
+            },
+            "UCAh6gaPtNIBBW_qNss4flcA": {
+              "beta_cond": -0.015833907859032926,
+              "n_switch": 584,
+              "n_sets": 113
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "beta_cond": -0.0019247796859242709,
+              "n_switch": 155,
+              "n_sets": 73
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "beta_cond": -0.04165919868049467,
+              "n_switch": 383,
+              "n_sets": 44
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "beta_cond": -0.009283754487552644,
+              "n_switch": 247,
+              "n_sets": 47
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "beta_cond": 0.027073097744204494,
+              "n_switch": 223,
+              "n_sets": 20
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "beta_cond": 0.05046047033778347,
+              "n_switch": 173,
+              "n_sets": 31
+            },
+            "UCdsTvXwaUcvV88UhqTHynTg": {
+              "beta_cond": -0.006668043919014802,
+              "n_switch": 132,
+              "n_sets": 53
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "beta_cond": 0.0650931428438992,
+              "n_switch": 10,
+              "n_sets": 8
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "beta_cond": -0.03355275172665137,
+              "n_switch": 209,
+              "n_sets": 34
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "beta_cond": 0.025510567050701007,
+              "n_switch": 272,
+              "n_sets": 102
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "beta_cond": -0.006739307051164287,
+              "n_switch": 121,
+              "n_sets": 42
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "beta_cond": 0.023824076353350442,
+              "n_switch": 368,
+              "n_sets": 131
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "beta_cond": 0.07055779413218642,
+              "n_switch": 92,
+              "n_sets": 58
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "beta_cond": 0.028461268198458633,
+              "n_switch": 245,
+              "n_sets": 84
+            }
+          },
+          "signflip": {
+            "p_one": 0.079345703125,
+            "p_two": 0.15869140625,
+            "exact": true,
+            "n": 17
+          }
+        },
+        "mixed_model": {
+          "family": "binomial",
+          "n_input": {
+            "0": 31844,
+            "1": 3962
+          },
+          "n_complete": {
+            "0": 30556,
+            "1": 3820
+          },
+          "n_switch": 3820,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "failed": false,
+          "accepted": true,
+          "structure": "full",
+          "structure_formula": "(1 + cond | speaker) + (1 | video/clip) + (1 | set)",
+          "cond": {
+            "estimate": 0.226821557265993,
+            "se": 0.162102838678641,
+            "z": 1.39924481961512
+          },
+          "cond_without_covariates": {
+            "estimate": 0.238501123287871,
+            "se": 0.15881564989962,
+            "z": 1.50174824356803
+          },
+          "without_covariates_fit": {
+            "optimizer": "bobyqa",
+            "error": false,
+            "unconverged": false,
+            "singular": false,
+            "warnings": []
+          },
+          "covariates": {
+            "d_f0": {
+              "estimate": 0.159630698373701,
+              "se": 0.0273385340248117,
+              "z": 5.83903651266832
+            },
+            "d_energy": {
+              "estimate": 0.239729784882415,
+              "se": 0.0251117488534249,
+              "z": 9.54651889367389
+            },
+            "d_rate": {
+              "estimate": 0.274700752932858,
+              "se": 0.024429156550482,
+              "z": 11.2447907223157
+            },
+            "d_tilt": {
+              "estimate": 0.207754444876275,
+              "se": 0.0249765365218823,
+              "z": 8.31798454898896
+            },
+            "d_snr": {
+              "estimate": 0.296333410361288,
+              "se": 0.0268034894274653,
+              "z": 11.0557773144879
+            }
+          },
+          "n_levels": {
+            "speaker": 17,
+            "video": 137,
+            "clip": 8954,
+            "set": 964
+          },
+          "p_one": 0.08086979026164198,
+          "p_two": 0.16173958052328397,
+          "direction": 1
+        },
+        "criteria": {
+          "a": true,
+          "b": false,
+          "c": true,
+          "d": true
+        },
+        "assessable": {
+          "b": true,
+          "c": true
+        },
+        "grade": "switch-associated",
+        "primary_category": "supported",
+        "label": "switch-associated (supported)"
+      }
+    },
+    "e2": {
+      "h1": {
+        "phrase_contrast": {
+          "statistic": "per-channel mean delta-cos in sets with a pause > 150 ms (predicted > 0)",
+          "n_sets": 381,
+          "n_channels": 14,
+          "excluded_channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": 1
+          },
+          "mean_of_channels": 0.03883029448605357,
+          "channels": {
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "n": 30,
+              "mean": 0.03393375724554062
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "n": 98,
+              "mean": 0.047493799380501925
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "n": 24,
+              "mean": 0.05777517023185889
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "n": 6,
+              "mean": 0.13900403678417206
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "n": 26,
+              "mean": 0.05625477318580334
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "n": 34,
+              "mean": 0.013616861227680655
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "n": 18,
+              "mean": 0.049860997332466975
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "n": 33,
+              "mean": 0.023389166051691227
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "n": 24,
+              "mean": 0.010130394871036211
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "n": 16,
+              "mean": 0.03442431800067425
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "n": 27,
+              "mean": -0.014084896555653325
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "n": 25,
+              "mean": 0.05828352212905884
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "n": 14,
+              "mean": 0.038055511457579475
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "n": 6,
+              "mean": -0.004513288537661235
+            }
+          },
+          "signflip": {
+            "p_one": 0.00048828125,
+            "p_two": 0.0009765625,
+            "exact": true,
+            "n": 14
+          }
+        },
+        "adjusted": {
+          "statistic": "per-channel covariate-adjusted condition coefficient (within-set least squares); sign-flip on direction x coefficient",
+          "direction": -1,
+          "n_channels": 17,
+          "excluded_channels": {},
+          "assessable": true,
+          "mean_coefficient": -0.022879284109521163,
+          "channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": {
+              "beta_cond": -0.027671025674108306,
+              "n_switch": 240,
+              "n_sets": 240
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "beta_cond": -0.021823274926173124,
+              "n_switch": 319,
+              "n_sets": 319
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "beta_cond": -0.031772491178797053,
+              "n_switch": 35,
+              "n_sets": 35
+            },
+            "UCAh6gaPtNIBBW_qNss4flcA": {
+              "beta_cond": -0.015720897688694238,
+              "n_switch": 534,
+              "n_sets": 534
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "beta_cond": -0.014365564482657628,
+              "n_switch": 143,
+              "n_sets": 143
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "beta_cond": -0.02184324705962681,
+              "n_switch": 396,
+              "n_sets": 396
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "beta_cond": -0.03319086807980448,
+              "n_switch": 231,
+              "n_sets": 231
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "beta_cond": -0.04260719284501292,
+              "n_switch": 212,
+              "n_sets": 212
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "beta_cond": -0.026611226723492795,
+              "n_switch": 171,
+              "n_sets": 171
+            },
+            "UCdsTvXwaUcvV88UhqTHynTg": {
+              "beta_cond": -0.01655097388239836,
+              "n_switch": 123,
+              "n_sets": 123
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "beta_cond": 0.027566960929156243,
+              "n_switch": 12,
+              "n_sets": 12
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "beta_cond": -0.009160259156446908,
+              "n_switch": 196,
+              "n_sets": 196
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "beta_cond": -0.039582249116905256,
+              "n_switch": 214,
+              "n_sets": 214
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "beta_cond": -0.010914399648292512,
+              "n_switch": 119,
+              "n_sets": 119
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "beta_cond": -0.008217274133562092,
+              "n_switch": 300,
+              "n_sets": 300
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "beta_cond": -0.051049332374488,
+              "n_switch": 77,
+              "n_sets": 77
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "beta_cond": -0.04543451382055551,
+              "n_switch": 236,
+              "n_sets": 236
+            }
+          },
+          "signflip": {
+            "p_one": 0.00017547607421875,
+            "p_two": 0.0003509521484375,
+            "exact": true,
+            "n": 17
+          }
+        },
+        "mixed_model": {
+          "family": "gaussian",
+          "n_input": {
+            "0": 10594,
+            "1": 3695
+          },
+          "n_complete": {
+            "0": 10299,
+            "1": 3565
+          },
+          "n_switch": 3565,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "failed": false,
+          "accepted": true,
+          "structure": "full",
+          "structure_formula": "(1 + cond | speaker) + (1 | video/clip) + (1 | set)",
+          "cond": {
+            "estimate": -0.0240522835421195,
+            "se": 0.00328853840970925,
+            "z": -7.31397373103697
+          },
+          "cond_without_covariates": {
+            "estimate": -0.0269897961481873,
+            "se": 0.00376948694050426,
+            "z": -7.16007153604218
+          },
+          "without_covariates_fit": {
+            "optimizer": "bobyqa",
+            "error": false,
+            "unconverged": false,
+            "singular": false,
+            "warnings": []
+          },
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.0138716837343622,
+              "se": 0.00105825654620918,
+              "z": -13.1080537928657
+            },
+            "d_energy": {
+              "estimate": -0.0128281851574166,
+              "se": 0.00103220271271303,
+              "z": -12.4279707846332
+            },
+            "d_rate": {
+              "estimate": -0.0115074431263221,
+              "se": 0.000961023992371158,
+              "z": -11.9741475943067
+            },
+            "d_tilt": {
+              "estimate": -0.0145291067122555,
+              "se": 0.00102666006400464,
+              "z": -14.151818329801
+            },
+            "d_snr": {
+              "estimate": -0.011387206880096,
+              "se": 0.00113773458172712,
+              "z": -10.008667278804
+            }
+          },
+          "n_levels": {
+            "speaker": 17,
+            "video": 137,
+            "clip": 6774,
+            "set": 3694
+          },
+          "p_one": 1.2967404927621828e-13,
+          "p_two": 2.5934809855243657e-13,
+          "direction": -1
+        },
+        "criteria": {
+          "a": true,
+          "b": true,
+          "c": true,
+          "d": true
+        },
+        "assessable": {
+          "b": true,
+          "c": true
+        },
+        "grade": "language-attributable",
+        "primary_category": "nonzero but trivial",
+        "label": "language-attributable (nonzero but trivial)"
+      },
+      "h2_p0": {
+        "phrase_contrast": {
+          "statistic": "per-channel cell-standardised AUC within the pause > 150 ms cells (predicted > 0.5)",
+          "n_channels": 13,
+          "excluded_channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": 1,
+            "UCA4izoAnn46iBh3TupN3ADQ": 2,
+            "UCAh6gaPtNIBBW_qNss4flcA": 1
+          },
+          "auc_mean_of_channels": 0.5582516004890883,
+          "channels": {
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "auc": 0.6036364040783121,
+              "n_ssdl": 27
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "auc": 0.6649122807017545,
+              "n_ssdl": 19
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "auc": 0.5260653160912169,
+              "n_ssdl": 94
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "auc": 0.5224718131416697,
+              "n_ssdl": 44
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "auc": 0.6755555555555556,
+              "n_ssdl": 25
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "auc": 0.6181937607578917,
+              "n_ssdl": 28
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "auc": 0.39612300704486464,
+              "n_ssdl": 5
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "auc": 0.4489562810770241,
+              "n_ssdl": 34
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "auc": 0.5864035087719298,
+              "n_ssdl": 38
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "auc": 0.6071128218187042,
+              "n_ssdl": 39
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "auc": 0.5180335097001764,
+              "n_ssdl": 54
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "auc": 0.5559523809523809,
+              "n_ssdl": 16
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "auc": 0.5338541666666667,
+              "n_ssdl": 32
+            }
+          },
+          "signflip": {
+            "p_one": 0.011962890625,
+            "p_two": 0.02392578125,
+            "exact": true,
+            "n": 13
+          }
+        },
+        "far": {
+          "ssdl": 0.16542309547788617,
+          "phrase_ctrl": 0.2463839174272285,
+          "other_ctrl": 0.12143186016707794,
+          "note": "mean over channels of the per-channel FAR at the frozen tau"
+        },
+        "adjusted": {
+          "statistic": "per-channel covariate-adjusted condition coefficient (within-set least squares); sign-flip on direction x coefficient",
+          "direction": 1,
+          "n_channels": 17,
+          "excluded_channels": {},
+          "assessable": true,
+          "mean_coefficient": 0.022450237972687897,
+          "channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": {
+              "beta_cond": -0.0017484915236503727,
+              "n_switch": 243,
+              "n_sets": 36
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "beta_cond": 0.022744077049632383,
+              "n_switch": 320,
+              "n_sets": 58
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "beta_cond": 0.08994211743854223,
+              "n_switch": 34,
+              "n_sets": 15
+            },
+            "UCAh6gaPtNIBBW_qNss4flcA": {
+              "beta_cond": -0.013358400696168995,
+              "n_switch": 584,
+              "n_sets": 113
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "beta_cond": -0.05733490491637668,
+              "n_switch": 155,
+              "n_sets": 73
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "beta_cond": -0.02335479589503008,
+              "n_switch": 383,
+              "n_sets": 44
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "beta_cond": 0.018493583983281284,
+              "n_switch": 247,
+              "n_sets": 47
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "beta_cond": 0.03912241204299214,
+              "n_switch": 223,
+              "n_sets": 20
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "beta_cond": 0.09223486429454952,
+              "n_switch": 173,
+              "n_sets": 31
+            },
+            "UCdsTvXwaUcvV88UhqTHynTg": {
+              "beta_cond": -0.012419216803653918,
+              "n_switch": 132,
+              "n_sets": 53
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "beta_cond": 0.01673209765173261,
+              "n_switch": 10,
+              "n_sets": 8
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "beta_cond": -0.0524290591361921,
+              "n_switch": 209,
+              "n_sets": 34
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "beta_cond": 0.06112397658129437,
+              "n_switch": 272,
+              "n_sets": 102
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "beta_cond": 0.06642823708784895,
+              "n_switch": 121,
+              "n_sets": 42
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "beta_cond": 0.01568943138915051,
+              "n_switch": 368,
+              "n_sets": 131
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "beta_cond": 0.07988458660148902,
+              "n_switch": 92,
+              "n_sets": 58
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "beta_cond": 0.039903530386253355,
+              "n_switch": 245,
+              "n_sets": 84
+            }
+          },
+          "signflip": {
+            "p_one": 0.0313720703125,
+            "p_two": 0.062744140625,
+            "exact": true,
+            "n": 17
+          }
+        },
+        "mixed_model": {
+          "family": "binomial",
+          "n_input": {
+            "0": 31844,
+            "1": 3962
+          },
+          "n_complete": {
+            "0": 30556,
+            "1": 3820
+          },
+          "n_switch": 3820,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "failed": false,
+          "accepted": true,
+          "structure": "full",
+          "structure_formula": "(1 + cond | speaker) + (1 | video/clip) + (1 | set)",
+          "cond": {
+            "estimate": 0.30844284837328,
+            "se": 0.158555943119623,
+            "z": 1.94532505249945
+          },
+          "cond_without_covariates": {
+            "estimate": 0.309626025350374,
+            "se": 0.158422383233993,
+            "z": 1.95443357832239
+          },
+          "without_covariates_fit": {
+            "optimizer": "bobyqa",
+            "error": false,
+            "unconverged": false,
+            "singular": false,
+            "warnings": []
+          },
+          "covariates": {
+            "d_f0": {
+              "estimate": 0.174600628588079,
+              "se": 0.0252196950161243,
+              "z": 6.92318556891537
+            },
+            "d_energy": {
+              "estimate": 0.209921917131243,
+              "se": 0.023341631324011,
+              "z": 8.9934552652839
+            },
+            "d_rate": {
+              "estimate": 0.291545138258636,
+              "se": 0.0222658238714571,
+              "z": 13.0938401355259
+            },
+            "d_tilt": {
+              "estimate": 0.232224033630193,
+              "se": 0.0225874456532259,
+              "z": 10.2811108965315
+            },
+            "d_snr": {
+              "estimate": 0.423456860938863,
+              "se": 0.0242350233340321,
+              "z": 17.4729297802748
+            }
+          },
+          "n_levels": {
+            "speaker": 17,
+            "video": 137,
+            "clip": 8954,
+            "set": 964
+          },
+          "p_one": 0.025867934378726032,
+          "p_two": 0.051735868757452064,
+          "direction": 1
+        },
+        "criteria": {
+          "a": true,
+          "b": true,
+          "c": true,
+          "d": true
+        },
+        "assessable": {
+          "b": true,
+          "c": true
+        },
+        "grade": "language-attributable",
+        "primary_category": "supported",
+        "label": "language-attributable (supported)"
+      }
+    },
+    "e3": {
+      "h1": {
+        "phrase_contrast": {
+          "statistic": "per-channel mean delta-cos in sets with a pause > 150 ms (predicted > 0)",
+          "n_sets": 381,
+          "n_channels": 14,
+          "excluded_channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": 1
+          },
+          "mean_of_channels": 0.04142486130940899,
+          "channels": {
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "n": 30,
+              "mean": 0.0021942774454752605
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "n": 98,
+              "mean": 0.06820741425059279
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "n": 24,
+              "mean": 0.039193945626417794
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "n": 6,
+              "mean": 0.1307006354133288
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "n": 26,
+              "mean": 0.07457023572463256
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "n": 34,
+              "mean": 0.030716625206610736
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "n": 18,
+              "mean": 0.038340330951743655
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "n": 33,
+              "mean": 0.05056890213128292
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "n": 24,
+              "mean": 0.01234759638706843
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "n": 16,
+              "mean": 0.041122100315988064
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "n": 27,
+              "mean": -0.026383577397576085
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "n": 25,
+              "mean": 0.07842122733592988
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "n": 14,
+              "mean": -0.0003720042960984366
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "n": 6,
+              "mean": 0.0403203492363294
+            }
+          },
+          "signflip": {
+            "p_one": 0.0006103515625,
+            "p_two": 0.001220703125,
+            "exact": true,
+            "n": 14
+          }
+        },
+        "adjusted": {
+          "statistic": "per-channel covariate-adjusted condition coefficient (within-set least squares); sign-flip on direction x coefficient",
+          "direction": -1,
+          "n_channels": 17,
+          "excluded_channels": {},
+          "assessable": true,
+          "mean_coefficient": -0.03010422075984287,
+          "channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": {
+              "beta_cond": -0.037148849441297475,
+              "n_switch": 240,
+              "n_sets": 240
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "beta_cond": -0.03450609590702411,
+              "n_switch": 319,
+              "n_sets": 319
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "beta_cond": -0.04152113414818201,
+              "n_switch": 35,
+              "n_sets": 35
+            },
+            "UCAh6gaPtNIBBW_qNss4flcA": {
+              "beta_cond": -0.020541442386966566,
+              "n_switch": 534,
+              "n_sets": 534
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "beta_cond": -0.02401341139860262,
+              "n_switch": 143,
+              "n_sets": 143
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "beta_cond": -0.04144645685974968,
+              "n_switch": 396,
+              "n_sets": 396
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "beta_cond": -0.026288083872124886,
+              "n_switch": 231,
+              "n_sets": 231
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "beta_cond": -0.03764049700101455,
+              "n_switch": 212,
+              "n_sets": 212
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "beta_cond": -0.03389140265403457,
+              "n_switch": 171,
+              "n_sets": 171
+            },
+            "UCdsTvXwaUcvV88UhqTHynTg": {
+              "beta_cond": -0.021137818691436844,
+              "n_switch": 123,
+              "n_sets": 123
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "beta_cond": -0.0025549454301452435,
+              "n_switch": 12,
+              "n_sets": 12
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "beta_cond": -0.01391297174286638,
+              "n_switch": 196,
+              "n_sets": 196
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "beta_cond": -0.03379904291792468,
+              "n_switch": 214,
+              "n_sets": 214
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "beta_cond": -0.03638003832904928,
+              "n_switch": 119,
+              "n_sets": 119
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "beta_cond": -0.02251934732771921,
+              "n_switch": 300,
+              "n_sets": 300
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "beta_cond": -0.036786136698823475,
+              "n_switch": 77,
+              "n_sets": 77
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "beta_cond": -0.04768407811036722,
+              "n_switch": 236,
+              "n_sets": 236
+            }
+          },
+          "signflip": {
+            "p_one": 7.62939453125e-06,
+            "p_two": 1.52587890625e-05,
+            "exact": true,
+            "n": 17
+          }
+        },
+        "mixed_model": {
+          "family": "gaussian",
+          "n_input": {
+            "0": 10594,
+            "1": 3695
+          },
+          "n_complete": {
+            "0": 10299,
+            "1": 3565
+          },
+          "n_switch": 3565,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "failed": false,
+          "accepted": true,
+          "structure": "full",
+          "structure_formula": "(1 + cond | speaker) + (1 | video/clip) + (1 | set)",
+          "cond": {
+            "estimate": -0.031053111167238,
+            "se": 0.00253496144982889,
+            "z": -12.2499342817754
+          },
+          "cond_without_covariates": {
+            "estimate": -0.0337052158641136,
+            "se": 0.00289633530399056,
+            "z": -11.6371940146829
+          },
+          "without_covariates_fit": {
+            "optimizer": "bobyqa",
+            "error": false,
+            "unconverged": false,
+            "singular": false,
+            "warnings": []
+          },
+          "covariates": {
+            "d_f0": {
+              "estimate": -0.011066565264716,
+              "se": 0.00100238803942475,
+              "z": -11.0402008298771
+            },
+            "d_energy": {
+              "estimate": -0.00866898174772635,
+              "se": 0.000977431925163522,
+              "z": -8.8691411898338
+            },
+            "d_rate": {
+              "estimate": -0.00994697312054275,
+              "se": 0.000910206955563707,
+              "z": -10.9282543489051
+            },
+            "d_tilt": {
+              "estimate": -0.0136878329898943,
+              "se": 0.000972350046877319,
+              "z": -14.0770631254171
+            },
+            "d_snr": {
+              "estimate": -0.00588433907700449,
+              "se": 0.0010768300133718,
+              "z": -5.46450136412828
+            }
+          },
+          "n_levels": {
+            "speaker": 17,
+            "video": 137,
+            "clip": 6774,
+            "set": 3694
+          },
+          "p_one": 0.0,
+          "p_two": 0.0,
+          "direction": -1
+        },
+        "criteria": {
+          "a": true,
+          "b": true,
+          "c": true,
+          "d": true
+        },
+        "assessable": {
+          "b": true,
+          "c": true
+        },
+        "grade": "language-attributable",
+        "primary_category": "supported",
+        "label": "language-attributable (supported)"
+      },
+      "h2_p0": {
+        "phrase_contrast": {
+          "statistic": "per-channel cell-standardised AUC within the pause > 150 ms cells (predicted > 0.5)",
+          "n_channels": 13,
+          "excluded_channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": 1,
+            "UCA4izoAnn46iBh3TupN3ADQ": 2,
+            "UCAh6gaPtNIBBW_qNss4flcA": 1
+          },
+          "auc_mean_of_channels": 0.5683634860700703,
+          "channels": {
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "auc": 0.6808557079174581,
+              "n_ssdl": 27
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "auc": 0.6403508771929824,
+              "n_ssdl": 19
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "auc": 0.6263386566486253,
+              "n_ssdl": 94
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "auc": 0.4669656665769106,
+              "n_ssdl": 44
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "auc": 0.5823809523809523,
+              "n_ssdl": 25
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "auc": 0.5570907070962356,
+              "n_ssdl": 28
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "auc": 0.4154616240266963,
+              "n_ssdl": 5
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "auc": 0.43734246489664447,
+              "n_ssdl": 34
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "auc": 0.7135964912280702,
+              "n_ssdl": 38
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "auc": 0.5932567432567433,
+              "n_ssdl": 39
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "auc": 0.5634038800705468,
+              "n_ssdl": 54
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "auc": 0.5168154761904762,
+              "n_ssdl": 16
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "auc": 0.5948660714285714,
+              "n_ssdl": 32
+            }
+          },
+          "signflip": {
+            "p_one": 0.0103759765625,
+            "p_two": 0.020751953125,
+            "exact": true,
+            "n": 13
+          }
+        },
+        "far": {
+          "ssdl": 0.12539291768048014,
+          "phrase_ctrl": 0.2224518538340539,
+          "other_ctrl": 0.08342424971355616,
+          "note": "mean over channels of the per-channel FAR at the frozen tau"
+        },
+        "adjusted": {
+          "statistic": "per-channel covariate-adjusted condition coefficient (within-set least squares); sign-flip on direction x coefficient",
+          "direction": 1,
+          "n_channels": 17,
+          "excluded_channels": {},
+          "assessable": true,
+          "mean_coefficient": 0.024250343206704578,
+          "channels": {
+            "UC1a2Vvzr7NJMtkIoV9c6Opw": {
+              "beta_cond": 0.0037250477290040954,
+              "n_switch": 243,
+              "n_sets": 36
+            },
+            "UC6B-8q01CqGJmZ5NswbYGDw": {
+              "beta_cond": 0.0028658777693093785,
+              "n_switch": 320,
+              "n_sets": 58
+            },
+            "UCA4izoAnn46iBh3TupN3ADQ": {
+              "beta_cond": 0.07117921304361782,
+              "n_switch": 34,
+              "n_sets": 15
+            },
+            "UCAh6gaPtNIBBW_qNss4flcA": {
+              "beta_cond": -0.010603533088542682,
+              "n_switch": 584,
+              "n_sets": 113
+            },
+            "UCIKslGb0pGieZTCn8341Xsw": {
+              "beta_cond": -0.00396407048401331,
+              "n_switch": 155,
+              "n_sets": 73
+            },
+            "UCJinKAyRTpHJOPE0YgCMhog": {
+              "beta_cond": -0.014041245471724029,
+              "n_switch": 383,
+              "n_sets": 44
+            },
+            "UCOC6C8_U9PsAs3tQodDDmGw": {
+              "beta_cond": 0.033397435081743976,
+              "n_switch": 247,
+              "n_sets": 47
+            },
+            "UCUj0DJEMJRzBgrFOnDqOZig": {
+              "beta_cond": -0.011037785944720832,
+              "n_switch": 223,
+              "n_sets": 20
+            },
+            "UCZfM_5lOt0Rfs9lY0kZ5glw": {
+              "beta_cond": 0.032979527822015624,
+              "n_switch": 173,
+              "n_sets": 31
+            },
+            "UCdsTvXwaUcvV88UhqTHynTg": {
+              "beta_cond": -0.0056061075984404,
+              "n_switch": 132,
+              "n_sets": 53
+            },
+            "UChx9-bynjfm6Js3k54Sf1Mg": {
+              "beta_cond": 0.13712099354067991,
+              "n_switch": 10,
+              "n_sets": 8
+            },
+            "UCiVc0CAFFWBOd2Zf3dQwThw": {
+              "beta_cond": -0.0019007506552035525,
+              "n_switch": 209,
+              "n_sets": 34
+            },
+            "UCjD3bnXfPtoGVfZ4PmY9sBQ": {
+              "beta_cond": 0.0228632798728706,
+              "n_switch": 272,
+              "n_sets": 102
+            },
+            "UCs_i-XIuSGGLQu-OHrWeTCA": {
+              "beta_cond": 0.028854507153795617,
+              "n_switch": 121,
+              "n_sets": 42
+            },
+            "UCvc1Xg1qWSfQptoCEq13pEA": {
+              "beta_cond": -0.0030167216059319,
+              "n_switch": 368,
+              "n_sets": 131
+            },
+            "UCy-Q66KQYSQAUVKvdNxgKbw": {
+              "beta_cond": 0.09365251009011807,
+              "n_switch": 92,
+              "n_sets": 58
+            },
+            "UCyPr9KIODQt5J1oOGbz44Hg": {
+              "beta_cond": 0.03578765725939941,
+              "n_switch": 245,
+              "n_sets": 84
+            }
+          },
+          "signflip": {
+            "p_one": 0.00848388671875,
+            "p_two": 0.0169677734375,
+            "exact": true,
+            "n": 17
+          }
+        },
+        "mixed_model": {
+          "family": "binomial",
+          "n_input": {
+            "0": 31844,
+            "1": 3962
+          },
+          "n_complete": {
+            "0": 30556,
+            "1": 3820
+          },
+          "n_switch": 3820,
+          "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+          "tried": {
+            "full": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": true,
+              "warnings": []
+            },
+            "no_slope": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": true,
+              "warnings": []
+            },
+            "no_video": {
+              "optimizer": "bobyqa",
+              "error": false,
+              "unconverged": false,
+              "singular": false,
+              "warnings": []
+            }
+          },
+          "R": "R version 4.5.3 (2026-03-11)",
+          "lme4": "2.0.6",
+          "failed": false,
+          "accepted": true,
+          "structure": "no_video",
+          "structure_formula": "(1 | speaker) + (1 | clip) + (1 | set)",
+          "cond": {
+            "estimate": 0.11548177294918,
+            "se": 0.0999949459439633,
+            "z": 1.15487609757692
+          },
+          "cond_without_covariates": {
+            "estimate": 0.147439035969613,
+            "se": 0.0954806777854232,
+            "z": 1.54417667940059
+          },
+          "without_covariates_fit": {
+            "optimizer": "bobyqa",
+            "error": false,
+            "unconverged": false,
+            "singular": false,
+            "warnings": []
+          },
+          "covariates": {
+            "d_f0": {
+              "estimate": 0.179557378936262,
+              "se": 0.0304603708049131,
+              "z": 5.89478637953087
+            },
+            "d_energy": {
+              "estimate": 0.232196793689479,
+              "se": 0.0276232362917481,
+              "z": 8.40585046723303
+            },
+            "d_rate": {
+              "estimate": 0.293963081007008,
+              "se": 0.027043308452314,
+              "z": 10.8700857191848
+            },
+            "d_tilt": {
+              "estimate": 0.268624006921121,
+              "se": 0.0267349162269398,
+              "z": 10.04768463237
+            },
+            "d_snr": {
+              "estimate": 0.294081946394058,
+              "se": 0.0304647530065397,
+              "z": 9.65318662951014
+            }
+          },
+          "n_levels": {
+            "speaker": 17,
+            "video": 137,
+            "clip": 8954,
+            "set": 964
+          },
+          "p_one": 0.12407058443830815,
+          "p_two": 0.2481411688766162,
+          "direction": 1
+        },
+        "criteria": {
+          "a": true,
+          "b": true,
+          "c": true,
+          "d": true
+        },
+        "assessable": {
+          "b": true,
+          "c": true
+        },
+        "grade": "language-attributable",
+        "primary_category": "supported",
+        "label": "language-attributable (supported)"
+      }
+    }
+  }
+}

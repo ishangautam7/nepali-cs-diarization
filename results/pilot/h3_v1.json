@@ -1,0 +1,377 @@
+{
+  "tag": "v1",
+  "split": "validation",
+  "n_windows": 9156,
+  "n_by_lang": {
+    "ne": 7471,
+    "en": 1685
+  },
+  "models": {
+    "e1": {
+      "shift_per_channel": {
+        "UCLR1utoz9wpo4byPAOEIMRQ": -0.019953962544204965,
+        "UCeq9rTo9W93NfJNP9n1eRGw": -0.03134192781794945,
+        "UCBbxIYJ35vGP8qWMJn3RmTA": -0.026919353227345906
+      },
+      "shift_mean": -0.026071747863166777,
+      "shift_in_target_sd": -0.24235233877467585,
+      "target_score_sd": 0.1075778678059578,
+      "between_channel_sd": 0.005741103065530309,
+      "cross_session_shift": {
+        "UCLR1utoz9wpo4byPAOEIMRQ": -0.013939052685389197,
+        "UCBbxIYJ35vGP8qWMJn3RmTA": -0.022763491517521467,
+        "UCeq9rTo9W93NfJNP9n1eRGw": -0.013398880619725606
+      },
+      "bins": {
+        "IMRQ:64": {
+          "shift": -0.019103265055546603,
+          "n_cross": 40880,
+          "n_mono_ne": 122677,
+          "n_mono_en": 3479
+        },
+        "IMRQ:16": {
+          "shift": -0.029432557632715906,
+          "n_cross": 2108,
+          "n_mono_ne": 6200,
+          "n_mono_en": 210
+        },
+        "IMRQ:8": {
+          "shift": -0.04954327360404043,
+          "n_cross": 389,
+          "n_mono_ne": 1155,
+          "n_mono_en": 34
+        },
+        "IMRQ:2": {
+          "shift": -0.04909828722030368,
+          "n_cross": 82,
+          "n_mono_ne": 271,
+          "n_mono_en": 10
+        },
+        "IMRQ:4": {
+          "shift": -0.025316586879874148,
+          "n_cross": 167,
+          "n_mono_ne": 575,
+          "n_mono_en": 18
+        },
+        "eRGw:16": {
+          "shift": -0.04798207761485751,
+          "n_cross": 1101,
+          "n_mono_ne": 1878,
+          "n_mono_en": 199
+        },
+        "eRGw:64": {
+          "shift": -0.030544209837893965,
+          "n_cross": 27061,
+          "n_mono_ne": 44031,
+          "n_mono_en": 4563
+        },
+        "eRGw:8": {
+          "shift": -0.03193847080095463,
+          "n_cross": 175,
+          "n_mono_ne": 309,
+          "n_mono_en": 53
+        },
+        "eRGw:4": {
+          "shift": -0.04123995019498128,
+          "n_cross": 107,
+          "n_mono_ne": 157,
+          "n_mono_en": 24
+        },
+        "eRGw:2": {
+          "shift": -0.0791318804433428,
+          "n_cross": 44,
+          "n_mono_ne": 98,
+          "n_mono_en": 14
+        },
+        "RmTA:64": {
+          "shift": -0.02618246739251201,
+          "n_cross": 60110,
+          "n_mono_ne": 122297,
+          "n_mono_en": 9172
+        },
+        "RmTA:16": {
+          "shift": -0.03150970418347521,
+          "n_cross": 6559,
+          "n_mono_ne": 12084,
+          "n_mono_en": 1255
+        },
+        "RmTA:8": {
+          "shift": -0.03360657314741655,
+          "n_cross": 1098,
+          "n_mono_ne": 2263,
+          "n_mono_en": 224
+        },
+        "RmTA:4": {
+          "shift": -0.03503628511673512,
+          "n_cross": 570,
+          "n_mono_ne": 1154,
+          "n_mono_en": 115
+        },
+        "RmTA:2": {
+          "shift": -0.03486514878800512,
+          "n_cross": 279,
+          "n_mono_ne": 617,
+          "n_mono_en": 89
+        }
+      },
+      "eer": {
+        "cross": 0.18930628519646028,
+        "mono": 0.16615041934218155
+      },
+      "min_dcf": {
+        "cross": 0.8608230130731138,
+        "mono": 0.7857718214862272
+      },
+      "n_trials": {
+        "cross_tgt": 140730,
+        "mono_tgt": 335225,
+        "cross_non": 38604,
+        "mono_non": 87054
+      }
+    },
+    "e2": {
+      "shift_per_channel": {
+        "UCLR1utoz9wpo4byPAOEIMRQ": -0.020721781507634807,
+        "UCeq9rTo9W93NfJNP9n1eRGw": -0.023191927202808032,
+        "UCBbxIYJ35vGP8qWMJn3RmTA": -0.02504805618784286
+      },
+      "shift_mean": -0.022987254966095234,
+      "shift_in_target_sd": -0.2068486617346461,
+      "target_score_sd": 0.11113078892230988,
+      "between_channel_sd": 0.002170387337668805,
+      "cross_session_shift": {
+        "UCLR1utoz9wpo4byPAOEIMRQ": -0.009562130904361532,
+        "UCBbxIYJ35vGP8qWMJn3RmTA": -0.02004397302082339,
+        "UCeq9rTo9W93NfJNP9n1eRGw": -0.0072091801798166155
+      },
+      "bins": {
+        "IMRQ:64": {
+          "shift": -0.019730629748061612,
+          "n_cross": 40834,
+          "n_mono_ne": 122635,
+          "n_mono_en": 3434
+        },
+        "IMRQ:16": {
+          "shift": -0.03311849235627495,
+          "n_cross": 2179,
+          "n_mono_ne": 6175,
+          "n_mono_en": 204
+        },
+        "IMRQ:2": {
+          "shift": -0.05930613359067627,
+          "n_cross": 84,
+          "n_mono_ne": 311,
+          "n_mono_en": 11
+        },
+        "IMRQ:8": {
+          "shift": -0.04535394546326327,
+          "n_cross": 396,
+          "n_mono_ne": 1134,
+          "n_mono_en": 35
+        },
+        "IMRQ:4": {
+          "shift": -0.02362700344401425,
+          "n_cross": 160,
+          "n_mono_ne": 584,
+          "n_mono_en": 16
+        },
+        "eRGw:64": {
+          "shift": -0.022682684029114553,
+          "n_cross": 27334,
+          "n_mono_ne": 43705,
+          "n_mono_en": 4559
+        },
+        "eRGw:16": {
+          "shift": -0.031753654324042535,
+          "n_cross": 1122,
+          "n_mono_ne": 1793,
+          "n_mono_en": 178
+        },
+        "eRGw:8": {
+          "shift": -0.03342180867188299,
+          "n_cross": 205,
+          "n_mono_ne": 366,
+          "n_mono_en": 47
+        },
+        "eRGw:4": {
+          "shift": -0.045523482075720656,
+          "n_cross": 89,
+          "n_mono_ne": 176,
+          "n_mono_en": 31
+        },
+        "eRGw:2": {
+          "shift": -0.02700461045052238,
+          "n_cross": 60,
+          "n_mono_ne": 103,
+          "n_mono_en": 15
+        },
+        "RmTA:64": {
+          "shift": -0.024556499589801217,
+          "n_cross": 60079,
+          "n_mono_ne": 121864,
+          "n_mono_en": 9158
+        },
+        "RmTA:4": {
+          "shift": -0.030529453215456748,
+          "n_cross": 630,
+          "n_mono_ne": 1254,
+          "n_mono_en": 137
+        },
+        "RmTA:16": {
+          "shift": -0.027252937216844186,
+          "n_cross": 6570,
+          "n_mono_ne": 12237,
+          "n_mono_en": 1275
+        },
+        "RmTA:8": {
+          "shift": -0.02943892162455819,
+          "n_cross": 1112,
+          "n_mono_ne": 2319,
+          "n_mono_en": 245
+        },
+        "RmTA:2": {
+          "shift": -0.04810729330186686,
+          "n_cross": 291,
+          "n_mono_ne": 649,
+          "n_mono_en": 87
+        }
+      },
+      "eer": {
+        "cross": 0.12359077594167023,
+        "mono": 0.09910200837272448
+      },
+      "min_dcf": {
+        "cross": 0.6334019026980723,
+        "mono": 0.5380550847055893
+      },
+      "n_trials": {
+        "cross_tgt": 141145,
+        "mono_tgt": 334737,
+        "cross_non": 38983,
+        "mono_non": 86335
+      }
+    },
+    "e3": {
+      "shift_per_channel": {
+        "UCLR1utoz9wpo4byPAOEIMRQ": -0.020940289867993282,
+        "UCeq9rTo9W93NfJNP9n1eRGw": -0.024331280152384144,
+        "UCBbxIYJ35vGP8qWMJn3RmTA": -0.024171655769641406
+      },
+      "shift_mean": -0.023147741930006276,
+      "shift_in_target_sd": -0.20361740509262702,
+      "target_score_sd": 0.11368253082036972,
+      "between_channel_sd": 0.0019133748823624628,
+      "cross_session_shift": {
+        "UCLR1utoz9wpo4byPAOEIMRQ": -0.023763370046838816,
+        "UCBbxIYJ35vGP8qWMJn3RmTA": -0.02197103722897456,
+        "UCeq9rTo9W93NfJNP9n1eRGw": -0.008393274357705371
+      },
+      "bins": {
+        "IMRQ:64": {
+          "shift": -0.0197942501778563,
+          "n_cross": 40936,
+          "n_mono_ne": 122568,
+          "n_mono_en": 3506
+        },
+        "IMRQ:8": {
+          "shift": -0.031467448869962666,
+          "n_cross": 375,
+          "n_mono_ne": 1083,
+          "n_mono_en": 32
+        },
+        "IMRQ:16": {
+          "shift": -0.03895990357590651,
+          "n_cross": 2121,
+          "n_mono_ne": 6219,
+          "n_mono_en": 174
+        },
+        "IMRQ:2": {
+          "shift": -0.036443278953148917,
+          "n_cross": 77,
+          "n_mono_ne": 282,
+          "n_mono_en": 17
+        },
+        "IMRQ:4": {
+          "shift": -0.043010260648540355,
+          "n_cross": 161,
+          "n_mono_ne": 599,
+          "n_mono_en": 33
+        },
+        "eRGw:64": {
+          "shift": -0.023683254094066075,
+          "n_cross": 27157,
+          "n_mono_ne": 43909,
+          "n_mono_en": 4484
+        },
+        "eRGw:16": {
+          "shift": -0.0342104660858929,
+          "n_cross": 1162,
+          "n_mono_ne": 1897,
+          "n_mono_en": 218
+        },
+        "eRGw:8": {
+          "shift": -0.04362885395192945,
+          "n_cross": 175,
+          "n_mono_ne": 334,
+          "n_mono_en": 47
+        },
+        "eRGw:2": {
+          "shift": -0.057657753790765265,
+          "n_cross": 48,
+          "n_mono_ne": 102,
+          "n_mono_en": 12
+        },
+        "eRGw:4": {
+          "shift": -0.03935869411874976,
+          "n_cross": 76,
+          "n_mono_ne": 158,
+          "n_mono_en": 18
+        },
+        "RmTA:64": {
+          "shift": -0.023217775724034162,
+          "n_cross": 59899,
+          "n_mono_ne": 122253,
+          "n_mono_en": 9273
+        },
+        "RmTA:4": {
+          "shift": -0.0279932964959492,
+          "n_cross": 620,
+          "n_mono_ne": 1093,
+          "n_mono_en": 137
+        },
+        "RmTA:16": {
+          "shift": -0.02964149183086731,
+          "n_cross": 6681,
+          "n_mono_ne": 12009,
+          "n_mono_en": 1248
+        },
+        "RmTA:8": {
+          "shift": -0.03617589599398069,
+          "n_cross": 1149,
+          "n_mono_ne": 2265,
+          "n_mono_en": 229
+        },
+        "RmTA:2": {
+          "shift": -0.04034025744373382,
+          "n_cross": 274,
+          "n_mono_ne": 635,
+          "n_mono_en": 92
+        }
+      },
+      "eer": {
+        "cross": 0.176566503262727,
+        "mono": 0.14390264884566673
+      },
+      "min_dcf": {
+        "cross": 0.7843987448508974,
+        "mono": 0.6745393216379312
+      },
+      "n_trials": {
+        "cross_tgt": 140911,
+        "mono_tgt": 334926,
+        "cross_non": 38784,
+        "mono_non": 86856
+      }
+    }
+  }
+}

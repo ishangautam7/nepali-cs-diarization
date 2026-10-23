@@ -1,0 +1,60 @@
+# Loan lexicon v1 for D1 (PLAN.md §2; decision 12). One word per line; text after "#" is ignored.
+# English words written in Devanagari. They are tagged `loan`: a loan word breaks a language run and may
+# not fall inside any analysis window.
+# Built 2026-10-18 from all D1 transcripts (text only). Candidates came from consonant-skeleton matching of
+# uroman romanisations against English words (scripts/lexicon_candidates.py) and Wiktionary's "Nepali terms
+# borrowed from English". Every entry was checked by hand in its corpus contexts. The corpus writes English in
+# Latin script, so true loans in Devanagari are rare (about 160 tokens).
+# Excluded homographs: जुन (Nepali "which", not June), बस ("sit"/"enough", not bus), चिज ("thing").
+ब्लॉक
+डिभाइड
+इनपुट
+प्याकेट
+प्लट
+मिटर
+मिटरमा
+मिटरको
+कम्पनी
+कम्पनीको
+कम्पनीहरू
+कम्पनीलाई
+कम्पनीले
+क्लास
+क्लासको
+स्क्वायर
+स्क्वेर
+साइबर
+जङ्क्सन
+क्लिक
+क्लक
+डेल्टा
+टेन्सन
+स्टप
+डिफल्ट
+पिरियड
+पिरियडहरू
+सर्कुलर
+कमन
+इम्पोर्टेन्ट
+बेसिक
+गिभन
+गिभनले
+पिक्सल
+पिक्सलले
+प्रक्टिकल
+लग्इन
+मोडेल
+सब्जेक्ट
+कम्युनिकेसन
+बटन
+एकाउन्ट
+सस्पेन्सन
+गार्डर
+प्लस
+सल्भ
+कार
+भिडियो
+भिडियोलाई
+भिडियोको
+कम्प्युटर
+कफी

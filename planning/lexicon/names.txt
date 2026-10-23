@@ -1,0 +1,159 @@
+# Name list v1 for D1 (PLAN.md §2; decision 12). One name per line, matched case-insensitively; text after
+# "#" is ignored. Proper names are `neutral`: they do not break a run and may not sit inside an analysis window.
+# Scope: names whose script would mis-assign their language. That means Latin-script names (people, places,
+# organisations, products, programming languages, days, months) and Devanagari spellings of foreign names.
+# Nepali names written in Devanagari stay `ne`, because they are spoken as Nepali.
+# Built 2026-10-18 from all D1 transcripts (text only): Latin types written capitalised in >= 80% of their
+# occurrences and rare in general English (scripts/lexicon_candidates.py), checked by hand for every type
+# with >= 2 occurrences. Acronyms (CPU, HTML, ...) are spoken as English letters and stay `en`.
+# Single Latin letters are handled by a rule in csdiar.data.tags, not here.
+# --- people
+newton
+fibonacci
+lami's
+poisson
+bezier
+bezier's
+jacobi
+johnson
+shannon
+rutherford
+bohr
+kelvin
+pascal
+raphson
+simpson's
+peterson
+wurtz
+markovnikov
+rubin
+harry
+potter
+elon
+musk
+daniel
+chris
+tendulkar
+sachin
+sonu
+manu
+raj
+ashish
+sushil
+santosh
+shubham
+aditya
+deepak
+ravi
+kalpana
+aryan
+rakesh
+urmila
+mira
+shyam
+roshni
+sagar
+pokhrel
+gautam
+samiksha
+pranisha
+lal
+bahadur
+mahadev
+# --- places and institutions
+nepal
+kathmandu
+mumbai
+asia
+virginia
+switzerland
+osaka
+rishikesh
+koshi
+kosi
+tribhuvan
+darbar
+# --- organisations, products, platforms
+google
+youtube
+facebook
+whatsapp
+linkedin
+instagram
+insta
+twitter
+telegram
+gmail
+amazon
+microsoft
+oracle
+github
+android
+ubuntu
+linux
+unix
+windows
+excel
+adobe
+bluetooth
+tata
+volvo
+dell
+amd
+figma
+dropbox
+salesforce
+pubg
+fortinet
+gemini
+chatgpt
+bing
+sybase
+mysql
+dynamodb
+docker
+kubernetes
+nginx
+tomcat
+hadoop
+mapreduce
+wordpress
+laravel
+django
+flask
+pandas
+tensorflow
+opengl
+netbeans
+eclipse
+unreal
+edunex
+# --- programming languages
+java
+javascript
+typescript
+python
+fortran
+# --- days and months (may and march are omitted: they are common English words)
+sunday
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+january
+february
+april
+june
+july
+august
+september
+october
+november
+december
+chaitra
+ashar
+# --- foreign names written in Devanagari
+अमेरिका
+एमाजोन

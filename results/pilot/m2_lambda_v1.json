@@ -1,0 +1,83 @@
+{
+  "tag": "v1",
+  "split": "validation",
+  "n_scored": 28405,
+  "families": {
+    "det": {
+      "all": {
+        "auc": 0.5803276400764931,
+        "n_ssdl": 17868
+      },
+      "stratum:lt0.5": {
+        "auc": 0.5675073083332564,
+        "n_ssdl": 13978
+      },
+      "stratum:0.5to1": {
+        "auc": 0.6124716656698671,
+        "n_ssdl": 3356
+      },
+      "stratum:ge1": {
+        "auc": 0.7138992640757393,
+        "n_ssdl": 534
+      },
+      "pause:none": {
+        "auc": 0.5793437277080438,
+        "n_ssdl": 15654
+      },
+      "pause:lt150": {
+        "auc": 0.5693128344700025,
+        "n_ssdl": 805
+      },
+      "pause:150to300": {
+        "auc": 0.6015817138224027,
+        "n_ssdl": 939
+      },
+      "pause:gt300": {
+        "auc": 0.5895010602499403,
+        "n_ssdl": 470
+      },
+      "phrase_vs_other_controls": {
+        "auc": 0.5720448526017953,
+        "n_phrase": 1440
+      }
+    },
+    "emb1": {
+      "all": {
+        "auc": 0.7226077697742195,
+        "n_ssdl": 436
+      },
+      "stratum:lt0.5": {
+        "auc": NaN,
+        "n_ssdl": 0
+      },
+      "stratum:0.5to1": {
+        "auc": NaN,
+        "n_ssdl": 0
+      },
+      "stratum:ge1": {
+        "auc": 0.7226077697742195,
+        "n_ssdl": 436
+      },
+      "pause:none": {
+        "auc": 0.7245186844144846,
+        "n_ssdl": 340
+      },
+      "pause:lt150": {
+        "auc": 0.6827228327228329,
+        "n_ssdl": 26
+      },
+      "pause:150to300": {
+        "auc": 0.722360649686231,
+        "n_ssdl": 43
+      },
+      "pause:gt300": {
+        "auc": 0.7373456790123456,
+        "n_ssdl": 27
+      },
+      "phrase_vs_other_controls": {
+        "auc": 0.5931353443257324,
+        "n_phrase": 420
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "label": "EXPLORATORY (post hoc, external review issue 2)",
+  "system": "p1",
+  "pins": {
+    "repo": "pyannote/speaker-diarization-community-1",
+    "revision": "3533c8cf8e369892e6b79ff1bf80f7b0286a54ee"
+  },
+  "device": "cuda",
+  "threads": 3,
+  "torch": "2.8.0+cu128"
+}

@@ -1,0 +1,78 @@
+{
+  "family": "binomial",
+  "n_input": {
+    "0": 31844,
+    "1": 3962
+  },
+  "n_complete": {
+    "0": 30556,
+    "1": 3820
+  },
+  "n_switch": 3820,
+  "fixed_formula": "y ~ cond + d_f0 + d_energy + d_rate + d_tilt + d_snr + pause_bin + pos_bin",
+  "tried": {
+    "full": {
+      "optimizer": "bobyqa",
+      "error": false,
+      "unconverged": false,
+      "singular": false,
+      "warnings": []
+    }
+  },
+  "R": "R version 4.5.3 (2026-03-11)",
+  "lme4": "2.0.6",
+  "failed": false,
+  "accepted": true,
+  "structure": "full",
+  "structure_formula": "(1 + cond | speaker) + (1 | video/clip) + (1 | set)",
+  "cond": {
+    "estimate": 0.226821557265993,
+    "se": 0.162102838678641,
+    "z": 1.39924481961512
+  },
+  "cond_without_covariates": {
+    "estimate": 0.238501123287871,
+    "se": 0.15881564989962,
+    "z": 1.50174824356803
+  },
+  "without_covariates_fit": {
+    "optimizer": "bobyqa",
+    "error": false,
+    "unconverged": false,
+    "singular": false,
+    "warnings": []
+  },
+  "covariates": {
+    "d_f0": {
+      "estimate": 0.159630698373701,
+      "se": 0.0273385340248117,
+      "z": 5.83903651266832
+    },
+    "d_energy": {
+      "estimate": 0.239729784882415,
+      "se": 0.0251117488534249,
+      "z": 9.54651889367389
+    },
+    "d_rate": {
+      "estimate": 0.274700752932858,
+      "se": 0.024429156550482,
+      "z": 11.2447907223157
+    },
+    "d_tilt": {
+      "estimate": 0.207754444876275,
+      "se": 0.0249765365218823,
+      "z": 8.31798454898896
+    },
+    "d_snr": {
+      "estimate": 0.296333410361288,
+      "se": 0.0268034894274653,
+      "z": 11.0557773144879
+    }
+  },
+  "n_levels": {
+    "speaker": 17,
+    "video": 137,
+    "clip": 8954,
+    "set": 964
+  }
+}

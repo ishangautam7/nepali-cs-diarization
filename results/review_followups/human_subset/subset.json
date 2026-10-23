@@ -1,0 +1,63 @@
+{
+  "label": "EXPLORATORY (post hoc, external review issue 4); prepared only, nothing labelled",
+  "seed": 20261022,
+  "n_switch": 150,
+  "n_control": 150,
+  "code_commit": "9f9d4e62a792067a8f4ff7ba0fb143bf3ce55cd1",
+  "population": {
+    "definition": "p0L1 switch points with >= 1 scored det_w1 control in their channel x video x pause bin x position bin cell, 17 confirmatory channels",
+    "size": 3962,
+    "per_channel": {
+      "UC1a2Vvzr7NJMtkIoV9c6Opw": 243,
+      "UC6B-8q01CqGJmZ5NswbYGDw": 323,
+      "UCA4izoAnn46iBh3TupN3ADQ": 39,
+      "UCAh6gaPtNIBBW_qNss4flcA": 584,
+      "UCIKslGb0pGieZTCn8341Xsw": 160,
+      "UCJinKAyRTpHJOPE0YgCMhog": 422,
+      "UCOC6C8_U9PsAs3tQodDDmGw": 258,
+      "UCUj0DJEMJRzBgrFOnDqOZig": 233,
+      "UCZfM_5lOt0Rfs9lY0kZ5glw": 188,
+      "UCdsTvXwaUcvV88UhqTHynTg": 133,
+      "UChx9-bynjfm6Js3k54Sf1Mg": 13,
+      "UCiVc0CAFFWBOd2Zf3dQwThw": 217,
+      "UCjD3bnXfPtoGVfZ4PmY9sBQ": 277,
+      "UCs_i-XIuSGGLQu-OHrWeTCA": 145,
+      "UCvc1Xg1qWSfQptoCEq13pEA": 374,
+      "UCy-Q66KQYSQAUVKvdNxgKbw": 98,
+      "UCyPr9KIODQt5J1oOGbz44Hg": 255
+    }
+  },
+  "allocation_per_channel": {
+    "UC1a2Vvzr7NJMtkIoV9c6Opw": 9,
+    "UC6B-8q01CqGJmZ5NswbYGDw": 12,
+    "UCA4izoAnn46iBh3TupN3ADQ": 1,
+    "UCAh6gaPtNIBBW_qNss4flcA": 22,
+    "UCIKslGb0pGieZTCn8341Xsw": 6,
+    "UCJinKAyRTpHJOPE0YgCMhog": 16,
+    "UCOC6C8_U9PsAs3tQodDDmGw": 10,
+    "UCUj0DJEMJRzBgrFOnDqOZig": 9,
+    "UCZfM_5lOt0Rfs9lY0kZ5glw": 7,
+    "UCdsTvXwaUcvV88UhqTHynTg": 5,
+    "UChx9-bynjfm6Js3k54Sf1Mg": 2,
+    "UCiVc0CAFFWBOd2Zf3dQwThw": 8,
+    "UCjD3bnXfPtoGVfZ4PmY9sBQ": 10,
+    "UCs_i-XIuSGGLQu-OHrWeTCA": 5,
+    "UCvc1Xg1qWSfQptoCEq13pEA": 14,
+    "UCy-Q66KQYSQAUVKvdNxgKbw": 4,
+    "UCyPr9KIODQt5J1oOGbz44Hg": 10
+  },
+  "snippet": {
+    "seconds": 4.0,
+    "boundary_at_s": 2.0
+  },
+  "inputs_sha256": {
+    "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b/points_train.csv.gz": "dffc685a50ed2b825716e171fac22b6bb625e5b362fb8a605ca8028af5af1c2e",
+    "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b/points_test.csv.gz": "13362fa6c9f4348b960548026b93395d89ff1f6e0f910e8bd78ac2b6653cd008",
+    "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-host-data/d1/manifest.csv": "4092ae10b64c306d60e33b616b16056f42f1fe59536ba24df0af556852396ccd"
+  },
+  "outputs_sha256": {
+    "key.csv": "8a287b5acb1e08dcaeb9c70d0db6052c72c0f8966c379997bd9d318b720f632d",
+    "template.csv": "5829e9b9b440ddbf501e09dee940627d58cc1d2a5ddb4dc26cf8755da25efc54"
+  },
+  "audio_files": 300
+}

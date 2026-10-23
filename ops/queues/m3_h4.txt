@@ -1,0 +1,70 @@
+# M3 jobs of PREREGISTRATION_H4.md section 7, rebuilt after the 2026-10-19 box loss (DEVIATIONS.md entry 6).
+# <fold|all> <seed> <w_dist> <ablation> <embed splits...>; w_dist written as m3_train formats it ({:g}).
+# 25 primary fold models (w0.3, none), seeds 0-4
+0 0 0.3 none validation train
+1 0 0.3 none validation train
+2 0 0.3 none validation train
+3 0 0.3 none validation train
+4 0 0.3 none validation train
+0 1 0.3 none validation train
+1 1 0.3 none validation train
+2 1 0.3 none validation train
+3 1 0.3 none validation train
+4 1 0.3 none validation train
+0 2 0.3 none validation train
+1 2 0.3 none validation train
+2 2 0.3 none validation train
+3 2 0.3 none validation train
+4 2 0.3 none validation train
+0 3 0.3 none validation train
+1 3 0.3 none validation train
+2 3 0.3 none validation train
+3 3 0.3 none validation train
+4 3 0.3 none validation train
+0 4 0.3 none validation train
+1 4 0.3 none validation train
+2 4 0.3 none validation train
+3 4 0.3 none validation train
+4 4 0.3 none validation train
+# 5 all-data models, seeds 0-4; they also embed the 2 test channels
+all 0 0.3 none validation train test
+all 1 0.3 none validation train test
+all 2 0.3 none validation train test
+all 3 0.3 none validation train test
+all 4 0.3 none validation train test
+# seed-0 variants in every fold: other w_dist, then the ablations at w0.3
+0 0 0 none validation train
+0 0 0.1 none validation train
+0 0 1 none validation train
+0 0 0.3 nogrl validation train
+0 0 0.3 nocon validation train
+0 0 0.3 noboth validation train
+0 0 0.3 nod5 validation train
+1 0 0 none validation train
+1 0 0.1 none validation train
+1 0 1 none validation train
+1 0 0.3 nogrl validation train
+1 0 0.3 nocon validation train
+1 0 0.3 noboth validation train
+1 0 0.3 nod5 validation train
+2 0 0 none validation train
+2 0 0.1 none validation train
+2 0 1 none validation train
+2 0 0.3 nogrl validation train
+2 0 0.3 nocon validation train
+2 0 0.3 noboth validation train
+2 0 0.3 nod5 validation train
+3 0 0 none validation train
+3 0 0.1 none validation train
+3 0 1 none validation train
+3 0 0.3 nogrl validation train
+3 0 0.3 nocon validation train
+3 0 0.3 noboth validation train
+3 0 0.3 nod5 validation train
+4 0 0 none validation train
+4 0 0.1 none validation train
+4 0 1 none validation train
+4 0 0.3 nogrl validation train
+4 0 0.3 nocon validation train
+4 0 0.3 noboth validation train
+4 0 0.3 nod5 validation train

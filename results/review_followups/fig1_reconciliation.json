@@ -1,0 +1,345 @@
+{
+  "label": "EXPLORATORY (post hoc, external review issue 1); not a pre-registered analysis",
+  "gate_rule": "step (d) must reproduce its reference within 1e-6; for e1, e2 the reference is the re-run on rebuilt inputs (decision 2026-10-22: option B)",
+  "code_commit": "9f9d4e62a792067a8f4ff7ba0fb143bf3ce55cd1",
+  "tau": {
+    "e1": 0.9168623979512837,
+    "e2": 0.8631095886230469,
+    "e3": 0.9288795312074744
+  },
+  "inputs": {
+    "boundaries": "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b",
+    "emb": "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb",
+    "pilot": "results/pilot/pilot_v2.json",
+    "reference": "results/confirm/confirm_m2a.json",
+    "sha256": {
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b/points_test.csv.gz": "13362fa6c9f4348b960548026b93395d89ff1f6e0f910e8bd78ac2b6653cd008",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b/points_train.csv.gz": "dffc685a50ed2b825716e171fac22b6bb625e5b362fb8a605ca8028af5af1c2e",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/boundaries/lex_v1b/points_validation.csv.gz": "a8ca6cdcbf1818ea10ccfddc39e1d91d8a66ea7694f3bb6b1aba511fe70d1030",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e1_L1/test.npz": "17bcf835d21a8768af434de27705e72e1e142b4150ae87a921c29c05366b3a99",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e1_L1/train.npz": "84b5a764701149a988838c0e524011387732f436ea868354f7f0a941a38d1f85",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e1_L1/validation.npz": "b3bcad44d114094e07730db52b3e667accb4dd692ebfdf5c34e3740564d70d19",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e2_L1/test.npz": "f7115caf8a1eb9fb5ad00754648702b03ee929d1066198c9ce2e26c00b0d2b31",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e2_L1/train.npz": "f9f135a16399f08afd2633417404c7bcaecd4534c50bef9754cdf2d44ee70dc8",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e2_L1/validation.npz": "452f23b88c7f9ab08feb31edb1afd43c003f1a46fa0b018f437218abbd5f2d42",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e3_L1/test.npz": "c4b2b1f387661231fe7fd82ba2268a713c06c909b38896babf3194c8ddbdf710",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e3_L1/train.npz": "e9efbf4e97451f00d609beefd7e9874e43f28633de38eb1bf98331f65b75827b",
+      "/home/ubuntu/.kiro/crew/workspace/research/nepdiar-box-backup/data/d1/emb/e3_L1/validation.npz": "ebf58a6d23d3fafb5c9e148169689b6aa2fdff9798e84942faba91efb3639400"
+    }
+  },
+  "units": "fractions; *_pp fields are percentage points",
+  "models": {
+    "e1": {
+      "steps": {
+        "a_figure": -0.010211169371510093,
+        "a_all": -0.0008457561575815203,
+        "b_figure": -0.013478872610182352,
+        "b_all": -0.003608748810013454,
+        "b2": -0.004660209795544587,
+        "c": 0.00809518209732855,
+        "d": 0.025124266358254658
+      },
+      "steps_pp": {
+        "a_figure": -1.0211169371510094,
+        "a_all": -0.08457561575815203,
+        "b_figure": -1.347887261018235,
+        "b_all": -0.3608748810013454,
+        "b2": -0.4660209795544587,
+        "c": 0.809518209732855,
+        "d": 2.5124266358254657
+      },
+      "gaps_pp": {
+        "no_peak_points_kept_as_non_fires (a_all - a_figure)": 0.9365413213928573,
+        "pilot_channels_dropped (b_all - a_all)": -0.27629926524319337,
+        "switch_points_without_cell_controls_dropped (b2 - b_all)": -0.1051460985531133,
+        "cell_standardisation (c - b2)": 1.2755391892873138,
+        "equal_channel_weighting (d - c)": 1.7029084260926106
+      },
+      "detail": {
+        "a": {
+          "figure": {
+            "ssdl_rate": 0.1278339251570609,
+            "ctrl_rate": 0.138045094528571,
+            "delta": -0.010211169371510093,
+            "n_ssdl": 3661,
+            "n_ctrl": 32953
+          },
+          "all": {
+            "ssdl_rate": 0.10365448504983389,
+            "ctrl_rate": 0.10450024120741541,
+            "delta": -0.0008457561575815203,
+            "n_ssdl": 4515,
+            "n_ctrl": 43531
+          }
+        },
+        "b": {
+          "figure": {
+            "ssdl_rate": 0.12511387792286668,
+            "ctrl_rate": 0.13859275053304904,
+            "delta": -0.013478872610182352,
+            "n_ssdl": 3293,
+            "n_ctrl": 30485
+          },
+          "all": {
+            "ssdl_rate": 0.10125337920865077,
+            "ctrl_rate": 0.10486212801866422,
+            "delta": -0.003608748810013454,
+            "n_ssdl": 4069,
+            "n_ctrl": 40291
+          }
+        },
+        "b2": {
+          "ssdl_rate": 0.10020191822311963,
+          "ctrl_rate": 0.10486212801866422,
+          "delta": -0.004660209795544587,
+          "n_ssdl": 3962,
+          "n_ctrl": 40291
+        },
+        "c": {
+          "delta": 0.00809518209732855,
+          "n_ssdl": 3962,
+          "ctrl_rate_raw_in_used_cells": 0.09961060168320562,
+          "n_ctrl_in_used_cells": 31844
+        }
+      },
+      "gate": {
+        "d": 0.025124266358254658,
+        "reference": 0.025124266358254658,
+        "reference_file": "results/sensitivity/base/confirm_sens_base.json",
+        "inputs": "REBUILT after the first box loss (DEVIATIONS.md entry 6); the frozen inputs no longer exist, so the gate is the re-run on the rebuilt inputs, not Table II",
+        "diff": 0.0,
+        "reproduces": true,
+        "table_ii_value": 0.024616908773575474,
+        "diff_from_table_ii": 0.0005073575846791835,
+        "also": {},
+        "channels": {
+          "UC1a2Vvzr7NJMtkIoV9c6Opw": -0.0006552257537285117,
+          "UC6B-8q01CqGJmZ5NswbYGDw": 0.02109998454851214,
+          "UCA4izoAnn46iBh3TupN3ADQ": 0.044303378450645636,
+          "UCAh6gaPtNIBBW_qNss4flcA": -0.01963229934477032,
+          "UCIKslGb0pGieZTCn8341Xsw": -0.024375300590693705,
+          "UCJinKAyRTpHJOPE0YgCMhog": -0.030147908782171218,
+          "UCOC6C8_U9PsAs3tQodDDmGw": -0.003377082741101309,
+          "UCUj0DJEMJRzBgrFOnDqOZig": 0.05005997590446404,
+          "UCZfM_5lOt0Rfs9lY0kZ5glw": 0.06689114026674639,
+          "UCdsTvXwaUcvV88UhqTHynTg": -0.0010221271852564953,
+          "UChx9-bynjfm6Js3k54Sf1Mg": 0.2316684166147,
+          "UCiVc0CAFFWBOd2Zf3dQwThw": -0.04833641157279267,
+          "UCjD3bnXfPtoGVfZ4PmY9sBQ": 0.029621860987611465,
+          "UCs_i-XIuSGGLQu-OHrWeTCA": 0.05217275451739162,
+          "UCvc1Xg1qWSfQptoCEq13pEA": 0.03279898070351382,
+          "UCy-Q66KQYSQAUVKvdNxgKbw": -0.008560717964106818,
+          "UCyPr9KIODQt5J1oOGbz44Hg": 0.034603110031365084
+        }
+      }
+    },
+    "e2": {
+      "steps": {
+        "a_figure": -0.0015547321313431894,
+        "a_all": 0.0072830265968222285,
+        "b_figure": -0.0066212957502437275,
+        "b_all": 0.0033970790735297074,
+        "b2": 0.0032748190533254673,
+        "c": 0.020124252302057416,
+        "d": 0.03097726808811061
+      },
+      "steps_pp": {
+        "a_figure": -0.15547321313431894,
+        "a_all": 0.7283026596822229,
+        "b_figure": -0.6621295750243728,
+        "b_all": 0.33970790735297074,
+        "b2": 0.32748190533254673,
+        "c": 2.0124252302057415,
+        "d": 3.097726808811061
+      },
+      "gaps_pp": {
+        "no_peak_points_kept_as_non_fires (a_all - a_figure)": 0.8837758728165418,
+        "pilot_channels_dropped (b_all - a_all)": -0.3885947523292521,
+        "switch_points_without_cell_controls_dropped (b2 - b_all)": -0.01222600202042401,
+        "cell_standardisation (c - b2)": 1.6849433248731949,
+        "equal_channel_weighting (d - c)": 1.0853015786053195
+      },
+      "detail": {
+        "a": {
+          "figure": {
+            "ssdl_rate": 0.16829798803697663,
+            "ctrl_rate": 0.16985272016831982,
+            "delta": -0.0015547321313431894,
+            "n_ssdl": 3678,
+            "n_ctrl": 33270
+          },
+          "all": {
+            "ssdl_rate": 0.13709856035437432,
+            "ctrl_rate": 0.1298155337575521,
+            "delta": 0.0072830265968222285,
+            "n_ssdl": 4515,
+            "n_ctrl": 43531
+          }
+        },
+        "b": {
+          "figure": {
+            "ssdl_rate": 0.16646562123039807,
+            "ctrl_rate": 0.1730869169806418,
+            "delta": -0.0066212957502437275,
+            "n_ssdl": 3316,
+            "n_ctrl": 30788
+          },
+          "all": {
+            "ssdl_rate": 0.13565986728926027,
+            "ctrl_rate": 0.13226278821573056,
+            "delta": 0.0033970790735297074,
+            "n_ssdl": 4069,
+            "n_ctrl": 40291
+          }
+        },
+        "b2": {
+          "ssdl_rate": 0.13553760726905603,
+          "ctrl_rate": 0.13226278821573056,
+          "delta": 0.0032748190533254673,
+          "n_ssdl": 3962,
+          "n_ctrl": 40291
+        },
+        "c": {
+          "delta": 0.020124252302057416,
+          "n_ssdl": 3962,
+          "ctrl_rate_raw_in_used_cells": 0.12809320437131014,
+          "n_ctrl_in_used_cells": 31844
+        }
+      },
+      "gate": {
+        "d": 0.03097726808811061,
+        "reference": 0.03097726808811061,
+        "reference_file": "results/sensitivity/base/confirm_sens_base.json",
+        "inputs": "REBUILT after the first box loss (DEVIATIONS.md entry 6); the frozen inputs no longer exist, so the gate is the re-run on the rebuilt inputs, not Table II",
+        "diff": 0.0,
+        "reproduces": true,
+        "table_ii_value": 0.02954617310982989,
+        "diff_from_table_ii": 0.0014310949782807211,
+        "also": {},
+        "channels": {
+          "UC1a2Vvzr7NJMtkIoV9c6Opw": -0.001156837897022688,
+          "UC6B-8q01CqGJmZ5NswbYGDw": 0.027462803977523424,
+          "UCA4izoAnn46iBh3TupN3ADQ": 0.17752619066384245,
+          "UCAh6gaPtNIBBW_qNss4flcA": -0.018586638003003163,
+          "UCIKslGb0pGieZTCn8341Xsw": -0.07920091096964149,
+          "UCJinKAyRTpHJOPE0YgCMhog": 0.003559113100913003,
+          "UCOC6C8_U9PsAs3tQodDDmGw": 0.03226222649129676,
+          "UCUj0DJEMJRzBgrFOnDqOZig": 0.05585296955005022,
+          "UCZfM_5lOt0Rfs9lY0kZ5glw": 0.09990894819221258,
+          "UCdsTvXwaUcvV88UhqTHynTg": -0.009953374797239557,
+          "UChx9-bynjfm6Js3k54Sf1Mg": 0.01765492035053884,
+          "UCiVc0CAFFWBOd2Zf3dQwThw": -0.053376611118741674,
+          "UCjD3bnXfPtoGVfZ4PmY9sBQ": 0.06583200354846161,
+          "UCs_i-XIuSGGLQu-OHrWeTCA": 0.09483546578575269,
+          "UCvc1Xg1qWSfQptoCEq13pEA": 0.02934160774091346,
+          "UCy-Q66KQYSQAUVKvdNxgKbw": 0.03659635551768095,
+          "UCyPr9KIODQt5J1oOGbz44Hg": 0.04805532536434303
+        }
+      }
+    },
+    "e3": {
+      "steps": {
+        "a_figure": 0.0022025155045499317,
+        "a_all": 0.006482003774604131,
+        "b_figure": -0.003552581402634536,
+        "b_all": 0.0018442508070083963,
+        "b2": 0.0014837977489633586,
+        "c": 0.011722054057097153,
+        "d": 0.027287020470006834
+      },
+      "steps_pp": {
+        "a_figure": 0.22025155045499317,
+        "a_all": 0.648200377460413,
+        "b_figure": -0.3552581402634536,
+        "b_all": 0.18442508070083963,
+        "b2": 0.14837977489633586,
+        "c": 1.1722054057097153,
+        "d": 2.7287020470006835
+      },
+      "gaps_pp": {
+        "no_peak_points_kept_as_non_fires (a_all - a_figure)": 0.4279488270054199,
+        "pilot_channels_dropped (b_all - a_all)": -0.46377529675957346,
+        "switch_points_without_cell_controls_dropped (b2 - b_all)": -0.03604530580450377,
+        "cell_standardisation (c - b2)": 1.0238256308133793,
+        "equal_channel_weighting (d - c)": 1.5564966412909682
+      },
+      "detail": {
+        "a": {
+          "figure": {
+            "ssdl_rate": 0.1176954732510288,
+            "ctrl_rate": 0.11549295774647887,
+            "delta": 0.0022025155045499317,
+            "n_ssdl": 3645,
+            "n_ctrl": 33370
+          },
+          "all": {
+            "ssdl_rate": 0.09501661129568106,
+            "ctrl_rate": 0.08853460752107693,
+            "delta": 0.006482003774604131,
+            "n_ssdl": 4515,
+            "n_ctrl": 43531
+          }
+        },
+        "b": {
+          "figure": {
+            "ssdl_rate": 0.11100945410186032,
+            "ctrl_rate": 0.11456203550449486,
+            "delta": -0.003552581402634536,
+            "n_ssdl": 3279,
+            "n_ctrl": 30813
+          },
+          "all": {
+            "ssdl_rate": 0.08945686900958466,
+            "ctrl_rate": 0.08761261820257626,
+            "delta": 0.0018442508070083963,
+            "n_ssdl": 4069,
+            "n_ctrl": 40291
+          }
+        },
+        "b2": {
+          "ssdl_rate": 0.08909641595153962,
+          "ctrl_rate": 0.08761261820257626,
+          "delta": 0.0014837977489633586,
+          "n_ssdl": 3962,
+          "n_ctrl": 40291
+        },
+        "c": {
+          "delta": 0.011722054057097153,
+          "n_ssdl": 3962,
+          "ctrl_rate_raw_in_used_cells": 0.08139680944604949,
+          "n_ctrl_in_used_cells": 31844
+        }
+      },
+      "gate": {
+        "d": 0.027287020470006834,
+        "reference": 0.027287020470006834,
+        "reference_file": "results/confirm/confirm_m2a.json",
+        "inputs": "frozen (the reference is Table II's value)",
+        "diff": 0.0,
+        "reproduces": true,
+        "table_ii_value": 0.027287020470006834,
+        "diff_from_table_ii": 0.0,
+        "also": {},
+        "channels": {
+          "UC1a2Vvzr7NJMtkIoV9c6Opw": 0.0032351494516965956,
+          "UC6B-8q01CqGJmZ5NswbYGDw": 0.006664372596295407,
+          "UCA4izoAnn46iBh3TupN3ADQ": 0.139654776939696,
+          "UCAh6gaPtNIBBW_qNss4flcA": -0.014774741119225509,
+          "UCIKslGb0pGieZTCn8341Xsw": -0.011669639861234593,
+          "UCJinKAyRTpHJOPE0YgCMhog": 0.005408179898103105,
+          "UCOC6C8_U9PsAs3tQodDDmGw": 0.03808402509899278,
+          "UCUj0DJEMJRzBgrFOnDqOZig": 0.010593583419376287,
+          "UCZfM_5lOt0Rfs9lY0kZ5glw": 0.01884620574529225,
+          "UCdsTvXwaUcvV88UhqTHynTg": -0.0005245469774771798,
+          "UChx9-bynjfm6Js3k54Sf1Mg": 0.11622487946031959,
+          "UCiVc0CAFFWBOd2Zf3dQwThw": -0.011855113346646837,
+          "UCjD3bnXfPtoGVfZ4PmY9sBQ": 0.028204029420952584,
+          "UCs_i-XIuSGGLQu-OHrWeTCA": 0.06314635146317904,
+          "UCvc1Xg1qWSfQptoCEq13pEA": 0.004088759588911778,
+          "UCy-Q66KQYSQAUVKvdNxgKbw": 0.0281133078378647,
+          "UCyPr9KIODQt5J1oOGbz44Hg": 0.040439768374020246
+        }
+      }
+    }
+  }
+}

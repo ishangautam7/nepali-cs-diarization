@@ -1,0 +1,73 @@
+{
+  "clips": 20805,
+  "words": 541899,
+  "tag_counts": {
+    "en": 176615,
+    "ne": 351036,
+    "neutral": 14248
+  },
+  "english_share_of_language_words": 0.3347,
+  "adjacent_pair_switch_rate": 0.3653,
+  "clips_with_both_languages": 0.9409,
+  "switches_per_100_words_median_clips_ge_10": 35.5,
+  "per_split": {
+    "test": {
+      "clips": 1765,
+      "switches": 7559,
+      "with_neutral_between": 407,
+      "both_runs_ge_1s_est": 569,
+      "both_runs_ge_0.5s_est": 2404
+    },
+    "train": {
+      "clips": 16702,
+      "switches": 154757,
+      "with_neutral_between": 2366,
+      "both_runs_ge_0.5s_est": 46854,
+      "both_runs_ge_1s_est": 9693
+    },
+    "validation": {
+      "clips": 2338,
+      "switches": 22860,
+      "both_runs_ge_0.5s_est": 5924,
+      "both_runs_ge_1s_est": 961,
+      "with_neutral_between": 828
+    }
+  },
+  "shorter_run_words_per_split": {
+    "test": {
+      "1": 6185,
+      "2": 1046,
+      "3-4": 282,
+      "5+": 46
+    },
+    "train": {
+      "1": 117084,
+      "2": 28850,
+      "5+": 1009,
+      "3-4": 7814
+    },
+    "validation": {
+      "2": 4059,
+      "1": 17881,
+      "3-4": 852,
+      "5+": 68
+    }
+  },
+  "english_insertion_words": {
+    "1": 60144,
+    "2": 19910,
+    "5+": 2957,
+    "3-4": 7631
+  },
+  "switches_per_minute_by_channel": {
+    "min": 19.1,
+    "median": 51.5,
+    "max": 74.9
+  },
+  "card_reference": {
+    "english_share": 0.332,
+    "adjacent_pair_switch_rate": 0.366,
+    "clips_with_both_languages": 0.942,
+    "switches_per_100_tokens_median": 35.7
+  }
+}

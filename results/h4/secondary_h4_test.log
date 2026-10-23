@@ -1,0 +1,6 @@
+lambda: wrote /home/ec2-user/data/d1/results/h4/secondary_h4_test_lambda.json
+m1k: wrote /home/ec2-user/data/d1/results/h4/secondary_h4_test_m1k.json
+emb: wrote /home/ec2-user/data/d1/results/h4/secondary_h4_test_emb.json
+sens: wrote /home/ec2-user/data/d1/results/h4/secondary_h4_test_sens.json
+m3: wrote /home/ec2-user/data/d1/results/h4/secondary_h4_test_m3.json
+speaker: wrote /home/ec2-user/data/d1/results/h4/secondary_h4_test_speaker.json

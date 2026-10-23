@@ -1,0 +1,7 @@
+# H3 pilot v1b (validation channels only)
+
+| Model | shift (cross − mono) | in target SD | per channel | cross-session | EER cross / mono | minDCF cross / mono |
+|---|---|---|---|---|---|---|
+| e1 | -0.0261 | -0.242 | IMRQ:-0.020 eRGw:-0.031 RmTA:-0.027 | RmTA:-0.021 IMRQ:-0.020 eRGw:-0.013 | 0.189 / 0.166 | 0.861 / 0.786 |
+| e2 | -0.0230 | -0.207 | IMRQ:-0.021 eRGw:-0.023 RmTA:-0.025 | RmTA:-0.020 IMRQ:-0.020 eRGw:-0.007 | 0.124 / 0.099 | 0.633 / 0.538 |
+| e3 | -0.0231 | -0.204 | IMRQ:-0.021 eRGw:-0.024 RmTA:-0.024 | RmTA:-0.018 IMRQ:-0.016 eRGw:-0.008 | 0.177 / 0.144 | 0.784 / 0.675 |

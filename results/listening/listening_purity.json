@@ -1,0 +1,67 @@
+{
+ "first": 117,
+ "flagged": {
+  "n": 104,
+  "unusable": 15,
+  "share_unusable": 0.14423076923076922,
+  "unusable_ci95": [
+   0.08939607665575679,
+   0.22441142587948065
+  ],
+  "usable_pairs": {
+   "n": 89,
+   "n_judged": 84,
+   "n_unsure": 5,
+   "different": 43,
+   "share_different": 0.5119047619047619,
+   "ci95": [
+    0.40685182810363585,
+    0.6159164640612594
+   ]
+  },
+  "all_pairs": {
+   "n": 104,
+   "n_judged": 92,
+   "n_unsure": 12,
+   "different": 49,
+   "share_different": 0.532608695652174,
+   "ci95": [
+    0.4314045662134567,
+    0.6311988214022439
+   ]
+  }
+ },
+ "control": {
+  "n": 13,
+  "unusable": 1,
+  "share_unusable": 0.07692307692307693,
+  "unusable_ci95": [
+   0.013710421090225994,
+   0.333139511713605
+  ],
+  "usable_pairs": {
+   "n": 12,
+   "n_judged": 12,
+   "n_unsure": 0,
+   "different": 1,
+   "share_different": 0.08333333333333333,
+   "ci95": [
+    0.014865094239669363,
+    0.35387991372124555
+   ]
+  },
+  "all_pairs": {
+   "n": 13,
+   "n_judged": 12,
+   "n_unsure": 1,
+   "different": 1,
+   "share_different": 0.08333333333333333,
+   "ci95": [
+    0.014865094239669363,
+    0.35387991372124555
+   ]
+  }
+ },
+ "difference_flagged_minus_control_usable_pairs": 0.42857142857142855,
+ "difference_flagged_minus_control_all_pairs": 0.44927536231884063
+}
