@@ -1,11 +1,11 @@
 # Speaker-embedding and change-score sensitivity at Nepali–English code-switch points
 
-Code, pre-registration, frozen hashes and aggregate results for the paper *Speaker-Embedding and Change-Score Sensitivity at Nepali–English Code-Switch Points* (Ishan Gautam, Pulchowk Campus, Institute of Engineering, Tribhuvan University). The LaTeX source is in `paper/`.
+Code, the pre-specified analysis plan, frozen hashes and aggregate results for the paper *Speaker-Embedding and Change-Score Sensitivity at Nepali–English Code-Switch Points* (Ishan Gautam, Pulchowk Campus, Institute of Engineering, Tribhuvan University). The LaTeX source is in `paper/`.
 
 The study asks whether, within one speaker, speaker-embedding similarity drops and a two-window speaker-change score rises across a natural Nepali–English switch. Real recordings are used throughout. The only artificial audio is the clip joins of the post hoc pipeline check, which the paper labels as such.
 
 - **Reproducing the results:** `REPRODUCE.md`.
-- **Pre-registration and freezes:** `planning/PREREGISTRATION.md` (with its H4 and H7 supplements) and the freeze records `planning/FREEZE_*.json`.
+- **Analysis plan and freezes:** `planning/PREREGISTRATION.md` (with its H4 and H7 supplements) and the freeze records `planning/FREEZE_*.json`. The plan was frozen in the project's git repository before each confirmatory run; it was not deposited with an external registry, so the paper calls it pre-specified. The plan files keep their original names and text, including the status line written before the freeze, because the freeze records pin their hashes.
 - **Decisions and deviations:** `planning/DECISIONS.md` and `planning/DEVIATIONS.md`.
 - **Frozen confirmatory results:** `results/confirm/`, `results/h7/` and `results/h4/`.
 - **Post hoc, exploratory analyses:** `results/review_followups/` (see its README).
