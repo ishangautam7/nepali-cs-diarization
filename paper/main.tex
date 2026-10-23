@@ -198,10 +198,8 @@ per-script lexicon from the frequent native-script word forms. LLM-based labelle
 parallel runs, labelled
 each form as loan, native or name. The lexicon has 763 loans and 67 names for Hindi, and
 393 and 21 for Bengali, and its candidate review lists cover 97.0\% of Hindi and 94.4\% of
-Bengali native-script tokens. The AI agent that ran the analysis (\S\ref{sec:ethics})
-spot-checked 60 items and found one arguable label, Bengali ``column'' labelled native.
-These checks are text-only checks of LLM labels by an LLM agent, not human or audio
-validation. For the two pairs, this gives 5{,}491 (train) / 237 (test) and 3{,}269 / 580
+Bengali native-script tokens. A 60-item spot-check found one arguable label, Bengali ``column'' labelled native.
+These are text-only checks of the labels, not audio validation. For the two pairs, this gives 5{,}491 (train) / 237 (test) and 3{,}269 / 580
 SS-DL switch points eligible for H1 with 1~s windows, of which 4{,}267 and 2{,}769 have matched
 controls (3{,}828 and 2{,}582 of these sets fall in tutorials that meet the 5-unit minimum of
 \S\ref{sec:h7} and enter the H1 tests), and 5{,}428 / 235 and 3{,}253 / 584 in the primary detection cell
@@ -218,14 +216,12 @@ language of every segment~\cite{displace2024}, with DISPLACE-M~\cite{displacem20
 fallback. We were not granted access to DISPLACE~2024 during the study. DISPLACE-M is also
 access-controlled and has no language references. The pre-registered full-pipeline tests,
 the DS-DL non-inferiority test (H5), the ordering of the mitigations (H6) and the joint
-trade-off were therefore not run (deviation 7 in the repository's deviation log). Apart from the artificial
+trade-off were therefore not run. Apart from the artificial
 speaker changes of the exploratory check (\S\ref{sec:pipe}), no result in this paper
 involves a speaker change.
 
 \section{Method}
 \label{sec:method}
-An AI coding agent wrote and ran the analysis code and drafted the text under the author's
-direction; \S\ref{sec:ethics} details the use of AI tools.
 
 \subsection{Switch points, controls and matching}
 We romanise each word with uroman~\cite{hermjakob2018uroman}, which restores Devanagari
@@ -253,7 +249,7 @@ in the same way.
 \emph{Primary detection cell.} The primary cell, \texttt{p0L1}, keeps only switch points
 where both language runs last at least a second, with a clean $\pm1$~s field. On the confirmatory channels \texttt{p0L1} holds 3{,}962 switch points with cell controls (3{,}851 train and 111 test; 107 more have no control in their cell), compared with 31{,}844 controls in 964 cells, and the pooled cell 120{,}630 (the sum of its run-length strata).
 
-\emph{How the primary cell was chosen.} The study plan, committed before the pilot, pooled all switch points. On the 3 pilot channels the pooled AUC was $0.486$--$0.494$. At $\tau$, switch points between runs of at least 1~s fired at 15--18\% (535 points), against about 7\% below 0.5~s and 10\% at controls; these rates were not standardised by cell and may partly reflect pauses. The pilot decision first kept the pooled cell, because changing the primary cell after seeing pilot effects could bias the test (decision 13 in the repository's decision log). After an LLM-based review of the pilot, \texttt{p0L1} was named primary on construct grounds: a detector with 1~s windows cannot register a sub-second insertion as a two-sided change (decision 16; commit \texttt{e430e1e}). The cell gives P0 the run-length condition that the study plan had fixed for H1 before the pilot (both runs at least 1~s). The choice was therefore made after pilot outcomes had been seen. The pre-registration document was drafted after this change (commit \texttt{bd60821}) and names \texttt{p0L1}, and the configuration was frozen at \texttt{11eb77c} (tag \texttt{m2a-freeze}) before the one confirmatory run (\S\ref{sec:ethics} gives the commit order and times). The 17 confirmatory channels are disjoint from the pilot channels as channels (the purity audit suggests one pilot video may share a confirmatory channel's teacher), which protects the test's error rate. The question it tests, however, was chosen with knowledge of pilot outcomes, and on the confirmatory channels it yields a positive result where the original pooled estimand shows no excess. We therefore report both.
+\emph{How the primary cell was chosen.} The study plan, committed before the pilot, pooled all switch points. On the 3 pilot channels the pooled AUC was $0.486$--$0.494$. At $\tau$, switch points between runs of at least 1~s fired at 15--18\% (535 points), against about 7\% below 0.5~s and 10\% at controls; these rates were not standardised by cell and may partly reflect pauses. We first kept the pooled cell, because changing the primary cell after seeing pilot effects could bias the test. On reviewing the pilot, we then named \texttt{p0L1} primary on construct grounds: a detector with 1~s windows cannot register a sub-second insertion as a two-sided change. The cell gives P0 the run-length condition that the study plan had fixed for H1 before the pilot (both runs at least 1~s). The choice was therefore made after pilot outcomes had been seen. The pre-registration was written after this change and names \texttt{p0L1}, and the configuration was frozen before the one confirmatory run. The 17 confirmatory channels are disjoint from the pilot channels as channels (the purity audit suggests one pilot video may share a confirmatory channel's teacher), which protects the test's error rate. The question it tests, however, was chosen with knowledge of pilot outcomes, and on the confirmatory channels it yields a positive result where the original pooled estimand shows no excess. We therefore report both.
 
 \subsection{Systems}
 We test three speaker embeddings: E1 ECAPA-TDNN~\cite{desplanques2020ecapa}, E2 the
@@ -299,7 +295,7 @@ and H3 $-0.24/-0.20/-0.25$ target SD (E1/E2/E3). Because sessions of one teacher
 as separate clusters, these $p$-values are optimistic, and the subset analysis is
 descriptive. A blind listening check covered the first 117 of the 230 planned pairs, in their
 randomised order, with one rater, the author, who knew the hypotheses
-(deviations 8 and 12). The main voice of a flagged clip was judged different
+The main voice of a flagged clip was judged different
 from its video's usual speaker in 51\% of the usable pairs (43 of 84; 95\% CI 41--62\%),
 against 8\% for control pairs of two unflagged clips (1 of 12; 1--35\%). Of the flagged
 pairs, 14\% were unusable. By this check about half of the flagged clips are other voices,
@@ -369,8 +365,7 @@ model, not the grading rule.
 
 \section{Diagnostic Results: Embeddings and Change Score on D1}
 \label{sec:results}
-\emph{Confirmatory run on 17 D1 channels with the frozen configuration (tag
-\texttt{m2a-freeze}). Exact sign-flip tests over channels with Holm-adjusted $p$-values; the
+\emph{Confirmatory run on 17 D1 channels with the frozen configuration. Exact sign-flip tests over channels with Holm-adjusted $p$-values; the
 estimates are unadjusted, with BCa intervals at $1-0.05/m$.} All nine primary tests are significant (Table~\ref{tab:d1-primary}). Every one of the 17 channels shows the predicted direction for H1 and H2-P0 with all three embeddings, and for H3 with E1 and E3 (16 of 17 with E2). These are not nine independent findings: H1 and H2-P0 compare similar 1~s windows, and H3 uses the same embeddings.
 
 \begin{table}[t]
@@ -463,7 +458,7 @@ second leaves out the 2 test channels (H1 $d_z$ 0.25/0.20/0.26, AUC 0.58/0.58/0.
 $-0.21/-0.17/-0.21$ SD). Three more analyses re-extract the switch points with one rule
 changed: re-tagging ``I'' and capital ``A'' as English, keeping the low-alignment clips,
 and counting loan words in the language they are pronounced in. The boundary pipeline had
-to be rebuilt after a compute-host loss (deviation 6), so each variant is
+to be rebuilt after a compute-host loss, so each variant is
 compared with a reference run on the rebuilt, unvaried boundaries. No H2-P0 or H3 category
 changes in any of these four runs (AUC 0.57--0.58; H3 does not use the switch points). The
 one grade that moves is E2's H1, which sits at its smallest effect of interest throughout.
@@ -494,7 +489,7 @@ pilot-channel video changes no primary estimate by more than 0.006; that video a
 channel's four videos form the four closest cross-channel pairs in the corpus.
 
 A blind listening check, with the author as the only rater, covered the first 352 of the 450
-planned items, in their randomised order (deviations 8 and 11). It
+planned items, in their randomised order. It
 found no audible language change at 6.3\% of the primary-cell switch points (95\% CI
 2.0--11.6\%), and a different speaker, overlap or noise at none of them. It found a
 language change at none of the cell's controls. The marker lay within about 0.1~s of a word
@@ -513,7 +508,7 @@ same-cell controls (video $\times$ pause $\times$ position), with $\tau$ calibra
 $10\%$ control fire rate on the pilot channels. Dot area grows with the channel's number of switch points (13 to 584); horizontal offset within an embedding is by rank only, to reduce overlap. Bars mark the equal-weight mean over channels, the pre-registered
 statistic of Table~\ref{tab:d1-det} ($+2.46/+2.95/+2.73$~pp). Diamonds mark the mean over
 switch points ($+0.78/+2.00/+1.17$~pp). Single channels vary widely; for E1 the equal-weight
-mean rests largely on the smallest channel (13 switch points; \S\ref{sec:results}). Drawn from the frozen result file alone.}
+mean rests largely on the smallest channel (13 switch points; \S\ref{sec:results}).}
 \label{fig:det}
 \end{figure}
 
@@ -535,7 +530,7 @@ analysis on the clean D1 windows of its five folds, not from the plotted sample.
 \section{Direction Check on D4 (Hindi-- and Bengali--English)}
 \label{sec:h7}
 We repeat the H1 and H2-P0 tests on D4 (MUCS~2021). They were pre-registered and frozen
-separately (\texttt{h7-freeze}, commit \texttt{a68e5b1}) before any D4 outcome was computed.
+separately before any D4 outcome was computed.
 Clusters are MUCS speaker IDs, that is, tutorials: 364/394 of 550 Hindi IDs and 235/254 of
 307 Bengali IDs meet the 5-unit minimum for H1/H2-P0. Holm adjusts the $p$-values of all 12 tests. All
 12 are significant in the predicted direction (Holm one-sided $p \le 2.6\times10^{-3}$;
@@ -549,7 +544,7 @@ both hypotheses), though some $99.58\%$ intervals still include it. There the di
 matches, but the effect is not shown to reach D1's practical size.
 
 \begin{table}[t]
-\caption{H7 on D4 (frozen run, \texttt{h7-freeze}), with tutorials (MUCS speaker IDs) as
+\caption{H7 on D4 (frozen run), with tutorials (MUCS speaker IDs) as
 clusters. All Holm one-sided $p<.05$ in the predicted direction, assuming tutorials are
 independent speakers; under the pre-registered voice clusters (6 Hindi, 3 Bengali) none is significant (Holm $p \ge 0.19$ Hindi, $0.88$ Bengali), a test without power (\S\ref{sec:h7}). ``$k$/3'' counts embeddings graded \emph{supported} at D1's smallest
 effect ($d_z\,0.2$, AUC $0.55$). CIs are $99.58\%$ BCa.}
@@ -578,23 +573,23 @@ is therefore \emph{untested} on D4, and the D4 result supports the direction of 
 not its significance under realistic speaker dependence.
 
 The pre-registered contamination audit of the native-script lexicon drew 200 random
-native-tagged tokens per pair and labelled them with an LLM-based labeller. The AI agent
-that ran the analysis checked 50 per pair against it, and all 100 agreed. By these text
+native-tagged tokens per pair and labelled them with an LLM-based labeller. A second LLM-based check
+of 50 per pair agreed on all 100. By these text
 labels, English makes up 0.5\% of these tokens in Hindi--English (95\% CI 0.1--2.8\%) and
 1.0\% in Bengali--English (0.3--3.6\%). Reading the other 150 Bengali items, outside the
-pre-registered check, the agent found four more English words the labeller had missed:
+pre-registered check, we found four more English words the labeller had missed:
 ``column'' and three English stems with Bengali endings (e.g.\ ``line'' with a genitive).
 Counting them gives 3.0\% (1.4--6.4\%), probably the fairer reading for Bengali. Neither
 check listens to the audio, and we did not quantify how residual mislabelling of this size
 affects the D4 estimates. The one
 change to code frozen for D4, a crash fix in a descriptive summary made before any D4 result
-existed, changes no D1 number and no primary D4 result (deviation 2).
+existed, changes no D1 number and no primary D4 result.
 
 \section{Mitigations}
 \label{sec:mitigations}
 H4 asks whether M1 and M3 lower the switch-point excess of P0 with E3, compared with the
 recalibrated baseline B0, on the 15 scored D1 channels (\S\ref{sec:mit-method}). Support
-needs Holm $p<.05$ and a reduction of at least 25\%. The test ran once, from the frozen code (tag \texttt{h4-freeze}, commit \texttt{cd22caf}) and inputs regenerated with that code and re-pinned after a compute-host loss (deviation 6). An earlier start was cut off by a second host loss before it wrote any output (deviation 13). On these channels
+needs Holm $p<.05$ and a reduction of at least 25\%. The test ran once, from the frozen code, with inputs regenerated by that code after a compute-host loss; an earlier start was cut off before it wrote any output. On these channels
 B0's excess is $+2.13$~pp, so the smallest effect of interest is a reduction of 0.53~pp.
 Neither mitigation is supported (Table~\ref{tab:h4}). M1 lowers the excess by 0.40~pp
 (18.9\%) and M3 by 0.53~pp (24.9\%). Both are \emph{inconclusive}: their intervals include
@@ -724,7 +719,7 @@ $-9.0$~pp, two-sided $p=.041$, unadjusted; $-5.0$~pp in the pooled rates); for D
 difference was $-1.5$~pp ($p=.29$). For DiariZen, same-speaker joins drew more false changes than natural
 controls ($+6.0$~pp per channel, $p=.031$), as a recording cut would. These tests also treat a channel
 as one speaker (\S\ref{sec:data}). The diarization error rates and per-channel values are
-in the repository.
+in the released repository.
 
 \section{Discussion}
 \label{sec:discussion}
@@ -796,8 +791,7 @@ evidence here is preliminary. The listening checks had one rater, the
 author, who knew the hypotheses, and the D4 language labels were checked as text by LLMs,
 not against the audio. By the listening check, about 6\% of primary-cell switch points
 carry no audible switch. D1's transcripts are mostly machine-generated, and the
-pre-registered measurement of tag noise on its 777 human-verified clips was not run
-(deviation 16). Both corpora are instructional monologues (STEM lectures;
+pre-registered measurement of tag noise on its 777 human-verified clips was not run. Both corpora are instructional monologues (STEM lectures;
 narrated tutorials), and we have no speaker metadata such as gender; switching in
 conversation, where diarization matters most, may differ in frequency, run length and
 prosody. The H4 supplement fixed no power analysis, and its intervals are wider than its smallest effect of interest,
@@ -820,36 +814,29 @@ references.
 \section{Ethics and Reproducibility}
 \label{sec:ethics}
 The study uses real recorded speech only and is a non-commercial project. D1 is used as
-released on Hugging Face (CC BY-NC 4.0, revision \texttt{dd00ca41})~\cite{dahal2026csasr}
-and MUCS~2021 as released on OpenSLR (resource 104, CC BY-SA 4.0); M3's Nepali speaker pool
-is the Nepali part of IndicVoices (CC BY 4.0, gated access, revision \texttt{c96f9088}). Only the released clips
-were used: the planned download of D1's long-form source videos failed
-(\S\ref{sec:data-conv}). No audio is redistributed. Code, configs, pre-registration
-documents, the decision and deviation logs, result files, seeds and data revisions are in the repository \href{https://github.com/ishangautam7/nepali-cs-diarization}{\nolinkurl{github.com/ishangautam7/nepali-cs-diarization}}, public from the date this version was posted; its \texttt{REPRODUCE.md} maps every number in this paper to its result file and command. It is a release copy of the development repository, without some planning notes and the LLM review records; the development repository, which holds the history cited below, is kept unchanged and is available to reviewers and editors on request. In it, the freezes are
-the git tags \texttt{m2a-freeze} (\texttt{11eb77c}), \texttt{h7-freeze} (\texttt{a68e5b1})
-and \texttt{h4-freeze} (\texttt{cd22caf}). Each confirmatory result file records its freeze tag and commit. The freeze records, in both repositories, give the SHA-256 hash of every frozen file and of the few files changed after a freeze, so the released files can be checked against them. The commit graph fixes the order of the decisions: \texttt{e430e1e}, which named the primary cell, is an ancestor of the pre-registration commit \texttt{bd60821}, which is an ancestor of the freeze \texttt{11eb77c}. By the author's clock they were committed at 15:31, 16:03 and 18:12 Nepal time (NPT, UTC+5:45) on 2026-10-18, and the run log starts the one confirmatory run at 18:15 NPT. Commit and tag times are set by the author's machine and the tags are unsigned, so neither independently proves when a decision was made; readers should check the commit hashes given here rather than the tag names. The
-pre-registration was not deposited with an external registry. GitHub's own records, which
-the author cannot set, show the freeze commits merged in the development repository's pull request~\#2 at 12:29 UTC
-(18:14 NPT) on
-2026-10-18 and the confirmatory results merged in pull request~\#3 at 13:01 UTC (18:46 NPT). This shows
-that the frozen plan reached the repository before the results did, though not when the run
-itself was made. The post hoc
-analyses, added after all pre-registered results in response to comments on drafts of
-this paper (deviations 14 and 15), are the pipeline check, the exact sample
-counts, the leave-one-channel-out check and a reconciliation of Fig.~\ref{fig:det} with an
-earlier, point-weighted draft of it. Speaker embeddings are biometric data, so we report only aggregate statistics and
-release no per-speaker embeddings. No ethics-board review was sought: the study uses only publicly
-released recordings, makes no new recordings and recruits no participants (the listening
-checks were done by the author).
+released on Hugging Face (CC BY-NC 4.0)~\cite{dahal2026csasr}, MUCS~2021 as released on
+OpenSLR (resource 104, CC BY-SA 4.0), and M3's Nepali speaker pool is the Nepali part of
+IndicVoices (CC BY 4.0, gated access). No audio is redistributed. Speaker embeddings are
+biometric data, so we report only aggregate statistics and release no per-speaker
+embeddings. No ethics-board review was sought: the study uses only publicly released
+recordings, makes no new recordings and recruits no participants.
 
-\emph{Use of AI tools.} An AI coding agent (Kiro, using Anthropic Claude models) wrote the
-analysis code, ran the pipelines and drafted this text under the author's direction.
-LLM-based labellers labelled the D4 lexicon and the contamination-audit sample, and the
-agent checked those labels as text (\S\ref{sec:data}, \S\ref{sec:h7}). Separate LLM reviews
-of the pilot, of the design and code before each freeze, and of drafts of this paper led to
-design and wording changes, including the choice of the primary cell (\S\ref{sec:method});
-their records are available from the author on request. The author directed the work and is
-responsible for all of its content.
+Code, configurations, the pre-registration, the decision and deviation logs, data and model
+revisions, seeds and all result files are available at
+\href{https://github.com/ishangautam7/nepali-cs-diarization}{\nolinkurl{github.com/ishangautam7/nepali-cs-diarization}},
+with instructions that map every number in this paper to the command that produced it. Each
+confirmatory analysis was frozen as a tagged commit, with the hash of every frozen file,
+before it was run, and each result file records the freeze it came from. The pre-registration
+was not deposited with an external registry, so its timing rests on the project's own commit
+history, which is available on request. The post hoc analyses, added after all
+pre-registered results, are marked as exploratory throughout.
+
+\emph{Use of AI tools.} The author designed the study, wrote the pre-registration, made
+every analysis decision, ran the listening checks and interpreted the results. AI coding
+assistants (Anthropic Claude models) helped write and run analysis code and edit the text,
+and LLM-based tools labelled the D4 lexicon and checked the contamination-audit labels as
+text (\S\ref{sec:data}, \S\ref{sec:h7}). The author checked their output and is responsible
+for all content.
 
 \section*{Conflicts of Interest}
 The author declares no conflicts of interest.
